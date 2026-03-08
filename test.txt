@@ -4,3 +4,4 @@ Gitの練習
 二つ目のファイルを追加
 Git statusの使い方
 git diff
+https://odawara-digital-museum.jp/photo/machinami/12/
