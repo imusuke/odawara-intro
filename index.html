@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>諸白小路（もろはくこうじ）— 小田原城下の歴史的小路</title>
+  <meta name="description" content="諸白小路は小田原城下南西部の武家地にあった歴史的な小路名。1686年の史料に初出し、稲葉正則の時代の諸白酒醸造にちなむ地名です。">
+  <style>
+    :root {
+      --color-bg: #faf8f5;
+      --color-surface: #ffffff;
+      --color-text: #2c2420;
+      --color-text-secondary: #6b5e54;
+      --color-accent: #8b6e4e;
+      --color-accent-light: #c4a882;
+      --color-border: #e8e0d8;
+      --color-highlight: #f5efe8;
+      --font-serif: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
+      --font-sans: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.9;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .hero {
+      position: relative;
+      background: linear-gradient(135deg, #3a2e26 0%, #5c4a3a 40%, #8b6e4e 100%);
+      color: #fff;
+      padding: 5rem 1.5rem 4rem;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .hero-label {
+      display: inline-block;
+      font-size: 0.8rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      opacity: 0.7;
+      margin-bottom: 1.5rem;
+      border: 1px solid rgba(255,255,255,0.25);
+      padding: 0.3em 1.2em;
+      border-radius: 2px;
+    }
+
+    .hero h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero h1 ruby rt {
+      font-size: 0.4em;
+      letter-spacing: 0.05em;
+    }
+
+    .hero-subtitle {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      opacity: 0.85;
+      margin-top: 1rem;
+      line-height: 1.8;
+    }
+
+    .divider-wave {
+      display: block;
+      width: 60px;
+      height: 2px;
+      background: var(--color-accent-light);
+      margin: 1.5rem auto 0;
+      border: none;
+      border-radius: 1px;
+    }
+
+    nav.toc {
+      max-width: 720px;
+      margin: -1.5rem auto 0;
+      padding: 0 1.5rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    nav.toc .toc-inner {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    }
+
+    nav.toc h2 {
+      font-family: var(--font-serif);
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      letter-spacing: 0.15em;
+      margin-bottom: 0.8rem;
+    }
+
+    nav.toc ol {
+      list-style: none;
+      counter-reset: toc;
+      display: grid;
+      gap: 0.3rem;
+    }
+
+    nav.toc li {
+      counter-increment: toc;
+    }
+
+    nav.toc a {
+      display: flex;
+      align-items: baseline;
+      gap: 0.6rem;
+      text-decoration: none;
+      color: var(--color-text);
+      padding: 0.35rem 0.5rem;
+      border-radius: 4px;
+      transition: background 0.2s, color 0.2s;
+      font-size: 0.95rem;
+    }
+
+    nav.toc a::before {
+      content: counter(toc);
+      font-family: var(--font-serif);
+      font-size: 0.8rem;
+      color: var(--color-accent);
+      min-width: 1.2em;
+      text-align: right;
+    }
+
+    nav.toc a:hover {
+      background: var(--color-highlight);
+      color: var(--color-accent);
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+
+    .lead {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      line-height: 2;
+      color: var(--color-text);
+      margin-bottom: 3rem;
+      padding: 1.5rem 2rem;
+      background: var(--color-highlight);
+      border-left: 3px solid var(--color-accent);
+      border-radius: 0 6px 6px 0;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--color-border);
+      display: flex;
+      align-items: baseline;
+      gap: 0.6rem;
+    }
+
+    section h2 .section-num {
+      font-size: 0.85rem;
+      color: var(--color-accent);
+      font-weight: 400;
+      min-width: 1.8rem;
+    }
+
+    section p {
+      margin-bottom: 1rem;
+      text-align: justify;
+    }
+
+    .keyword {
+      background: linear-gradient(transparent 60%, rgba(196,168,130,0.25) 60%);
+      font-weight: 600;
+    }
+
+    .note-box {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 6px;
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+      color: var(--color-text-secondary);
+    }
+
+    .note-box::before {
+      content: "※";
+      display: inline-block;
+      margin-right: 0.3em;
+      color: var(--color-accent);
+      font-weight: 700;
+    }
+
+    .summary-box {
+      background: linear-gradient(135deg, #3a2e26, #5c4a3a);
+      color: #fff;
+      border-radius: 8px;
+      padding: 2rem 2.2rem;
+      margin-top: 3rem;
+      line-height: 2;
+    }
+
+    .summary-box h2 {
+      color: #fff;
+      border-bottom-color: rgba(255,255,255,0.2);
+      margin-bottom: 1rem;
+    }
+
+    .summary-box .section-num {
+      color: var(--color-accent-light) !important;
+    }
+
+    .summary-box p {
+      opacity: 0.92;
+      font-family: var(--font-serif);
+      font-size: 1.02rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1.5rem 3rem;
+      font-size: 0.82rem;
+      color: var(--color-text-secondary);
+      border-top: 1px solid var(--color-border);
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 3.5rem 1.2rem 3rem;
+      }
+
+      nav.toc .toc-inner {
+        padding: 1.2rem 1.5rem;
+      }
+
+      main {
+        padding: 2.5rem 1.2rem 4rem;
+      }
+
+      .lead {
+        padding: 1.2rem 1.4rem;
+      }
+
+      .summary-box {
+        padding: 1.5rem 1.4rem;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-bg: #1a1714;
+        --color-surface: #242019;
+        --color-text: #e8e0d8;
+        --color-text-secondary: #a89888;
+        --color-accent: #c4a882;
+        --color-accent-light: #d4bc9a;
+        --color-border: #3a332c;
+        --color-highlight: #2a241e;
+      }
+
+      .hero {
+        background: linear-gradient(135deg, #1a1410 0%, #2c2420 40%, #5c4a3a 100%);
+      }
+
+      nav.toc .toc-inner {
+        box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+      }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-content">
+      <span class="hero-label">小田原城下の歴史地名</span>
+      <h1><ruby>諸白小路<rt>もろはくこうじ</rt></ruby></h1>
+      <p class="hero-subtitle">小田原城下南西部の武家地に連なる歴史的小路。<br>稲葉正則の時代、上方の杜氏が醸した諸白酒に由来する。</p>
+      <hr class="divider-wave">
+    </div>
+  </header>
+
+  <nav class="toc">
+    <div class="toc-inner">
+      <h2>目 次</h2>
+      <ol>
+        <li><a href="#s1">史料上の位置づけ</a></li>
+        <li><a href="#s2">地名の由来</a></li>
+        <li><a href="#s3">どんな場所だったか</a></li>
+        <li><a href="#s4">現在の場所はどこか</a></li>
+        <li><a href="#s5">「南町1丁目4」と言い切ってよいか</a></li>
+        <li><a href="#s6">近代以降の手がかり</a></li>
+        <li><a href="#s7">まとめ</a></li>
+      </ol>
+    </div>
+  </nav>
+
+  <main>
+
+    <p class="lead">
+      諸白小路（もろはくこうじ）は、小田原城下南西部の武家地の小路名で、史料上は1686年の「貞享三年御引渡記録」に初出します。地名は、稲葉正則の時代に上方から杜氏を招いて諸白酒を造らせたことにちなむ、というのが小田原市資料の説明です。道の両側には中級藩士の屋敷が並んでいました。現在は南町周辺にその名が受け継がれ、歴史的町名碑や古写真資料から位置関係をたどれます。
+    </p>
+
+    <section id="s1">
+      <h2><span class="section-num">一</span>史料上の位置づけ</h2>
+      <p>
+        小田原市の町名・地名資料では、<span class="keyword">筋違橋町の東海道筋から南へ延びる武家屋敷の小路</span>として、諸白小路・狩野殿小路・安斎小路が並記されています。つまり諸白小路は、単独の町ではなく、東海道脇に南へ延びる武家地の小路として理解するのが正確です。
+      </p>
+      <p>
+        また、別の市資料では諸白小路そのものについて、<span class="keyword">「貞享三年御引渡記録」（1686年）に初見</span>と明記されています。
+      </p>
+    </section>
+
+    <section id="s2">
+      <h2><span class="section-num">二</span>地名の由来</h2>
+      <p>
+        小田原市の公式資料では、諸白小路の由来を次のように説明しています。
+      </p>
+      <p>
+        小田原藩主・<span class="keyword">稲葉正則</span>の時代、この地に上方から杜氏を招いて、<span class="keyword">諸白酒</span>を造らせたことから地名が生まれたとされています。ここでいう「諸白酒」は、蒸米も麹米もよく精白した米で醸した酒です。
+      </p>
+      <p>
+        この説明は、市のデジタルミュージアムの古写真解説でも繰り返されており、地元で定着した由来説明と見てよさそうです。
+      </p>
+    </section>
+
+    <section id="s3">
+      <h2><span class="section-num">三</span>どんな場所だったか</h2>
+      <p>
+        市資料では、諸白小路の道の両側は武家地で、<span class="keyword">中級藩士</span>が住んでいたとされています。周辺の狩野殿小路、天神小路、御厩小路も同様に武家地として説明されており、この一帯が小田原城下の武家屋敷帯だったことがわかります。
+      </p>
+    </section>
+
+    <section id="s4">
+      <h2><span class="section-num">四</span>現在の場所はどこか</h2>
+      <p>
+        小田原市の「歴史的町名碑 全体図」では、諸白小路は<span class="keyword">南町二丁目付近</span>に相当する位置に示されています。地図上では、東海道沿いの筋違橋町から南へ入った一帯で、近くに狩野殿小路・安斎小路・御厩小路・天神小路・西海子小路などが並んでいます。
+      </p>
+      <p>
+        一方で、市のデジタルミュージアムは、1967年撮影の古写真を<span class="keyword">「諸白小路（現 南町）の界隈」</span>として公開しており、撮影場所を「国道1号 諸白小路」としています。したがって現在の行政地名では、広く<strong>南町エリア</strong>として理解するのが自然です。
+      </p>
+    </section>
+
+    <section id="s5">
+      <h2><span class="section-num">五</span>「南町1丁目4」と言い切ってよいか</h2>
+      <p>
+        ここは少し慎重に見るべき点です。
+      </p>
+      <p>
+        民間地図サービスでは代表点として南町1丁目4が出ることがありますが、公式資料が示しているのはあくまで歴史的な小路の位置関係で、必ずしも単一点の現住所を確定しているわけではありません。市の歴史的町名碑図では、諸白小路は南町二丁目寄りに見え、デジタルミュージアムは「現 南町」と広めに表現しています。
+      </p>
+      <div class="note-box">
+        厳密には<strong>「現在の南町周辺にあたる」</strong>と書く方が安全です。
+      </div>
+    </section>
+
+    <section id="s6">
+      <h2><span class="section-num">六</span>近代以降の手がかり</h2>
+      <p>
+        デジタルミュージアムには、1967年の<span class="keyword">諸白小路バス停</span>周辺の写真があり、八百屋・魚屋・呉服店・物産店が見えると説明されています。つまり近代以降も、地名は少なくともバス停名・通称地名として生きていたことが確認できます。
+      </p>
+      <p>
+        さらに近年の小田原市資料には、南町の歴史的風致に関する文脈で、<span class="keyword">旧野崎幻庵邸（諸白小路）</span>、<span class="keyword">旧榎本武憲邸（諸白小路）</span>といった記述も見え、諸白小路が近代の別邸文化・人物史とも結びつく場所として認識されていることがわかります。
+      </p>
+    </section>
+
+    <section id="s7" class="summary-box">
+      <h2><span class="section-num">七</span>まとめ</h2>
+      <p>
+        諸白小路は、小田原城下南西部の武家地にあった歴史的な小路名で、1686年の史料に見える。地名は、稲葉正則の時代に上方から杜氏を招いて諸白酒を造らせたことにちなむとされる。道の両側には中級藩士の屋敷が並び、現在の南町周辺にその位置をたどることができる。
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>小田原市公式資料・デジタルミュージアム等の公開情報に基づく</p>
+  </footer>
+
+</body>
+</html>
