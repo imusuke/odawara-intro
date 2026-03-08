@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>諸白小路（もろはくこうじ）</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --color-bg: #faf8f4;
+      --color-surface: #ffffff;
+      --color-primary: #4a3728;
+      --color-accent: #8b5e3c;
+      --color-accent-light: #c4956a;
+      --color-text: #2d2218;
+      --color-text-muted: #6b5744;
+      --color-border: #ddd5c8;
+      --color-tag-bg: #f0ebe3;
+      --shadow-sm: 0 1px 3px rgba(74, 55, 40, 0.08);
+      --shadow-md: 0 4px 16px rgba(74, 55, 40, 0.12);
+      --radius: 10px;
+    }
+
+    body {
+      font-family: 'Hiragino Mincho ProN', 'Yu Mincho', 'YuMincho', Georgia, serif;
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.9;
+      font-size: 17px;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, var(--color-primary) 0%, #2e1f12 100%);
+      color: #fff;
+      padding: 60px 24px 52px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(
+        45deg,
+        rgba(255,255,255,0.03) 0px,
+        rgba(255,255,255,0.03) 1px,
+        transparent 1px,
+        transparent 16px
+      );
+    }
+
+    header .kana {
+      font-size: 14px;
+      letter-spacing: 0.3em;
+      color: var(--color-accent-light);
+      margin-bottom: 14px;
+      font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+      font-weight: 300;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      line-height: 1.2;
+      position: relative;
+    }
+
+    header .subtitle {
+      margin-top: 20px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.6);
+      font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+      letter-spacing: 0.05em;
+      position: relative;
+    }
+
+    /* ── Layout ── */
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── Lead ── */
+    .lead {
+      background: var(--color-surface);
+      border-left: 4px solid var(--color-accent);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 28px 32px;
+      margin-bottom: 48px;
+      box-shadow: var(--shadow-sm);
+      font-size: 16.5px;
+      color: var(--color-text);
+    }
+
+    /* ── Section ── */
+    section {
+      margin-bottom: 48px;
+    }
+
+    section h2 {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--color-border);
+      letter-spacing: 0.05em;
+    }
+
+    section h2 .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      background: var(--color-accent);
+      color: #fff;
+      border-radius: 50%;
+      font-size: 14px;
+      font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    section p {
+      margin-bottom: 16px;
+      color: var(--color-text);
+    }
+
+    section p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ── Card ── */
+    .card {
+      background: var(--color-surface);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--color-border);
+    }
+
+    /* ── Highlight box ── */
+    .highlight {
+      background: var(--color-tag-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin: 20px 0;
+      font-size: 15.5px;
+    }
+
+    .highlight strong {
+      color: var(--color-accent);
+    }
+
+    /* ── Summary ── */
+    .summary-box {
+      background: linear-gradient(135deg, #f5efe7 0%, #ede4d6 100%);
+      border: 1px solid var(--color-accent-light);
+      border-radius: var(--radius);
+      padding: 32px 36px;
+      margin-top: 12px;
+      position: relative;
+    }
+
+    .summary-box::before {
+      content: '要約';
+      position: absolute;
+      top: -12px;
+      left: 24px;
+      background: var(--color-accent);
+      color: #fff;
+      font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      padding: 3px 12px;
+      border-radius: 20px;
+    }
+
+    /* ── Tags ── */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .tag {
+      background: var(--color-tag-bg);
+      border: 1px solid var(--color-border);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 13px;
+      font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+      color: var(--color-text-muted);
+      letter-spacing: 0.03em;
+    }
+
+    /* ── Timeline dot ── */
+    .timeline-item {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+
+    .timeline-dot {
+      width: 10px;
+      height: 10px;
+      background: var(--color-accent);
+      border-radius: 50%;
+      margin-top: 8px;
+      flex-shrink: 0;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      background: var(--color-primary);
+      color: rgba(255,255,255,0.55);
+      font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      body { font-size: 15.5px; }
+      .lead, .card, .summary-box { padding: 20px; }
+      section h2 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <p class="kana">もろはくこうじ</p>
+  <h1>諸白小路</h1>
+  <p class="subtitle">小田原城下 武家地の歴史的小路</p>
+</header>
+
+<main>
+
+  <!-- Lead -->
+  <div class="lead">
+    諸白小路は、小田原城下南西部の武家地の小路名で、史料上は1686年の「貞享三年御引渡記録」に初出します。地名は、稲葉正則の時代に上方から杜氏を招いて諸白酒を造らせたことにちなむとされています。道の両側には中級藩士の屋敷が並んでいました。現在は南町周辺にその名が受け継がれ、歴史的町名碑や古写真資料から位置関係をたどることができます。
+  </div>
+
+  <!-- Section 1 -->
+  <section>
+    <h2><span class="num">1</span>史料上の位置づけ</h2>
+    <div class="card">
+      <p>
+        小田原市の町名・地名資料では、筋違橋町の東海道筋から南へ延びる武家屋敷の小路として、諸白小路・狩野殿小路・安斎小路が並記されています。つまり諸白小路は、単独の町ではなく、東海道脇に南へ延びる武家地の小路として理解するのが正確です。
+      </p>
+      <div class="highlight">
+        また、別の市資料では諸白小路そのものについて、<strong>「貞享三年御引渡記録」（1686年）</strong>に初見と明記されています。
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section>
+    <h2><span class="num">2</span>地名の由来</h2>
+    <div class="card">
+      <p>
+        小田原市の公式資料では、諸白小路の由来を次のように説明しています。
+      </p>
+      <div class="highlight">
+        小田原藩主・<strong>稲葉正則</strong>の時代、この地に上方から杜氏を招いて、<strong>諸白酒</strong>を造らせたことから地名が生まれたとされています。ここでいう「諸白酒」は、蒸米も麹米もよく精白した米で醸した酒です。
+      </div>
+      <p>
+        この説明は、市のデジタルミュージアムの古写真解説でも繰り返されており、地元で定着した由来説明と見てよさそうです。
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 3 -->
+  <section>
+    <h2><span class="num">3</span>どんな場所だったか</h2>
+    <div class="card">
+      <p>
+        市資料では、諸白小路の道の両側は武家地で、<strong>中級藩士</strong>が住んでいたとされています。
+      </p>
+      <p>
+        周辺の小路も同様の性格を持っていました。
+      </p>
+      <div class="tags">
+        <span class="tag">狩野殿小路</span>
+        <span class="tag">天神小路</span>
+        <span class="tag">御厩小路</span>
+        <span class="tag">安斎小路</span>
+        <span class="tag">西海子小路</span>
+      </div>
+      <p style="margin-top:16px;">
+        この一帯が小田原城下の武家屋敷帯だったことがわかります。
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 4 -->
+  <section>
+    <h2><span class="num">4</span>現在の場所はどこか</h2>
+    <div class="card">
+      <p>
+        小田原市の「歴史的町名碑 全体図」では、諸白小路は<strong>南町二丁目付近</strong>に相当する位置に示されています。地図上では、東海道沿いの筋違橋町から南へ入った一帯に位置します。
+      </p>
+      <p>
+        一方で、市のデジタルミュージアムは、1967年撮影の古写真を「諸白小路（現 南町）の界隈」として公開しており、撮影場所を「国道1号 諸白小路」としています。したがって現在の行政地名では、広く<strong>南町エリア</strong>として理解するのが自然です。
+      </p>
+    </div>
+  </section>
+
+  <!-- Section 5 -->
+  <section>
+    <h2><span class="num">5</span>「南町1丁目4」と言い切ってよいか</h2>
+    <div class="card">
+      <p>
+        ここは少し慎重に見るべき点です。民間地図サービスでは代表点として南町1丁目4が出ることがありますが、公式資料が示しているのはあくまで歴史的な小路の位置関係で、必ずしも単一点の現住所を確定しているわけではありません。
+      </p>
+      <div class="highlight">
+        市の歴史的町名碑図では、諸白小路は<strong>南町二丁目寄り</strong>に見え、デジタルミュージアムは「現 南町」と広めに表現しています。厳密には<strong>「現在の南町周辺にあたる」</strong>と書く方が安全です。
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6 -->
+  <section>
+    <h2><span class="num">6</span>近代以降の手がかり</h2>
+    <div class="card">
+      <p>
+        デジタルミュージアムには、<strong>1967年の諸白小路バス停周辺</strong>の写真があり、八百屋・魚屋・呉服店・物産店が見えると説明されています。つまり近代以降も、地名は少なくともバス停名・通称地名として生きていたことが確認できます。
+      </p>
+      <p>
+        さらに近年の小田原市資料には、南町の歴史的風致に関する文脈で、以下の記述も見られます。
+      </p>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <p><strong>旧野崎幻庵邸（諸白小路）</strong></p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <p><strong>旧榎本武憲邸（諸白小路）</strong></p>
+      </div>
+      <p>
+        このことから、諸白小路が近代の別邸文化・人物史とも結びつく場所として認識されていることがわかります。
+      </p>
+    </div>
+  </section>
+
+  <!-- Summary -->
+  <section>
+    <h2><span class="num">7</span>まとめ</h2>
+    <div class="summary-box">
+      <p>
+        諸白小路は、<strong>小田原城下南西部の武家地</strong>にあった歴史的な小路名で、1686年の史料に見える。地名は、<strong>稲葉正則の時代に上方から杜氏を招いて諸白酒を造らせたことにちなむ</strong>とされる。道の両側には中級藩士の屋敷が並び、現在の<strong>南町周辺</strong>にその位置をたどることができる。
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>諸白小路 ― 小田原城下 武家地の歴史的小路</p>
+  <p style="margin-top:6px;">資料出典：小田原市 町名・地名資料 / 小田原市デジタルミュージアム</p>
+</footer>
+
+</body>
+</html>
