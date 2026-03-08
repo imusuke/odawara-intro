@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/morohaku-koji",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/morohaku-koji/",
+      "destination": "/index.html"
+    }
+  ]
+}
