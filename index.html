@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>諸白小路 | 小田原城下の歴史的な小路</title>
+  <meta
+    name="description"
+    content="諸白小路の史料上の初見、地名の由来、武家地としての性格、現在の位置づけを整理した解説ページです。"
+  >
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f1e8;
+      --panel: #fffdf8;
+      --line: #d8ccb8;
+      --text: #2d241b;
+      --muted: #6f6255;
+      --accent: #8b5e34;
+      --accent-soft: #efe4d5;
+      --shadow: 0 18px 40px rgba(45, 36, 27, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic",
+        "Noto Sans JP", sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(139, 94, 52, 0.08), transparent 32%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    .container {
+      width: min(1100px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 72px 0 36px;
+    }
+
+    .hero {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: 1.4fr 0.9fr;
+      align-items: stretch;
+    }
+
+    .hero-main,
+    .hero-side,
+    .section-card,
+    .summary-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-main {
+      padding: 40px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.92rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1.15;
+    }
+
+    .lead {
+      margin: 0;
+      font-size: 1.08rem;
+      color: var(--muted);
+    }
+
+    .hero-side {
+      padding: 28px;
+      display: grid;
+      gap: 16px;
+      align-content: start;
+    }
+
+    .stat {
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: #fff8ef;
+      border: 1px solid #eadcc8;
+    }
+
+    .stat strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+      color: var(--accent);
+    }
+
+    main {
+      padding-bottom: 56px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .section-card {
+      padding: 28px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 1.35rem;
+      line-height: 1.35;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    p:last-child,
+    ul:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.25rem;
+    }
+
+    .summary-wrap {
+      margin-top: 20px;
+    }
+
+    .summary-card {
+      padding: 30px;
+      border-left: 6px solid var(--accent);
+    }
+
+    .summary-card p {
+      margin: 0;
+      font-size: 1.05rem;
+    }
+
+    footer {
+      padding: 0 0 48px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .footnote {
+      margin-top: 16px;
+      padding: 16px 18px;
+      border-radius: 16px;
+      background: rgba(255, 253, 248, 0.7);
+      border: 1px solid var(--line);
+    }
+
+    @media (max-width: 860px) {
+      .hero,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        padding-top: 40px;
+      }
+
+      .hero-main,
+      .hero-side,
+      .section-card,
+      .summary-card {
+        border-radius: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <section class="hero" aria-label="諸白小路の概要">
+        <div class="hero-main">
+          <span class="eyebrow">小田原城下の歴史をたどる</span>
+          <h1>諸白小路（もろはくこうじ）</h1>
+          <p class="lead">
+            諸白小路は、小田原城下南西部の武家地にあった歴史的な小路名です。
+            史料上は1686年の「貞享三年御引渡記録」に初出し、地名は稲葉正則の時代に
+            上方から杜氏を招いて諸白酒を造らせたことにちなむと説明されています。
+          </p>
+        </div>
+        <aside class="hero-side" aria-label="要点">
+          <div class="stat">
+            <strong>史料上の初見</strong>
+            <span>1686年「貞享三年御引渡記録」</span>
+          </div>
+          <div class="stat">
+            <strong>場所の性格</strong>
+            <span>東海道脇から南へ延びる武家地の小路</span>
+          </div>
+          <div class="stat">
+            <strong>現在の理解</strong>
+            <span>南町周辺に位置づけるのが最も安全</span>
+          </div>
+        </aside>
+      </section>
+    </header>
+
+    <main>
+      <section class="grid">
+        <article class="section-card">
+          <h2>1. 史料上の位置づけ</h2>
+          <p>
+            小田原市の町名・地名資料では、筋違橋町の東海道筋から南へ延びる武家屋敷の
+            小路として、諸白小路・狩野殿小路・安斎小路が並んで記されています。
+          </p>
+          <p>
+            そのため諸白小路は、独立した一つの町名というよりも、
+            東海道脇から南へ延びる武家地の小路として理解するのが適切です。
+          </p>
+          <p>
+            また、市の別資料では諸白小路そのものについて、
+            1686年の「貞享三年御引渡記録」に初見と明記されています。
+          </p>
+        </article>
+
+        <article class="section-card">
+          <h2>2. 地名の由来</h2>
+          <p>
+            小田原市の公式資料では、諸白小路の由来を、
+            小田原藩主・稲葉正則の時代にこの地で諸白酒を造らせたことに求めています。
+          </p>
+          <p>
+            上方から杜氏を招き、蒸米も麹米もよく精白した米で酒を醸したことが
+            「諸白」の名につながったとされます。
+          </p>
+          <p>
+            この説明は市のデジタルミュージアムでも繰り返されており、
+            地元で広く定着した由来説明と考えられます。
+          </p>
+        </article>
+
+        <article class="section-card">
+          <h2>3. どんな場所だったか</h2>
+          <p>
+            市資料によれば、諸白小路の道の両側は武家地で、
+            中級藩士の屋敷が建ち並んでいました。
+          </p>
+          <p>
+            周辺の狩野殿小路、天神小路、御厩小路も同じく武家地として説明されており、
+            この一帯が小田原城下の武家屋敷帯であったことがわかります。
+          </p>
+        </article>
+
+        <article class="section-card">
+          <h2>4. 現在の場所はどこか</h2>
+          <p>
+            小田原市の「歴史的町名碑 全体図」では、諸白小路は南町二丁目付近に
+            相当する位置に示されています。
+          </p>
+          <p>
+            地図上では、東海道沿いの筋違橋町から南へ入った一帯で、
+            近くに狩野殿小路・安斎小路・御厩小路・天神小路・西海子小路などが並びます。
+          </p>
+          <p>
+            一方、市のデジタルミュージアムでは1967年撮影の古写真を
+            「諸白小路（現 南町）の界隈」として紹介しており、
+            現在の行政地名では広く南町エリアとして理解するのが自然です。
+          </p>
+        </article>
+
+        <article class="section-card">
+          <h2>5. 「南町1丁目4」と言い切ってよいか</h2>
+          <p>
+            この点は慎重に扱うべきです。民間地図サービスでは代表点として
+            南町1丁目4が表示される場合がありますが、
+            公式資料が示しているのは歴史的な小路の位置関係です。
+          </p>
+          <p>
+            特定の一地点を厳密な現住所として確定しているわけではないため、
+            表現としては「現在の南町周辺にあたる」とするのが安全です。
+          </p>
+        </article>
+
+        <article class="section-card">
+          <h2>6. 近代以降の手がかり</h2>
+          <p>
+            デジタルミュージアムには、1967年の諸白小路バス停周辺の写真があり、
+            八百屋・魚屋・呉服店・物産店が見えると説明されています。
+          </p>
+          <p>
+            そのことから、近代以降も諸白小路という名が、
+            少なくともバス停名や通称地名として生きていたことが確認できます。
+          </p>
+          <p>
+            さらに近年の小田原市資料には、南町の歴史的風致をめぐる文脈で、
+            旧野崎幻庵邸（諸白小路）や旧榎本武憲邸（諸白小路）といった記述も見られます。
+          </p>
+        </article>
+      </section>
+
+      <section class="summary-wrap" aria-label="まとめ">
+        <div class="summary-card">
+          <h2>7. まとめ</h2>
+          <p>
+            諸白小路は、小田原城下南西部の武家地にあった歴史的な小路名で、
+            1686年の史料に見えます。地名は、稲葉正則の時代に上方から杜氏を招いて
+            諸白酒を造らせたことにちなむとされ、道の両側には中級藩士の屋敷が並んでいました。
+            現在では、南町周辺にその位置をたどることができます。
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footnote">
+        本ページはご提示いただいた内容をもとに、読みやすいHTML形式へ整理したものです。
+        位置については、公式資料の表現に合わせて「南町周辺」としています。
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
