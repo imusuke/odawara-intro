@@ -30,6 +30,45 @@
         font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Noto Sans JP",
           system-ui, -apple-system, sans-serif;
         line-height: 1.85;
+        display: flex;
+      }
+
+      .sidebar {
+        width: 200px;
+        background: var(--card);
+        border-right: 1px solid var(--border);
+        padding: 20px;
+        position: fixed;
+        height: 100vh;
+        overflow-y: auto;
+      }
+
+      .sidebar h3 {
+        margin-top: 0;
+        font-size: 1.1rem;
+      }
+
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .sidebar li {
+        margin-bottom: 8px;
+      }
+
+      .sidebar a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      .sidebar a:hover {
+        text-decoration: underline;
+      }
+
+      .main-content {
+        flex: 1;
+        margin-left: 200px;
       }
 
       .container {
@@ -254,7 +293,19 @@
     </style>
   </head>
   <body>
-    <main class="container">
+    <div class="sidebar">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li><a href="#morohaku">諸白小路</a></li>
+        <li><a href="#nishikoji">西海子小路</a></li>
+        <li><a href="#hasuan">葉雨庵（野崎幻庵の旧別邸）</a></li>
+        <li><a href="#seizan">静山荘（望月軍四郎の旧別邸）</a></li>
+        <li><a href="#genan">野崎幻庵</a></li>
+        <li><a href="#gunshiro">望月軍四郎</a></li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <main class="container">
       <header>
         <h1>諸白小路（もろはくこうじ）</h1>
         <p class="lead">
@@ -289,7 +340,7 @@
         </p>
       </section>
 
-      <section>
+      <section id="morohaku">
         <h2>2. 諸白小路に纏わる歴史的年表</h2>
         <p class="section-intro">
           諸白小路の成立から現代までの主な出来事を年表形式でまとめました。
@@ -497,15 +548,15 @@
             明治維新後、武家制度の廃止により屋敷地は民間に開放されました。諸白小路の名は次第に薄れ、南町という現代的な町名に置き換わっていきました。しかし、地名の記憶は史料と地元伝承として残り、今も観光資源となっています。
           </p>
         </div>
-        <div class="detail-box">
+        <div class="detail-box" id="hasuan">
           <h3>野崎幻庵の別荘「自怡荘」</h3>
-          <p>
+          <p id="genan">
             野崎幻庵（野崎廣太）は、小田原の十字町・諸白小路（現在の小田原市南町）に別荘「自怡荘（じいそう）」を構え、その敷地内に茶室「葉雨庵」を建てていました。この別荘の跡地には、後にメガネスーパーの創業者が豪邸を建てたという歴史があります。
           </p>
         </div>
       </section>
 
-      <section>
+      <section id="nishikoji">
         <h2>11. 周辺地域との比較</h2>
         <p class="section-intro">
           諸白小路をより深く理解するために、周辺の小路との比較を見てみましょう。
@@ -520,8 +571,8 @@
           <li>
             <strong>西海子小路</strong>: 小田原城の南側（現在の小田原市南町周辺）にある、旧武家屋敷街の面影を残す歴史的な小路。名称は、この地にサイカチの木が植えられていたことに由来するといわれます。現在の地名としては、小田原市南町二〜三丁目付近で、東海道（国道1号）の南側に並行して通る横町です。江戸時代末期には、中級藩士の武家屋敷が道の両側に十八軒並んでいたとされ、城下の武家地として整った町並みでした。藩主稲葉家の時代の史料「永代日記」にも地名が見られ、近世から知られた通り名です。現在は「小田原文学館」「白秋童謡館」へのアプローチとなる通りで、文学者ゆかりの地としても知られています。桜並木が有名で、春には桜のトンネルができる小田原屈指の花見スポットになっています。
           </li>
-          <li>
-            <strong>静山荘</strong>: 諸白小路と西海子小路の交差点にある、実業家・望月軍四郎（1879〜1940）の旧別邸として知られる歴史的建造物。明治25年（1892）に上府中村（現在の小田原市上府中・千代付近）で建てられた農家住宅を、昭和14年（1939）に望月軍四郎が現在地へ移築し、別荘としたものです。農家建築を別荘に転用した点が珍しく、書院造風の座敷と民家風の広間が調和する構成や、当時の優れた構造・意匠が高く評価されています。住所は小田原市南町3-1-20で、小田原駅から徒歩圏内の邸園エリアに位置します。「小田原ゆかりの優れた建造物」として市が位置付けており、普段は非公開ですが、文化財建造物の観覧会など特定の機会に外観見学が行われることがあります。
+          <li id="seizan">
+            <strong>静山荘</strong>: 諸白小路と西海子小路の交差点にある、実業家・<span id="gunshiro">望月軍四郎</span>（1879〜1940）の旧別邸として知られる歴史的建造物。明治25年（1892）に上府中村（現在の小田原市上府中・千代付近）で建てられた農家住宅を、昭和14年（1939）に望月軍四郎が現在地へ移築し、別荘としたものです。農家建築を別荘に転用した点が珍しく、書院造風の座敷と民家風の広間が調和する構成や、当時の優れた構造・意匠が高く評価されています。住所は小田原市南町3-1-20で、小田原駅から徒歩圏内の邸園エリアに位置します。「小田原ゆかりの優れた建造物」として市が位置付けており、普段は非公開ですが、文化財建造物の観覧会など特定の機会に外観見学が行われることがあります。
           </li>
           <li>
             <strong>天神小路・御厩小路</strong>: 南側に続き、武家地の延長線上です。
@@ -576,5 +627,6 @@
         本ページは、提供された内容を基に一般向けに読みやすく再構成した解説です。
       </footer>
     </main>
+    </div>
   </body>
 </html>
