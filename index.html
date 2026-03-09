@@ -182,9 +182,73 @@
         text-decoration: underline;
       }
 
-      footer {
-        color: var(--muted);
-        font-size: 0.95rem;
+      .timeline {
+        position: relative;
+        max-width: 800px;
+        margin: 20px auto;
+      }
+
+      .timeline::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: var(--accent);
+        top: 0;
+        bottom: 0;
+        left: 30px;
+        margin-left: -3px;
+      }
+
+      .timeline-item {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 100%;
+      }
+
+      .timeline-item::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -17px;
+        background-color: white;
+        border: 4px solid var(--accent);
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+      }
+
+      .timeline-year {
+        left: 2px;
+        background-color: var(--accent);
+        color: white;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        position: absolute;
+      }
+
+      .timeline-content {
+        padding: 20px 30px;
+        background-color: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        position: relative;
+        margin-left: 70px;
+      }
+
+      .timeline-content h3 {
+        margin: 0 0 10px;
+        color: var(--accent);
+      }
+
+      .timeline-content p {
+        margin: 0;
       }
     </style>
   </head>
@@ -429,9 +493,60 @@
       </section>
 
       <section>
-        <h2>12. まとめ</h2>
+        <h2>12. 諸白小路に纏わる歴史的年表</h2>
+        <p class="section-intro">
+          諸白小路の成立から現代までの主な出来事を年表形式でまとめました。
+        </p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">1592</div>
+            <div class="timeline-content">
+              <h3>稲葉正則、小田原城主就任</h3>
+              <p>徳川家康の家臣である稲葉正則が小田原城主となり、城下町の整備を開始。上方から杜氏を招いて諸白酒づくりを推進。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">1686</div>
+            <div class="timeline-content">
+              <h3>諸白小路初見史料</h3>
+              <p>「貞享三年御引渡記録」に諸白小路が初めて記録される。武家地の小路として位置づけられる。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">1868</div>
+            <div class="timeline-content">
+              <h3>明治維新と武家制度廃止</h3>
+              <p>明治維新により武家制度が廃止され、諸白小路の武家屋敷地は民間に開放。地名の使用が次第に薄れる。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">1975</div>
+            <div class="timeline-content">
+              <h3>小田原市史編纂</h3>
+              <p>小田原市史（通史編上巻）が刊行され、諸白小路の歴史的背景が詳述される。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2006</div>
+            <div class="timeline-content">
+              <h3>歴史的町名碑設置</h3>
+              <p>小田原市が歴史的町名碑を設置。諸白小路の位置が南町周辺として示される。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">現在</div>
+            <div class="timeline-content">
+              <h3>観光・文化資源として</h3>
+              <p>諸白小路は城下町の歴史を伝える重要な地名として、デジタルミュージアムや観光ガイドで紹介されている。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>13. まとめ</h2>
         <p class="summary">
-          諸白小路は、<strong>1686年の史料に見える武家地の小路名</strong>である。由来は稲葉正則時代の諸白酒づくりとされ、当時は中級藩士の屋敷が並んでいた。現在は南町周辺に、その歴史的位置をたどることができる。周辺の小路との比較や現代の観光情報も参考に、城下町の歴史を深く理解しよう。
+          諸白小路は、<strong>1686年の史料に見える武家地の小路名</strong>である。由来は稲葉正則時代の諸白酒づくりとされ、当時は中級藩士の屋敷が並んでいた。現在は南町周辺に、その歴史的位置をたどることができる。周辺の小路との比較や現代の観光情報、歴史的年表も参考に、城下町の歴史を深く理解しよう。
         </p>
       </section>
 
