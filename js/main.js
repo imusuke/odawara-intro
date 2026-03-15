@@ -3,9 +3,10 @@
   if (!mapEl) return;
   var center = [35.2455, 139.1532];
   var map = L.map('spots-map').setView(center, 17);
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-    maxZoom: 19
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+    subdomains: 'abcd',
+    maxZoom: 20
   }).addTo(map);
   function buildTooltipHtml(title, description, sources) {
     var html = '<span class="spot-tooltip-title">' + title + '</span><span class="spot-tooltip-desc">' + (description || '') + '</span>';
@@ -82,10 +83,10 @@
     { lat: 35.24716670727812, lng: 139.14817605993196, name: '居神神社', label: '居神神社', color: '#1d4ed8', tooltipDirection: null,
       description: '小田原に鎮座する居神神社は、地域の氏神として古くから信仰されている。城下町の西側に位置し、南町・諸白小路周辺からも参拝しやすい。小田原の町の信仰と歴史を伝えるスポットの一つである。',
       sources: [] },
-    { lat: 35.24744174648453, lng: 139.15471594266543, name: '柳屋ベーカリー', label: '柳屋ベーカリー', color: '#1d4ed8', tooltipDirection: null,
+    { lat: 35.24744174648453, lng: 139.15471594266543, name: '柳屋ベーカリー', label: '柳屋ベーカリー', color: '#1d4ed8', tooltipDirection: null, category: 'gourmet',
       description: '小田原・南町周辺で親しまれているパン屋「柳屋ベーカリー」である。南町散策や諸白小路・西海子小路を歩いた際の休憩やお土産の拠点として人気がある。',
       sources: [] },
-    { lat: 35.24808590827724, lng: 139.16061944570703, name: '籠清本店', label: '籠清本店', color: '#1d4ed8', tooltipDirection: null,
+    { lat: 35.24808590827724, lng: 139.16061944570703, name: '籠清本店', label: '籠清本店', color: '#1d4ed8', tooltipDirection: null, category: 'gourmet',
       description: 'かまぼこ通り周辺に店を構える老舗「籠清本店」である。蒲鉾・干物など海の幸を扱い、かまぼこ通りの食文化を代表する店の一つとして知られる。南町・諸白小路から海側へ足を延ばした際の立ち寄りスポットとしても人気がある。',
       sources: [] },
     { lat: 35.245096952753364, lng: 139.1569404333824, name: '滄浪閣旧址', label: '滄浪閣旧址', color: '#1d4ed8', tooltipDirection: null,
@@ -256,10 +257,17 @@
   }
   var spotMarkerColor = '#1d4ed8';
   spots.forEach(function (s) {
+    var isGourmet = s.category === 'gourmet';
     var isStar = s.shape === 'star';
-    var iconHtml = isStar
-      ? '<span class="spot-marker spot-marker-star" style="color:' + (s.color || spotMarkerColor) + '">★</span>'
-      : '<span class="spot-marker" style="background-color:' + spotMarkerColor + '"></span>';
+    var c = s.color || spotMarkerColor;
+    var iconHtml;
+    if (isGourmet) {
+      iconHtml = '<span class="spot-marker spot-marker-gourmet" style="background-color:' + c + '">🍴</span>';
+    } else if (isStar) {
+      iconHtml = '<span class="spot-marker spot-marker-star" style="color:' + c + '">★</span>';
+    } else {
+      iconHtml = '<span class="spot-marker" style="background-color:' + spotMarkerColor + '"></span>';
+    }
     var icon = L.divIcon({
       className: 'spot-marker-wrap',
       html: iconHtml,
@@ -515,6 +523,8 @@
     });
   });
   var route1LabelPos = labelOffsetFromLine(route1Latlngs, pointAlongLine(route1Latlngs, 0.36), 0.00022, 1);
+  // ラベルを約300m東へずらす（経度 +0.0033 度 ≒ 300m @ 緯度35.25°）
+  route1LabelPos = [route1LabelPos[0], route1LabelPos[1] + 0.0033];
   var route1LabelIcon = L.divIcon({
     className: 'street-label-wrap',
     html: '<span class="street-label" style="background-color:#1d4ed8">国道1号</span>',
@@ -547,6 +557,12 @@
     toggleTokaido.addEventListener('change', function () {
       if (this.checked) map.addLayer(tokaidoLayerGroup);
       else map.removeLayer(tokaidoLayerGroup);
+    });
+  }
+  var resetBtn = document.getElementById('map-reset-view');
+  if (resetBtn) {
+    resetBtn.addEventListener('click', function () {
+      map.fitBounds(initialBounds, { padding: [24, 24], maxZoom: 18 });
     });
   }
 })();

@@ -103,11 +103,12 @@
           <a href="index.html" target="_top" class="fullscreen-back-link" id="fullscreen-back-link">解説ページへ</a>
           <div id="spots-map" aria-label="諸白小路・南町周辺の地図"></div>
           <div id="spots-map-tooltip-panel" class="spots-tooltip-panel" aria-live="polite"></div>
+          <p class="map-caption map-layer-toggles">
+            <label><input type="checkbox" id="toggle-route1" checked> 国道1号</label>
+            <label><input type="checkbox" id="toggle-tokaido" checked> 旧東海道</label>
+            <button type="button" id="map-reset-view" class="map-reset-btn">地図の表示を初期に戻す</button>
+          </p>
         </div>
-        <p class="map-caption map-layer-toggles">
-          <label><input type="checkbox" id="toggle-route1" checked> 国道1号</label>
-          <label><input type="checkbox" id="toggle-tokaido" checked> 旧東海道</label>
-        </p>
         <p class="map-caption">
           線はOpenStreetMapに登録されている現在の道路です。灰色の点線は旧東海道（板橋旧道・本町〜新宿）です。スポットマーカーや小路・国道1号のラベルをクリックすると説明パネルが表示されます。同じマーカー・ラベルを再度クリックするか、パネルの閉じるボタンで非表示にできます。
         </p>

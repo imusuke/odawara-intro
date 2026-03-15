@@ -683,6 +683,18 @@ main a:focus-visible {
   background: none !important;
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
+.spot-marker-wrap .spot-marker.spot-marker-gourmet {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 15px;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #ea580c !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.35);
+  box-sizing: border-box;
+}
 .spot-label-wrap.leaflet-div-icon {
   background: none !important;
   border: none !important;
@@ -858,7 +870,23 @@ body.fullscreen-map nav,
 body.fullscreen-map header,
 body.fullscreen-map section:not(#map-spots),
 body.fullscreen-map footer,
-body.fullscreen-map .map-caption:not(.map-layer-toggles) { display: none !important; }
+body.fullscreen-map .map-caption:not(.map-layer-toggles),
+body.fullscreen-map .map-fullscreen-link,
+body.fullscreen-map .map-links { display: none !important; }
+/* 全画面は地図のみ表示：ナビゲーション（サイドバー）を完全に除去 */
+body.fullscreen-map { display: block !important; }
+body.fullscreen-map .sidebar {
+  display: none !important;
+  position: absolute !important;
+  left: -9999px !important;
+  width: 0 !important;
+  min-width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+body.fullscreen-map .main-content { margin-left: 0 !important; margin-right: 0 !important; width: 100% !important; max-width: none !important; flex: none !important; }
 body.fullscreen-map main { padding: 0; max-width: none; width: 100%; }
 body.fullscreen-map #map-spots { margin: 0; padding: 0; }
 body.fullscreen-map #map-spots h2,
@@ -921,9 +949,26 @@ body.fullscreen-map .map-layer-toggles label {
 body.fullscreen-map .map-layer-toggles label:last-child {
   margin-right: 0;
 }
-/* 全画面でツールチップが下側のとき、レイヤートグルと重ならないよう左端をずらす */
+.map-reset-btn {
+  margin-left: 12px;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  color: var(--accent);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+}
+.map-reset-btn:hover {
+  background: var(--bg);
+  text-decoration: none;
+}
+/* 全画面でツールチップが下側のとき、レイヤートグル・「地図の表示を初期に戻す」と重ならないよう右半分にのみ表示 */
 body.fullscreen-map .spots-tooltip-panel:not(.at-top) {
-  left: 240px;
+  left: 50%;
+  right: 12px;
+  max-width: calc(50% - 24px);
 }
 .street-label {
   display: inline-block;
@@ -936,6 +981,19 @@ body.fullscreen-map .spots-tooltip-panel:not(.at-top) {
   white-space: nowrap;
   box-shadow: 0 1px 3px rgba(0,0,0,0.2);
   pointer-events: none;
+}
+/* 地図ラッパー内のレイヤートグル・初期に戻すは地図の下に重ねて表示 */
+.spots-map-wrapper .map-layer-toggles {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  margin: 0;
+  padding: 8px 12px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+  z-index: 1001;
 }
 .map-layer-toggles label { margin-right: 1rem; cursor: pointer; }
 .map-layer-toggles input { margin-right: 0.35rem; }
