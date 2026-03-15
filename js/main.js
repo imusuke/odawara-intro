@@ -18,19 +18,19 @@
     return html;
   }
   var spots = [
-    { lat: 35.24562, lng: 139.15456, name: '旧松本剛吉別邸（南町2-1-27）', label: '旧松本剛吉別邸', color: '#b45309', tooltipDirection: null,
+    { lat: 35.24562, lng: 139.15456, name: '旧松本剛吉別邸（南町2-1-27）', label: '旧松本剛吉別邸', color: '#b45309', tooltipDirection: null, category: 'meiji',
       description: '大正12年（1923年）頃、貴族院議員・松本剛吉が建てた別邸である。松本剛吉は明治期に外務省で条約改正に携わり、のち貴族院議員として活躍した人物で、小田原には政財界の要人が別荘を構えた明治・大正期の風潮のなかでこの地を選んだ。数寄屋風の主屋、茶室「雨香亭」、回遊式庭園からなり、近代小田原の別邸文化を今に伝える。南町の武家地由来の町並みのなかにあり、諸白小路・西海子小路周辺の歴史的景観の核の一つとなっている。平成28年（2016年）に小田原市歴史的風致形成建造物に指定され、2019年市有化のうえ「松本剛吉記念館」として一般公開されている。庭園と建物の見学が可能で、南町散策の拠点として人気が高い。',
       sources: [{ label: '松本剛吉記念館', url: 'https://www.matsumoto-goukichi.com/building.html' }, { label: '小田原市', url: 'https://www.city.odawara.kanagawa.jp/field/lifelong/culture/historical_structure/p20642.html' }] },
-    { lat: 35.244773, lng: 139.153718, name: '小田原文学館・北村透谷碑・白秋童謡館・尾崎一雄邸（南町2-3-4）', label: '小田原文学館ほか', color: '#be185d', tooltipDirection: null,
+    { lat: 35.244773, lng: 139.153718, name: '小田原文学館・北村透谷碑・白秋童謡館・尾崎一雄邸（南町2-3-4）', label: '小田原文学館ほか', color: '#be185d', tooltipDirection: null, category: 'meiji',
       description: '小田原を代表する文学ゆかりの施設が一つの敷地に集まる。北村透谷の文学碑（碑文は島崎藤村の揮毫）が境内に立ち、北原白秋の童謡資料を展示する白秋童謡館（登録有形文化財）、尾崎一雄の「冬眠居」書斎が移築保存されるなど、近代文学と小田原の関わりを体感できる。建物はもともと明治・大正期の元老・田中光顕の別邸で、のち文学館として整備された。西海子小路の桜並木の先にあり、諸白小路・南町の歴史地区と文学の町としての小田原を結ぶ拠点である。展示・イベントも多く、散策の途中で立ち寄りやすい。',
       sources: [{ label: '小田原市（文学館）', url: 'https://www.city.odawara.kanagawa.jp/public-i/facilities/literature-museum/bungakukan.html' }, { label: 'おだわらデジタルミュージアム', url: 'https://odawara-digital-museum.jp/point/detail/617/' }] },
-    { lat: 35.245629976659124, lng: 139.1525974526273, name: '静山荘（旧望月軍四郎別邸）（南町3-1-20）', label: '静山荘', color: '#0d9488', tooltipDirection: null,
+    { lat: 35.245629976659124, lng: 139.1525974526273, name: '静山荘（旧望月軍四郎別邸）（南町3-1-20）', label: '静山荘', color: '#0d9488', tooltipDirection: null, category: 'meiji',
       description: '実業家・望月軍四郎が小田原市南町に構えた別荘で、農家建築を移築した素朴で風情ある佇まいが特徴である。望月軍四郎は明治期に製糸・貿易などで財をなした実業家で、小田原には政財界人が別荘を置いた時代に、武家地由来の南町の一角にこの静山荘を建てた。諸白小路と西海子小路の交差点付近に位置し、城下町の小路と近代別荘文化が交差する象徴的な存在である。市の優れた建造物として歴史的風致に位置づけられ、外観や庭の雰囲気を道からうかがうことができる。南町散策の目印の一つとなっている。',
       sources: [{ label: 'おだわらデジタルミュージアム', url: 'https://odawara-digital-museum.jp/point/detail/176/' }] },
-    { lat: 35.246666135257605, lng: 139.15049167524205, name: '豆相人車鉄道 旧小田原駅跡（早川口・国道1号付近）', label: '旧小田原駅跡', color: '#c2410c', tooltipDirection: null,
+    { lat: 35.246666135257605, lng: 139.15049167524205, name: '豆相人車鉄道 旧小田原駅跡（早川口・国道1号付近）', label: '旧小田原駅跡', color: '#c2410c', tooltipDirection: null, category: 'meiji',
       description: '明治29年（1896年）に小田原〜熱海間で開業した豆相人車鉄道の旧小田原駅の跡地である。人馬が客車を引く「人車鉄道」という珍しい方式で、箱根の峠を避けて海岸沿いで熱海へ向かうルートを走った。現在のJR小田原駅より南東、国道1号・早川口交差点付近に石碑が残り、南町・諸白小路周辺からも徒歩で訪れやすい。東海道本線の熱海線延伸に伴い廃止されたが、明治期の地域交通や観光開発の歴史を伝える貴重な遺構として、小田原市や鉄道史愛好家により顕彰されている。',
       sources: [{ label: 'sloway（豆相人車鉄道）', url: 'http://sloway.net/zusou/history.html' }] },
-    { lat: 35.2474585, lng: 139.1523143, name: '対潮閣跡（南町1-5-32付近）', label: '対潮閣跡', color: '#7c3aed', tooltipDirection: null,
+    { lat: 35.2474585, lng: 139.1523143, name: '対潮閣跡（南町1-5-32付近）', label: '対潮閣跡', color: '#7c3aed', tooltipDirection: null, category: 'meiji',
       description: '山下汽船（現・商船三井）創業者・山下亀三郎が大正期に建てた海を望む別邸「対潮閣」の跡地である。日露戦争で参謀として活躍した秋山真之が、大正7年（1918年）2月にここで療養の末、49歳で逝去したことで知られ、近代史・文学ファンの訪れるスポットとなっている。石垣、釣鐘石、通用門などが残り、南町の海に面した高台という立地とあわせて、当時の別荘文化を偲ばせる。近隣には静閑亭や旧松本剛吉別邸があり、南町一帯が明治・大正期の政財界人別荘地として賑わった歴史を伝えている。',
       sources: [{ label: '歴史の風景', url: 'https://yhistoricalplace2.web.fc2.com/historical_place/kamesaburo_yamashita/index.html' }, { label: 'note', url: 'https://note.com/seikantei/n/nb68282b1f87a' }] },
     { lat: 35.24571985815069, lng: 139.15322363345845, name: '自怡荘跡地（野崎幻庵別荘・メガネスーパー創業者豪邸付近）', label: '自怡荘跡地', color: '#b91c1c', tooltipDirection: null, shape: 'star',
@@ -42,10 +42,10 @@
     { lat: 35.24719609514179, lng: 139.15370991255148, name: '筋違橋町（すじかいばしちょう）', label: '筋違橋町', color: '#6b21a8', tooltipDirection: null,
       description: '小田原城下の歴史的町名で、東海道から南へ延びる一帯を指す。史料では諸白小路・狩野殿小路・安斎小路が「筋違橋町」の小路として並んで記され、城下の地割りを理解するうえで重要な地名である。筋違橋は斜めに架かった橋に由来するとされ、道や川が斜めに交わる地形的特徴、あるいは城下の区画が筋違いに走ることに因むともいわれる。武家地と町人地の境や、東海道と南側の小路群を結ぶ結節点として機能し、諸白小路をはじめとする南町の小路の歴史を語る際に欠かせない町名である。小田原市の歴史的町名の解説や町名碑でも紹介されている。',
       sources: [{ label: '小田原市（歴史的町名）', url: 'https://www.city.odawara.kanagawa.jp/field/lifelong/property/topics/tyoumeihi.html' }, { label: '0465.net', url: 'https://www.0465.net/map/index.html?i=802' }] },
-    { lat: 35.2491008040028, lng: 139.16004770569708, name: '松原神社', label: '松原神社', color: '#0f766e', tooltipDirection: null,
+    { lat: 35.2491008040028, lng: 139.16004770569708, name: '松原神社', label: '松原神社', color: '#0f766e', tooltipDirection: null, category: 'shrine',
       description: '小田原の総鎮守として古くから崇敬を集める神社である。創建は近衛天皇の久安年間（1145〜1150年）の勧請との伝承があり、鶴の森明神・松原大明神と称された時代を経て、明治2年（1869年）に松原神社と改称した。北条氏・稲葉氏・大久保氏と、歴代の小田原城主が厚く信仰し、江戸時代には小田原宿十九町の総鎮守として藩の財で社費が賄われた。現在は県社で、小田原三大明神の一社として、城下町の精神的な中心の役割を果たし続けている。かまぼこ通りや海に近い町の北東に鎮座し、南町・諸白小路周辺からも参拝しやすい位置にある。',
       sources: [{ label: '松原神社公式', url: 'https://odawaramatsubarajinja.com/' }, { label: '神奈川県神社庁', url: 'https://www.kanagawa-jinja.or.jp/shrine/1210143-000/' }, { label: '観光かながわNOW', url: 'https://www.kanagawa-kankou.or.jp/spot/1158' }] },
-    { lat: 35.25014734289875, lng: 139.1528205329637, name: '報徳二宮神社', label: '報徳二宮神社', color: '#78350f', tooltipDirection: 'bottom',
+    { lat: 35.25014734289875, lng: 139.1528205329637, name: '報徳二宮神社', label: '報徳二宮神社', color: '#78350f', tooltipDirection: 'bottom', category: 'shrine',
       description: '二宮尊徳（金次郎）を御祭神とする神社で、報徳思想の総本山的な存在である。明治27年（1894年）、旧小田原城二の丸小峰曲輪の一角に、伊豆・三河・遠江・駿河・甲斐・相模の6か国報徳社の総意により創建された。尊徳は小田原藩領でも報徳仕法を実践し、領民救済に尽くしたと伝えられ、拝殿の礎石には天保の大飢饉の際に尊徳が城内米蔵を開いて救済した時の礎石が用いられている。明治42年（1909年）に本殿・幣殿を新築し、神明造りの社殿が現在の景観を形づくっている。神社本庁の別表神社で、小田原城址公園の北西に位置し、城と町の歴史を結ぶスポットである。',
       sources: [{ label: '報徳二宮神社公式', url: 'https://www.ninomiya.or.jp/info/' }, { label: '御祭神・二宮尊徳翁', url: 'https://www.ninomiya.or.jp/sontoku/' }, { label: 'Wikipedia', url: 'https://ja.wikipedia.org/wiki/%E5%A0%B1%E5%BE%B3%E4%BA%8C%E5%AE%AE%E7%A5%9E%E7%A4%BE_(%E5%B0%8F%E7%94%B0%E5%8E%9F%E5%B8%82)' }] },
     { lat: 35.24754510670632, lng: 139.15604991263515, name: 'ういろう本店', label: 'ういろう本店', color: '#ca8a04', tooltipDirection: 'bottom',
@@ -54,16 +54,16 @@
     { lat: 35.24658639198841, lng: 139.1566450193041, name: '茶畑町（ちゃばたけちょう）', label: '茶畑町', color: '#065f46', tooltipDirection: null,
       description: '小田原城下の江戸時代の町人地を表す歴史的町名である。東海道筋の脇に位置し、この一帯でかつて茶の栽培が行われていたことに由来するといわれる。城下町であり宿場町でもあった小田原では、東海道沿いに町人地が発達し、茶畑町はそのなかで茶生産や茶商いと結びついた地名として残った。小田原市では町名碑などで過去の地名を伝える取り組みが行われており、武家地の小路（諸白小路・西海子小路など）とは異なる、町人・商業の歴史を感じさせる町名として紹介されている。',
       sources: [{ label: 'ツナガルマップ（小田原の町名）', url: 'https://www.tsunagaru-map.com/odawara-names-basic/map.html?point=920' }, { label: '小田原市（町名・地名）', url: 'https://www.city.odawara.kanagawa.jp/about/introduction/history/timei.html' }] },
-    { lat: 35.2510456834545, lng: 139.15344468712, name: '小田原城', label: '小田原城', color: '#374151', tooltipDirection: 'bottom',
+    { lat: 35.2510456834545, lng: 139.15344468712, name: '小田原城', label: '小田原城', color: '#374151', tooltipDirection: 'bottom', category: 'castle',
       description: '戦国時代から続く小田原のシンボルで、北条氏の本拠として難攻不落の城下町を形成した。のち稲葉氏・大久保氏などが城主を務め、江戸期には東海道の要衝として栄えた。現在は復興天守・常盤木門・馬出門などが整備され、城址公園として歴史・観光の中心となっている。南町・諸白小路は城の南西に広がる武家地に含まれ、城下町の地割りを理解するうえで城址とセットで訪れたいスポットである。',
       sources: [{ label: '小田原城公式', url: 'https://www.city.odawara.kanagawa.jp/encycl/odawara-castle/' }] },
     { lat: 35.256164102368004, lng: 139.15576140682765, name: '小田原駅', label: '小田原駅', color: '#059669', tooltipDirection: null,
       description: 'JR東海道本線・東海道新幹線・小田急小田原線が乗り入れる小田原の玄関口で、1920年（大正9年）に開業した。南町・諸白小路周辺へは徒歩15〜20分で、城下町の武家地由来の町並みを歩きながら向かえる。駅の南東には豆相人車鉄道の旧小田原駅跡（早川口付近）があり、明治期の交通史とあわせて訪れると小田原の変遷がより深く理解できる。',
       sources: [{ label: 'JR東日本', url: 'https://www.jreast.co.jp/station/stations/878.html' }] },
-    { lat: 35.243452421280864, lng: 139.15786012531294, name: '荒久の灯台', label: '荒久の灯台', color: '#1d4ed8', tooltipDirection: null,
+    { lat: 35.243452421280864, lng: 139.15786012531294, name: '荒久の灯台', label: '荒久の灯台', color: '#1d4ed8', tooltipDirection: null, category: 'sea',
       description: '小田原市南町付近の荒久地区に立つ灯台で、漁港や海岸の目印として、また地域のランドマークとして親しまれている。荒久は海に面した一角で、かまぼこ通りや御幸の浜にも近く、南町・諸白小路周辺から海側へ足を延ばした際の目印となる。',
       sources: [] },
-    { lat: 35.25355017061354, lng: 139.14328952727084, name: '小峰御鐘ノ台大堀切東堀', label: '小峰御鐘ノ台大堀切東堀', color: '#1d4ed8', tooltipDirection: null,
+    { lat: 35.25355017061354, lng: 139.14328952727084, name: '小峰御鐘ノ台大堀切東堀', label: '小峰御鐘ノ台大堀切東堀', color: '#1d4ed8', tooltipDirection: null, category: 'castle',
       description: '小田原城総構の北西・城山丘陵にある小峰御鐘ノ台大堀切の「東堀」である。後北条氏が八幡山〜小峰の尾根を断ち切る形で築いた三重空堀（東・中・西）のうち、現存規模が最大で、堀底に遊歩道が整備された空堀散策ルートとして人気がある。長さ約220〜280m、幅約20〜30m、深さは土塁頂から約12〜15mあり、法面は50〜60度の急斜面で関東ロームの滑りやすい土質とあわせ敵の登攀を防いだ。発掘で堀障子・土橋状部分・横矢掛かりが確認され、天正期総構の代表的遺構として小田原市や観光案内で紹介されている。小田原駅西口から徒歩約20分、箱根板橋駅から徒歩約11分。南町の武家地遺構とあわせて、城下町全体の防御構造を理解するうえで貴重なスポットである。',
       sources: [
         { label: '小田原観光', url: 'https://www.odawara-kankou.com/spot/spot_area/oohorikiri.html' },
@@ -71,16 +71,16 @@
         { label: 'his-trip', url: 'https://www.his-trip.info/siseki/entry2479.html' },
         { label: 'じゃらん', url: 'https://www.jalan.net/kankou/spt_14206af2172086035/' }
       ] },
-    { lat: 35.243452421280864, lng: 139.15786012531294, name: '荒久の灯台', label: '荒久の灯台', color: '#1d4ed8', tooltipDirection: null,
+    { lat: 35.243452421280864, lng: 139.15786012531294, name: '荒久の灯台', label: '荒久の灯台', color: '#1d4ed8', tooltipDirection: null, category: 'sea',
       description: '小田原の海辺・荒久地区に立つ灯台で、漁港や海岸の目印として地域に親しまれている。南町・諸白小路から海側へ向かう際のランドマークの一つである。',
       sources: [] },
-    { lat: 35.24701461701089, lng: 139.16100646635766, name: '海へと続くトンネル', label: '海へと続くトンネル', color: '#1d4ed8', tooltipDirection: null,
+    { lat: 35.24701461701089, lng: 139.16100646635766, name: '海へと続くトンネル', label: '海へと続くトンネル', color: '#1d4ed8', tooltipDirection: null, category: 'sea',
       description: 'かまぼこ通り方面から海側へ抜ける通路として知られるトンネルである。旧東海道筋の町並みと海とを結び、歩いて海辺や御幸の浜へ向かう際に利用できる。かまぼこ通り散策の延長で海まで足を延ばすルートの目印となっている。',
       sources: [] },
-    { lat: 35.24518150663211, lng: 139.15930097306406, name: '御幸の浜', label: '御幸の浜', color: '#1d4ed8', tooltipDirection: null,
+    { lat: 35.24518150663211, lng: 139.15930097306406, name: '御幸の浜', label: '御幸の浜', color: '#1d4ed8', tooltipDirection: null, category: 'sea',
       description: '小田原の海岸に広がる御幸の浜は、海に面した砂浜・海岸のスポットとして市民や観光客に親しまれている。南町・諸白小路周辺から東へ向かうと、かまぼこ通りを経て海辺に出られ、城下町の歴史と海の景観を一度に楽しめる。',
       sources: [] },
-    { lat: 35.24716670727812, lng: 139.14817605993196, name: '居神神社', label: '居神神社', color: '#1d4ed8', tooltipDirection: null,
+    { lat: 35.24716670727812, lng: 139.14817605993196, name: '居神神社', label: '居神神社', color: '#1d4ed8', tooltipDirection: null, category: 'shrine',
       description: '小田原に鎮座する居神神社は、地域の氏神として古くから信仰されている。城下町の西側に位置し、南町・諸白小路周辺からも参拝しやすい。小田原の町の信仰と歴史を伝えるスポットの一つである。',
       sources: [] },
     { lat: 35.24744174648453, lng: 139.15471594266543, name: '柳屋ベーカリー', label: '柳屋ベーカリー', color: '#1d4ed8', tooltipDirection: null, category: 'gourmet',
@@ -89,28 +89,28 @@
     { lat: 35.24808590827724, lng: 139.16061944570703, name: '籠清本店', label: '籠清本店', color: '#1d4ed8', tooltipDirection: null, category: 'gourmet',
       description: 'かまぼこ通り周辺に店を構える老舗「籠清本店」である。蒲鉾・干物など海の幸を扱い、かまぼこ通りの食文化を代表する店の一つとして知られる。南町・諸白小路から海側へ足を延ばした際の立ち寄りスポットとしても人気がある。',
       sources: [] },
-    { lat: 35.245096952753364, lng: 139.1569404333824, name: '滄浪閣旧址', label: '滄浪閣旧址', color: '#1d4ed8', tooltipDirection: null,
+    { lat: 35.245096952753364, lng: 139.1569404333824, name: '滄浪閣旧址', label: '滄浪閣旧址', color: '#1d4ed8', tooltipDirection: null, category: 'meiji',
       description: '初代内閣総理大臣・伊藤博文の別邸「滄浪閣」の旧址である。博文は小田原に別荘を構えた明治の政治家の一人で、この地で政務の合間を過ごした。南町付近にあった別荘の跡地として、近代史と小田原の別荘文化を伝えるスポットである。',
       sources: [] },
-    { lat: 35.253365328262646, lng: 139.15005064295596, name: '八幡山古郭跡', label: '八幡山古郭跡', color: '#1d4ed8', tooltipDirection: null,
+    { lat: 35.253365328262646, lng: 139.15005064295596, name: '八幡山古郭跡', label: '八幡山古郭跡', color: '#1d4ed8', tooltipDirection: null, category: 'castle',
       description: '小田原城総構の北西、八幡山に築かれた古郭（曲輪）の跡である。後北条氏時代の城の防御体系の一部をなしており、総構の規模と構造を理解するうえで重要な遺構の一つとして紹介されている。南町の武家地遺構とあわせて、城下町全体の成り立ちを学べる。',
       sources: [] },
-    { lat: 35.25212190749775, lng: 139.1517216851566, name: '小田原城 八幡山古郭東曲輪跡', label: '小田原城 八幡山古郭東曲輪跡', color: '#1d4ed8', tooltipDirection: null,
+    { lat: 35.25212190749775, lng: 139.1517216851566, name: '小田原城 八幡山古郭東曲輪跡', label: '小田原城 八幡山古郭東曲輪跡', color: '#1d4ed8', tooltipDirection: null, category: 'castle',
       description: '小田原城・八幡山古郭の東曲輪の跡で、総構の北西側に位置する曲輪遺構である。城の防御構造や縄張りを学ぶうえで貴重な地点で、小田原城址公園や城の回廊の解説でも触れられる。',
       sources: [] },
     { lat: 35.249190242807416, lng: 139.14147358637595, name: '松永記念館（小田原市郷土文化館分館）', label: '松永記念館', color: '#1d4ed8', tooltipDirection: null,
       description: '小田原市郷土文化館の分館である松永記念館は、小田原の歴史・文化に関する資料を展示している。城下町や近代の別荘文化、文学など、南町・諸白小路の背景をより深く知りたい際の学習拠点として活用できる。',
       sources: [] },
-    { lat: 35.248753583172665, lng: 139.14431719133296, name: '古稀庵（山縣有朋公爵別邸跡）', label: '古稀庵', color: '#1d4ed8', tooltipDirection: null,
+    { lat: 35.248753583172665, lng: 139.14431719133296, name: '古稀庵（山縣有朋公爵別邸跡）', label: '古稀庵', color: '#1d4ed8', tooltipDirection: null, category: 'meiji',
       description: '明治・大正期の元老・山縣有朋公爵の別邸跡「古稀庵」である。山縣は小田原に複数の別荘を構えた政治家の一人で、古稀庵はその代表的な遺構として知られる。南町の別荘群（旧松本剛吉別邸・対潮閣跡など）とあわせて、近代小田原の政財界人別荘文化を伝えるスポットである。',
       sources: [] },
-    { lat: 35.249898155703065, lng: 139.14380680069968, name: '皆春荘（旧山縣有朋・清浦奎吾別邸）', label: '皆春荘', color: '#1d4ed8', tooltipDirection: null,
+    { lat: 35.249898155703065, lng: 139.14380680069968, name: '皆春荘（旧山縣有朋・清浦奎吾別邸）', label: '皆春荘', color: '#1d4ed8', tooltipDirection: null, category: 'meiji',
       description: '旧山縣有朋・清浦奎吾別邸「皆春荘」は、明治・大正期の政治家ゆかりの別邸として知られる。小田原には政財界の要人が別荘を構えた歴史があり、皆春荘はその一端を伝える。南町の諸白小路周辺の別荘文化とあわせて、近代小田原の歴史を学べる。',
       sources: [] },
-    { lat: 35.250771460318745, lng: 139.1457106387132, name: '小田原城 三の丸外郭新堀土塁', label: '小田原城 三の丸外郭新堀土塁', color: '#1d4ed8', tooltipDirection: null,
+    { lat: 35.250771460318745, lng: 139.1457106387132, name: '小田原城 三の丸外郭新堀土塁', label: '小田原城 三の丸外郭新堀土塁', color: '#1d4ed8', tooltipDirection: null, category: 'castle',
       description: '小田原城三の丸外郭の新堀に伴って築かれた土塁で、城の防御遺構の一つである。江戸期の城の縄張りや改修の歴史を物語り、城址公園周辺の史跡とあわせて小田原城の全体像を理解するうえで重要なポイントとなっている。',
       sources: [] },
-    { lat: 35.244611419808315, lng: 139.14921957726818, name: '小田原城跡 早川口遺構', label: '小田原城跡 早川口遺構', color: '#1d4ed8', tooltipDirection: null,
+    { lat: 35.244611419808315, lng: 139.14921957726818, name: '小田原城跡 早川口遺構', label: '小田原城跡 早川口遺構', color: '#1d4ed8', tooltipDirection: null, category: 'castle',
       description: '小田原城跡の早川口に残る遺構で、城の虎口・出入口に関連する遺構である。早川口は南町・諸白小路周辺から城へ向かう際にも関係する歴史的な入口で、豆相人車鉄道の旧小田原駅跡もこの付近にあり、交通と城の関係を考えるうえで興味深い地点である。',
       sources: [] }
   ];
@@ -258,11 +258,23 @@
   var spotMarkerColor = '#1d4ed8';
   spots.forEach(function (s) {
     var isGourmet = s.category === 'gourmet';
+    var isCastle = s.category === 'castle';
+    var isShrine = s.category === 'shrine';
+    var isMeiji = s.category === 'meiji';
+    var isSea = s.category === 'sea';
     var isStar = s.shape === 'star';
     var c = s.color || spotMarkerColor;
     var iconHtml;
     if (isGourmet) {
       iconHtml = '<span class="spot-marker spot-marker-gourmet" style="background-color:' + c + '">🍴</span>';
+    } else if (isCastle) {
+      iconHtml = '<span class="spot-marker spot-marker-castle" style="background-color:' + c + '">🏯</span>';
+    } else if (isShrine) {
+      iconHtml = '<span class="spot-marker spot-marker-shrine" style="background-color:' + c + '">⛩️</span>';
+    } else if (isMeiji) {
+      iconHtml = '<span class="spot-marker spot-marker-meiji" style="background-color:' + c + '">🚂</span>';
+    } else if (isSea) {
+      iconHtml = '<span class="spot-marker spot-marker-sea" style="background-color:' + c + '">🌊</span>';
     } else if (isStar) {
       iconHtml = '<span class="spot-marker spot-marker-star" style="color:' + c + '">★</span>';
     } else {
