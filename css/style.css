@@ -921,6 +921,10 @@ body.fullscreen-map .map-layer-toggles label {
 body.fullscreen-map .map-layer-toggles label:last-child {
   margin-right: 0;
 }
+/* 全画面でツールチップが下側のとき、レイヤートグルと重ならないよう左端をずらす */
+body.fullscreen-map .spots-tooltip-panel:not(.at-top) {
+  left: 240px;
+}
 .street-label {
   display: inline-block;
   padding: 3px 8px;
