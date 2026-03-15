@@ -1,0 +1,2311 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>諸白小路（もろはくこうじ）について</title>
+    <meta
+      name="description"
+      content="諸白小路（もろはくこうじ）を、由来・位置・現在の場所まで分かりやすく整理した解説ページ。"
+    />
+    <style>
+      :root {
+        --bg: #f5f5f4;
+        --card: #ffffff;
+        --text: #1c1917;
+        --text-strong: #0c0a09;
+        --muted: #57534e;
+        --accent: #7c2d12;
+        --accent-hover: #9a3412;
+        --accent-soft: #fff7ed;
+        --border: #e7e5e4;
+        --radius-sm: 6px;
+        --radius-md: 10px;
+        --radius-lg: 12px;
+        --space-unit: 8px;
+        --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+        --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.06), 0 2px 4px -2px rgba(0,0,0,0.04);
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .skip-link {
+        position: absolute;
+        top: -3.5rem;
+        left: 1rem;
+        padding: 0.6rem 1.2rem;
+        background: var(--accent);
+        color: #fff;
+        text-decoration: none;
+        border-radius: var(--radius-sm);
+        font-size: 0.9rem;
+        font-weight: 500;
+        z-index: 100;
+        transition: top 0.2s ease;
+      }
+      .skip-link:focus {
+        top: 1rem;
+        outline: 2px solid var(--accent);
+        outline-offset: 2px;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP",
+          system-ui, -apple-system, sans-serif;
+        font-size: 1rem;
+        line-height: 1.75;
+        letter-spacing: 0.02em;
+        display: flex;
+      }
+
+      .sidebar {
+        width: 220px;
+        background: var(--card);
+        border-right: 1px solid var(--border);
+        padding: 24px 20px;
+        position: fixed;
+        height: 100vh;
+        overflow-y: auto;
+        box-shadow: var(--shadow-sm);
+      }
+
+      .sidebar h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: var(--text-strong);
+        letter-spacing: 0.02em;
+      }
+
+      .sidebar ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .sidebar li {
+        margin-bottom: 6px;
+      }
+
+      .sidebar a {
+        color: var(--accent);
+        text-decoration: none;
+        padding: 4px 0;
+        display: block;
+        font-size: 0.9rem;
+        line-height: 1.4;
+        border-radius: var(--radius-sm);
+        transition: color 0.15s ease, background 0.15s ease;
+      }
+
+      .sidebar a:hover {
+        color: var(--accent-hover);
+        text-decoration: underline;
+      }
+      .sidebar a:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 2px;
+      }
+
+      .main-content {
+        flex: 1;
+        margin-left: 220px;
+      }
+
+      .container {
+        max-width: 52rem;
+        margin: 32px auto;
+        padding: 0 24px 48px;
+      }
+
+      header,
+      section,
+      footer {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        padding: 28px 26px;
+        margin-bottom: 24px;
+        box-shadow: var(--shadow-sm);
+      }
+
+      footer {
+        padding: 20px 26px;
+        font-size: 0.9rem;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      .era-heading {
+        margin-top: 2rem;
+        padding-top: 12px;
+        border-top: 2px solid var(--border);
+        font-size: 1.12rem;
+        font-weight: 600;
+      }
+
+      h1,
+      h2 {
+        line-height: 1.35;
+        margin-top: 0;
+        letter-spacing: 0.02em;
+      }
+
+      h1 {
+        color: var(--accent);
+        font-size: 1.85rem;
+        font-weight: 700;
+        margin-bottom: 0.5em;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--text-strong);
+        margin-bottom: 14px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      h3 {
+        letter-spacing: 0.01em;
+      }
+
+      p,
+      li {
+        margin: 0 0 1em;
+        max-width: 70ch;
+      }
+
+      p:last-child,
+      li:last-child {
+        margin-bottom: 0;
+      }
+
+      ul {
+        margin: 0 0 1em;
+        padding-left: 1.4rem;
+      }
+
+      ul li {
+        margin-bottom: 0.5em;
+      }
+
+      .lead {
+        font-size: 1.05rem;
+        line-height: 1.8;
+        color: var(--muted);
+      }
+
+      .lead strong {
+        color: var(--text-strong);
+      }
+
+      .quick-points {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 14px;
+        margin-top: 20px;
+      }
+
+      .quick-point {
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+        padding: 14px 16px;
+        background: var(--accent-soft);
+        transition: box-shadow 0.15s ease;
+      }
+
+      .quick-point:hover {
+        box-shadow: var(--shadow-sm);
+      }
+
+      .quick-point h3 {
+        margin: 0 0 6px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: var(--accent);
+      }
+
+      .quick-point p {
+        margin: 0;
+        font-size: 0.9rem;
+        line-height: 1.5;
+      }
+
+      .summary {
+        border-left: 4px solid var(--accent);
+        padding-left: 18px;
+        margin-bottom: 0;
+        font-size: 1.02rem;
+        line-height: 1.75;
+      }
+
+      .note {
+        display: inline-block;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: var(--accent-hover);
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin-bottom: 12px;
+      }
+
+      .image-card {
+        padding: 20px;
+      }
+
+      .image-card h2 {
+        margin-bottom: 14px;
+      }
+
+      .image-card img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-sm);
+      }
+
+      .caption {
+        margin-top: 12px;
+        margin-bottom: 0;
+        color: var(--muted);
+        font-size: 0.9rem;
+        line-height: 1.5;
+      }
+
+      .section-intro {
+        color: var(--muted);
+        font-size: 0.98rem;
+        line-height: 1.7;
+        margin-bottom: 16px;
+      }
+
+      .detail-box {
+        background: #fafaf9;
+        border: 1px solid var(--border);
+        border-left: 4px solid var(--accent);
+        border-radius: var(--radius-md);
+        padding: 18px 20px;
+        margin-bottom: 16px;
+        box-shadow: var(--shadow-sm);
+      }
+
+      .detail-box h3 {
+        margin: 0 0 10px;
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: var(--text-strong);
+        letter-spacing: 0.01em;
+      }
+
+      .detail-box p {
+        margin: 0 0 0.75em;
+        font-size: 0.95rem;
+        line-height: 1.7;
+        max-width: none;
+      }
+
+      .detail-box p:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .detail-box h4 {
+        margin: 1rem 0 0.5rem;
+        font-size: 0.98rem;
+        font-weight: 600;
+        color: var(--accent);
+        letter-spacing: 0.01em;
+      }
+      .detail-box h4:first-of-type {
+        margin-top: 0.5rem;
+      }
+
+      main a {
+        color: var(--accent);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        transition: color 0.15s ease;
+      }
+
+      main a:hover {
+        color: var(--accent-hover);
+      }
+
+      main a:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 2px;
+      }
+
+      .links li {
+        margin-bottom: 8px;
+      }
+
+      .links a {
+        color: var(--accent);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+
+      .links a:hover {
+        color: var(--accent-hover);
+      }
+
+      .timeline {
+        --t-start: 1592;
+        --t-end: 2025;
+        --t-span: 433;
+        margin: 16px 0 20px;
+        max-width: 100%;
+      }
+
+      .timeline-scale {
+        position: relative;
+        height: 30px;
+        background: linear-gradient(to right,
+          rgba(124,45,18,0.14) 0%,
+          rgba(124,45,18,0.14) 63.7%,
+          rgba(124,45,18,0.07) 63.7%,
+          rgba(124,45,18,0.07) 73.9%,
+          rgba(124,45,18,0.12) 73.9%,
+          rgba(124,45,18,0.12) 77.1%,
+          rgba(124,45,18,0.18) 77.1%,
+          rgba(124,45,18,0.18) 91.7%,
+          rgba(124,45,18,0.06) 91.7%,
+          rgba(124,45,18,0.06) 100%);
+        border-radius: var(--radius-sm);
+        margin-bottom: 10px;
+      }
+
+      .timeline-scale-inner {
+        position: absolute;
+        inset: 0;
+        border-radius: 6px;
+        border: 1px solid var(--border);
+      }
+
+      .timeline-era-labels {
+        position: relative;
+        height: 22px;
+        font-size: 0.72rem;
+        font-weight: 500;
+        color: var(--muted);
+        margin-bottom: 4px;
+      }
+
+      .timeline-era-labels span {
+        position: absolute;
+        transform: translateX(-50%);
+      }
+
+      .timeline-year-ticks {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        pointer-events: none;
+      }
+
+      .timeline-year-tick {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background: var(--border);
+      }
+
+      .timeline-scale-years {
+        position: relative;
+        height: 20px;
+        font-size: 0.75rem;
+        color: var(--muted);
+        margin-bottom: 6px;
+      }
+
+      .timeline-scale-years span {
+        position: absolute;
+        transform: translateX(-50%);
+      }
+
+      .timeline-scale-years span:first-child {
+        transform: translateX(0);
+      }
+
+      .timeline-scale-years span:last-child {
+        transform: none;
+      }
+
+      .timeline-events {
+        position: relative;
+        height: 32px;
+        margin-bottom: 12px;
+      }
+
+      .timeline-event-marker {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 10px;
+        height: 10px;
+        background: var(--accent);
+        border: 2px solid var(--card);
+        border-radius: 50%;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+        z-index: 2;
+      }
+
+      .timeline-event-marker[data-year="現在"] {
+        left: 100% !important;
+        transform: translate(-100%, -50%);
+      }
+
+      .timeline-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 14px;
+      }
+
+      .timeline-item {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        position: relative;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+        overflow: hidden;
+        box-shadow: var(--shadow-sm);
+      }
+
+      .timeline-year {
+        width: 100%;
+        padding: 5px 10px;
+        border-radius: 0;
+        font-size: 0.82rem;
+        font-weight: 600;
+        background: var(--accent);
+        color: #fff;
+        flex-shrink: 0;
+      }
+
+      .timeline-era {
+        font-size: 0.68rem;
+        opacity: 0.92;
+        margin-top: 2px;
+      }
+
+      .timeline-content {
+        padding: 8px 12px 10px;
+        margin-left: 0;
+        border: none;
+        background: transparent;
+        border-radius: 0;
+      }
+
+      .timeline-content h3 {
+        margin: 0 0 4px;
+        font-size: 0.9rem;
+        line-height: 1.35;
+        font-weight: 600;
+        color: var(--accent);
+      }
+
+      .timeline-content p {
+        margin: 0;
+        font-size: 0.82rem;
+        line-height: 1.45;
+        color: var(--text);
+      }
+
+      @media (max-width: 600px) {
+        .timeline-cards {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        body {
+          flex-direction: column;
+          font-size: 0.98rem;
+        }
+        .container {
+          padding: 0 18px 36px;
+        }
+        header,
+        section,
+        footer {
+          padding: 22px 20px;
+          margin-bottom: 20px;
+        }
+        .sidebar {
+          position: static;
+          width: 100%;
+          height: auto;
+          border-right: none;
+          border-bottom: 1px solid var(--border);
+          padding: 18px 20px;
+          box-shadow: none;
+        }
+        .main-content {
+          margin-left: 0;
+        }
+        .sidebar ul {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px 10px;
+        }
+        .sidebar li {
+          margin-bottom: 0;
+        }
+        .sidebar a {
+          display: inline-block;
+          padding: 6px 12px;
+          background: var(--accent-soft);
+          border-radius: var(--radius-sm);
+          font-size: 0.88rem;
+        }
+        .sidebar a:hover {
+          text-decoration: none;
+          background: #fed7aa;
+        }
+        p, li {
+          max-width: none;
+        }
+      }
+
+      .map-section {
+        padding: 20px 26px;
+      }
+      .map-section h2 {
+        margin-bottom: 14px;
+      }
+      .spots-map-wrapper {
+        position: relative;
+        width: 100%;
+        height: 420px;
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+        margin-bottom: 16px;
+        background: #e7e5e4;
+      }
+      #spots-map {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+      }
+      .map-legend {
+        display: none;
+        margin-top: -8px;
+        margin-bottom: 12px;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+        padding: 8px 12px;
+        font-size: 0.75rem;
+        box-shadow: var(--shadow-sm);
+      }
+      .map-legend h4 {
+        margin: 0 0 6px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: var(--text-strong);
+      }
+      .map-legend ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .map-legend li {
+        margin: 2px 0;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .map-legend span.line {
+        display: inline-block;
+        height: 4px;
+        width: 28px;
+        border-radius: 2px;
+        flex-shrink: 0;
+      }
+      .map-legend span.line-dashed {
+        background: repeating-linear-gradient(90deg, #b45309 0, #b45309 5px, transparent 5px, transparent 9px) !important;
+      }
+      .map-legend span.dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 3px;
+        flex-shrink: 0;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      }
+      .map-legend .legend-block {
+        margin-top: 12px;
+      }
+      .map-legend .legend-block:first-child {
+        margin-top: 0;
+      }
+      .map-legend h4 {
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+
+      .spot-marker-wrap.leaflet-div-icon {
+        background: none !important;
+        border: none !important;
+      }
+      .spot-marker-wrap .spot-marker {
+        width: 20px;
+        height: 20px;
+        border-radius: 6px;
+        border: 2px solid rgba(255,255,255,0.95);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15), 0 1px 2px rgba(0,0,0,0.08);
+        box-sizing: border-box;
+        display: block;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+      .spot-marker-wrap:hover .spot-marker {
+        transform: scale(1.1);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+      }
+      .spot-marker-wrap .spot-marker.spot-marker-star {
+        width: auto;
+        height: 20px;
+        line-height: 20px;
+        font-size: 20px;
+        text-align: center;
+        border: none;
+        border-radius: 0;
+        background: none !important;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+      }
+      .spot-label-wrap.leaflet-div-icon {
+        background: none !important;
+        border: none !important;
+      }
+      .spot-label {
+        display: inline-block;
+        padding: 2px 6px;
+        font-size: 0.65rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        color: var(--text-strong);
+        background: var(--card);
+        border-radius: 4px;
+        white-space: nowrap;
+        box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+        pointer-events: none;
+        max-width: 140px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      #spots-map .leaflet-popup-content-wrapper {
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.06);
+        padding: 0;
+        overflow: hidden;
+      }
+      #spots-map .leaflet-popup-content {
+        margin: 14px 18px;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        color: var(--text-strong);
+        min-width: 180px;
+      }
+      #spots-map .leaflet-popup-tip {
+        box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      }
+      #spots-map .leaflet-tooltip.spot-tooltip {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+        padding: 10px 14px;
+        font-size: 0.85rem;
+        color: var(--text-strong);
+        box-shadow: var(--shadow-md);
+        min-width: 280px;
+        max-width: 580px;
+        white-space: normal;
+        line-height: 1.5;
+        text-align: left;
+      }
+      #spots-map { overflow: hidden; }
+      #spots-map .leaflet-tooltip.spot-tooltip .spot-tooltip-title {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 6px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid var(--border);
+      }
+      #spots-map .leaflet-tooltip.spot-tooltip .spot-tooltip-desc {
+        display: block;
+        font-weight: normal;
+        color: var(--muted);
+        font-size: 0.8rem;
+      }
+      #spots-map .leaflet-tooltip.spot-tooltip .spot-tooltip-sources {
+        display: block;
+        margin-top: 8px;
+        padding-top: 6px;
+        border-top: 1px solid var(--border);
+        font-size: 0.75rem;
+        color: var(--muted);
+      }
+      #spots-map .leaflet-tooltip.spot-tooltip .spot-tooltip-sources a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      #spots-map .leaflet-tooltip.spot-tooltip .spot-tooltip-sources a:hover {
+        text-decoration: underline;
+      }
+      .spots-tooltip-panel {
+        position: absolute;
+        bottom: 12px;
+        left: 12px;
+        right: 12px;
+        max-height: 58%;
+        overflow-y: auto;
+        z-index: 1000;
+        display: none;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+        padding: 12px 40px 12px 14px;
+        font-size: 0.85rem;
+        color: var(--text-strong);
+        box-shadow: var(--shadow-md);
+        line-height: 1.5;
+        text-align: left;
+      }
+      .spots-tooltip-close {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 28px;
+        height: 28px;
+        border: none;
+        background: var(--bg);
+        border-radius: var(--radius-sm);
+        font-size: 1.25rem;
+        line-height: 1;
+        cursor: pointer;
+        color: var(--muted);
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .spots-tooltip-close:hover {
+        color: var(--text-strong);
+        background: var(--border);
+      }
+      .spots-tooltip-panel.at-top {
+        top: 12px;
+        bottom: auto;
+        right: 130px;
+        padding-left: 44px;
+      }
+      .spots-tooltip-panel.at-top .spots-tooltip-close {
+        right: auto;
+        left: 8px;
+      }
+      .spots-tooltip-panel .spot-tooltip-title {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 6px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid var(--border);
+      }
+      .spots-tooltip-panel .spot-tooltip-desc {
+        display: block;
+        font-weight: normal;
+        color: var(--muted);
+        font-size: 0.8rem;
+      }
+      .spots-tooltip-panel .spot-tooltip-sources {
+        display: block;
+        margin-top: 8px;
+        padding-top: 6px;
+        border-top: 1px solid var(--border);
+        font-size: 0.75rem;
+        color: var(--muted);
+      }
+      .spots-tooltip-panel .spot-tooltip-sources a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      .spots-tooltip-panel .spot-tooltip-sources a:hover {
+        text-decoration: underline;
+      }
+      .callout-line path {
+        stroke: #475569 !important;
+        stroke-width: 2px !important;
+      }
+      .street-label-wrap.leaflet-div-icon {
+        background: none !important;
+        border: none !important;
+      }
+      #spots-map .leaflet-control-attribution {
+        font-size: 0.65rem;
+        opacity: 0.85;
+      }
+      body.fullscreen-map .skip-link,
+      body.fullscreen-map nav,
+      body.fullscreen-map header,
+      body.fullscreen-map section:not(#map-spots),
+      body.fullscreen-map footer,
+      body.fullscreen-map .map-caption { display: none !important; }
+      body.fullscreen-map main { padding: 0; max-width: none; width: 100%; }
+      body.fullscreen-map #map-spots { margin: 0; padding: 0; }
+      body.fullscreen-map #map-spots h2,
+      body.fullscreen-map #map-spots .note,
+      body.fullscreen-map #map-spots .section-intro { display: none; }
+      body.fullscreen-map .spots-map-wrapper {
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+      }
+      .map-fullscreen-link { margin-top: 8px; }
+      .map-fullscreen-link a {
+        color: var(--accent);
+        text-decoration: none;
+        font-size: 0.9rem;
+      }
+      .map-fullscreen-link a:hover { text-decoration: underline; }
+      .fullscreen-back-link {
+        display: none;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        z-index: 1001;
+        padding: 8px 14px;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+        color: var(--accent);
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 500;
+        box-shadow: var(--shadow-md);
+      }
+      .fullscreen-back-link:hover {
+        text-decoration: underline;
+        background: var(--bg);
+      }
+      body.fullscreen-map .fullscreen-back-link { display: inline-block; }
+      .street-label {
+        display: inline-block;
+        padding: 3px 8px;
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        color: #fff;
+        border-radius: 4px;
+        white-space: nowrap;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        pointer-events: none;
+      }
+      .map-layer-toggles label { margin-right: 1rem; cursor: pointer; }
+      .map-layer-toggles input { margin-right: 0.35rem; }
+      .map-caption {
+        margin-top: 12px;
+        margin-bottom: 0;
+        color: var(--muted);
+        font-size: 0.9rem;
+        line-height: 1.5;
+      }
+      .map-links {
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid var(--border);
+      }
+      .map-links h3 {
+        margin: 0 0 10px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: var(--text-strong);
+      }
+      .map-links ul {
+        margin: 0;
+        padding-left: 1.2rem;
+        font-size: 0.92rem;
+      }
+      .map-links li {
+        margin-bottom: 6px;
+      }
+      .map-links a {
+        color: var(--accent);
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+      .map-links a:hover {
+        color: var(--accent-hover);
+      }
+
+      @media print {
+        :root {
+          --bg: #fff;
+          --border: #ddd;
+        }
+        body {
+          background: #fff;
+          font-size: 11pt;
+          line-height: 1.6;
+        }
+        .skip-link,
+        .sidebar {
+          display: none !important;
+        }
+        .main-content {
+          margin-left: 0;
+        }
+        header, section, footer {
+          box-shadow: none;
+          border: 1px solid #ccc;
+        }
+        a {
+          color: #333;
+          text-decoration: underline;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  </head>
+  <body>
+    <script>if(/[?&]fullscreen=1/.test(location.search)){document.body.classList.add('fullscreen-map');}</script>
+    <a href="#main-content" class="skip-link">本文へスキップ</a>
+    <div class="sidebar">
+      <h3>ナビゲーション</h3>
+      <p style="font-size:0.85rem; color:var(--muted); margin:0 0 10px;">時系列・体系別に整理している。</p>
+      <ul>
+        <li><a href="#header-top">トップ</a></li>
+        <li><a href="#zukai">図解画像</a></li>
+        <li><a href="#map-spots">地図（登場する地点）</a></li>
+        <li><a href="#morohaku">歴史年表</a></li>
+      </ul>
+      <h3 style="margin-top:1rem; font-size:0.95rem;">I. 江戸時代の城下町</h3>
+      <ul>
+        <li><a href="#shiryo">史料上の位置づけ</a></li>
+        <li><a href="#yurai">地名の由来</a></li>
+        <li><a href="#morohakushu">諸白酒とは</a></li>
+        <li><a href="#basho">どんな場所だったか</a></li>
+        <li><a href="#shosai">詳細解説</a></li>
+        <li><a href="#omayakoji">御厩小路</a></li>
+        <li><a href="#kakonagaya">かこながや（水主長屋）</a></li>
+        <li><a href="#kanodono">狩野殿小路</a></li>
+        <li><a href="#anzaikoji">安斎小路</a></li>
+        <li><a href="#tenjinkoji">天神小路</a></li>
+      </ul>
+      <h3 style="margin-top:1rem; font-size:0.95rem;">II. 明治〜昭和の南町</h3>
+      <ul>
+        <li><a href="#rekishi">歴史的背景の詳細</a></li>
+        <li><a href="#odawara-ekiseki">豆相人車鉄道・駅跡</a></li>
+        <li><a href="#tanizaki">谷崎潤一郎</a></li>
+        <li><a href="#matsumoto-goukichi">旧松本剛吉別邸</a></li>
+        <li><a href="#hasuan">葉雨庵・野崎幻庵</a></li>
+        <li><a href="#gunshiro">望月軍四郎</a></li>
+        <li><a href="#seizan">静山荘</a></li>
+        <li><a href="#nishikoji">西海子小路ほか</a></li>
+      </ul>
+      <h3 style="margin-top:1rem; font-size:0.95rem;">III. 現代</h3>
+      <ul>
+        <li><a href="#kanko">観光・訪問情報</a></li>
+        <li><a href="#meganesuper">メガネスーパー</a></li>
+        <li><a href="#uirou">小田原のういろう</a></li>
+        <li><a href="#taichokaku">対潮閣跡</a></li>
+        <li><a href="#tokoku-hi">北村透谷碑</a></li>
+        <li><a href="#hakushu-douyoukan">白秋童謡館</a></li>
+        <li><a href="#ozaki-kazuo">尾崎一雄邸</a></li>
+        <li><a href="#renkei">関連リンク</a></li>
+        <li><a href="#sanko">参考文献</a></li>
+        <li><a href="#matome">まとめ</a></li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <main class="container" id="main-content">
+      <header id="header-top">
+        <h1>諸白小路（もろはくこうじ）</h1>
+        <p class="lead">
+          <strong>諸白小路</strong>は、小田原城下町の南西部にあった小さな道の名前である。<br />
+          江戸時代初期、城主・稲葉正則が京都や大阪から酒造りの職人を招いて「諸白酒」をつくらせたことに由来し、今も南町周辺にその歴史をたどることができる。
+        </p>
+        <div class="quick-points">
+          <div class="quick-point">
+            <h3>初出史料</h3>
+            <p>「貞享三年御引渡記録」（1686年）</p>
+          </div>
+          <div class="quick-point">
+            <h3>地名の由来</h3>
+            <p>京都や大阪から杜氏を招いて諸白酒を造らせたこと</p>
+          </div>
+        </div>
+      </header>
+
+      <section id="zukai" class="image-card">
+        <span class="note">先に図で全体像</span>
+        <h2>図解画像</h2>
+        <img
+          src="assets/morohaku-koji.png"
+          alt="小田原城下・諸白小路（もろはくこうじ）の歴史と変遷"
+        />
+        <p class="caption">
+          小田原城下の諸白小路について、由来と位置関係を図で整理した画像。
+        </p>
+      </section>
+
+      <section id="map-spots" class="map-section">
+        <span class="note">現地を訪れるとき</span>
+        <h2>登場する地点の地図</h2>
+        <p class="section-intro">
+          諸白小路・南町周辺で紹介している主な地点を地図に示した。各地点をクリックすると説明が表示される。Google Mapsで詳しく見る場合は下記のリンクから。
+        </p>
+        <div class="spots-map-wrapper">
+          <a href="index.html" target="_top" class="fullscreen-back-link" id="fullscreen-back-link">解説ページに戻る</a>
+          <div id="spots-map" aria-label="諸白小路・南町周辺の地図"></div>
+          <div id="spots-map-tooltip-panel" class="spots-tooltip-panel" aria-live="polite"></div>
+        </div>
+        <p class="map-caption map-layer-toggles">
+          <label><input type="checkbox" id="toggle-route1" checked> 国道1号</label>
+          <label><input type="checkbox" id="toggle-tokaido" checked> 旧東海道</label>
+        </p>
+        <p class="map-caption">
+          線はOpenStreetMapに登録されている現在の道路です。灰色の点線は旧東海道（板橋旧道・本町〜新宿）です。スポットマーカーや小路・国道1号のラベルをクリックすると説明パネルが表示されます。同じマーカー・ラベルを再度クリックするか、パネルの閉じるボタンで非表示にできます。
+        </p>
+        <p class="map-fullscreen-link">
+          <a href="map.html">地図を全画面で見る</a>
+        </p>
+        <div class="map-links">
+          <h3>Google Mapsで開く</h3>
+          <ul>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=小田原市南町二丁目+歴史的町名碑+諸白小路" target="_blank" rel="noopener noreferrer">歴史的町名碑（諸白小路）・南町二丁目</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=旧松本剛吉別邸+小田原市南町" target="_blank" rel="noopener noreferrer">旧松本剛吉別邸（南町二丁目1-27）</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=小田原文学館+小田原市南町" target="_blank" rel="noopener noreferrer">小田原文学館・北村透谷碑・白秋童謡館・尾崎一雄邸（南町2-3-4）</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=静山荘+望月軍四郎別邸+小田原市南町" target="_blank" rel="noopener noreferrer">静山荘（旧望月軍四郎別邸）・諸白・西海子交差点付近</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=豆相人車鉄道+旧小田原駅+早川口交差点+小田原" target="_blank" rel="noopener noreferrer">豆相人車鉄道 旧小田原駅跡（早川口交差点付近）</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=対潮閣跡+小田原市南町1-5-32" target="_blank" rel="noopener noreferrer">対潮閣跡（南町1-5-32付近）</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=小田原城" target="_blank" rel="noopener noreferrer">小田原城</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=小田原駅" target="_blank" rel="noopener noreferrer">小田原駅</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=小田原市南町" target="_blank" rel="noopener noreferrer">南町一帯（諸白小路・西海子小路ほか）</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="morohaku">
+        <h2>2. 諸白小路に纏わる歴史的年表</h2>
+        <p class="section-intro">
+          諸白小路の成立から現代までの主な出来事を年表形式でまとめた。
+        </p>
+        <p class="section-intro" style="margin-bottom:12px;">南町・諸白小路周辺の主な出来事を時系列で示す。横軸は年尺に比例しており、各年の間隔が正確に把握できる。下記の各セクションはこの年表の時代区分に沿って整理した。</p>
+        <div class="timeline">
+          <div class="timeline-era-labels">
+            <span style="left: 31.9%;">江戸時代</span>
+            <span style="left: 68.8%;">明治時代</span>
+            <span style="left: 75.5%;">大正時代</span>
+            <span style="left: 84.4%;">昭和時代</span>
+            <span style="left: 95.9%;">現代</span>
+          </div>
+          <div class="timeline-scale">
+            <div class="timeline-scale-inner"></div>
+            <div class="timeline-year-ticks">
+              <span class="timeline-year-tick" style="left: 0;"></span>
+              <span class="timeline-year-tick" style="left: 24.9%;"></span>
+              <span class="timeline-year-tick" style="left: 48%;"></span>
+              <span class="timeline-year-tick" style="left: 63.7%;"></span>
+              <span class="timeline-year-tick" style="left: 71.1%;"></span>
+              <span class="timeline-year-tick" style="left: 75.8%;"></span>
+              <span class="timeline-year-tick" style="left: 80.4%;"></span>
+              <span class="timeline-year-tick" style="left: 85%;"></span>
+              <span class="timeline-year-tick" style="left: 94.2%;"></span>
+              <span class="timeline-year-tick" style="left: 100%;"></span>
+            </div>
+          </div>
+          <div class="timeline-scale-years">
+            <span style="left: 0;">1592</span>
+            <span style="left: 24.9%;">1700</span>
+            <span style="left: 48%;">1800</span>
+            <span style="left: 63.7%;">1868</span>
+            <span style="left: 71.1%;">1900</span>
+            <span style="left: 75.8%;">1920</span>
+            <span style="left: 80.4%;">1940</span>
+            <span style="left: 85%;">1960</span>
+            <span style="left: 94.2%;">2000</span>
+            <span style="right: 0; left: auto;">現在</span>
+          </div>
+          <div class="timeline-events">
+            <span class="timeline-event-marker" data-year="1592" style="left: 0%;" title="1592 稲葉正則"></span>
+            <span class="timeline-event-marker" data-year="1660" style="left: 15.7%;" title="1660 かこながや"></span>
+            <span class="timeline-event-marker" data-year="1669" style="left: 17.8%;" title="1669 御厩小路"></span>
+            <span class="timeline-event-marker" data-year="1686" style="left: 21.7%;" title="1686 諸白・狩野殿・安斎"></span>
+            <span class="timeline-event-marker" data-year="1868" style="left: 63.7%;" title="1868 明治維新"></span>
+            <span class="timeline-event-marker" data-year="1896" style="left: 70.2%;" title="1896 豆相人車鉄道"></span>
+            <span class="timeline-event-marker" data-year="1919" style="left: 75.5%;" title="1919 谷崎・小田原事件"></span>
+            <span class="timeline-event-marker" data-year="1923" style="left: 76.4%;" title="1923 松本剛吉別邸"></span>
+            <span class="timeline-event-marker" data-year="1928" style="left: 77.6%;" title="1928 葉雨庵"></span>
+            <span class="timeline-event-marker" data-year="1939" style="left: 80.1%;" title="1939 静山荘"></span>
+            <span class="timeline-event-marker" data-year="1975" style="left: 88.5%;" title="1975 小田原市史"></span>
+            <span class="timeline-event-marker" data-year="2006" style="left: 95.6%;" title="2006 町名碑"></span>
+            <span class="timeline-event-marker" data-year="2016" style="left: 97.9%;" title="2016 松本別邸指定"></span>
+            <span class="timeline-event-marker" data-year="現在" style="left: 100%;" title="現在"></span>
+          </div>
+          <div class="timeline-cards">
+            <div class="timeline-item">
+              <div class="timeline-year">1592 <span class="timeline-era">江戸時代</span></div>
+              <div class="timeline-content">
+                <h3>稲葉正則、小田原城主就任</h3>
+                <p>徳川家康の家臣である稲葉正則が小田原城主となり、城下町の整備を開始。上方から杜氏を招いて諸白酒づくりを推進した。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1660 <span class="timeline-era">江戸時代</span></div>
+              <div class="timeline-content">
+                <h3>万治図・かこながや</h3>
+                <p>「万治図」の小田原城絵図に御船小屋と並んで水主長屋の地が記載される。城下の水運・船関連の労働者居住区であった。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1669 <span class="timeline-era">江戸時代</span></div>
+              <div class="timeline-content">
+                <h3>御厩小路初出</h3>
+                <p>「寛文九年火災報告に関する文書」に御厩小路が登場する。西海子小路交差点西側に藩の馬屋（御厩）があったことに由来する。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1686 <span class="timeline-era">江戸時代</span></div>
+              <div class="timeline-content">
+                <h3>諸白・狩野殿・安斎小路など史料に</h3>
+                <p>「貞享三年御引渡記録」に諸白小路・狩野殿小路・安斎小路などが記録される。武家地の小路として位置づけられた。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1868 <span class="timeline-era">明治時代</span></div>
+              <div class="timeline-content">
+                <h3>明治維新と武家制度廃止</h3>
+                <p>武家屋敷地は民間に開放された。諸白小路の地名は次第に薄れ、南町という町名へ移る。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1896 <span class="timeline-era">明治時代</span></div>
+              <div class="timeline-content">
+                <h3>豆相人車鉄道・旧小田原駅</h3>
+                <p>熱海方面への人車鉄道が開設された。早川口交差点付近に旧小田原駅（のち石碑が建つ）がある。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1919 <span class="timeline-era">大正時代</span></div>
+              <div class="timeline-content">
+                <h3>谷崎潤一郎・小田原事件</h3>
+                <p>十字町（南町）在住中の谷崎。妻・千代子と佐藤春夫の三角関係に端を発する「小田原事件」が起きた。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1923 <span class="timeline-era">大正時代</span></div>
+              <div class="timeline-content">
+                <h3>旧松本剛吉別邸</h3>
+                <p>貴族院議員・松本剛吉が南町二丁目に別邸を建設した。のち市歴史的風致形成建造物に指定され、一般公開される。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1928 <span class="timeline-era">昭和時代</span></div>
+              <div class="timeline-content">
+                <h3>葉雨庵（野崎幻庵の旧別邸）</h3>
+                <p>野崎幻庵が自怡荘内に茶室「葉雨庵」を建築した。のち松永記念館へ移築され、国登録有形文化財となった。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1939 <span class="timeline-era">昭和時代</span></div>
+              <div class="timeline-content">
+                <h3>静山荘（望月軍四郎別邸）移築</h3>
+                <p>望月軍四郎が農家住宅を南町に移築し別荘「静山荘」とした。諸白小路・西海子小路交差点付近にある。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1975 <span class="timeline-era">昭和時代</span></div>
+              <div class="timeline-content">
+                <h3>小田原市史編纂</h3>
+                <p>小田原市史（通史編上巻）が刊行された。諸白小路の歴史的背景が詳述される。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2006 <span class="timeline-era">現代</span></div>
+              <div class="timeline-content">
+                <h3>歴史的町名碑設置</h3>
+                <p>小田原市が歴史的町名碑を設置した。諸白小路の位置が南町周辺として示される。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2016 <span class="timeline-era">現代</span></div>
+              <div class="timeline-content">
+                <h3>旧松本剛吉別邸指定</h3>
+                <p>小田原市歴史的風致形成建造物に指定された。2019年市有化のうえ一般公開されている。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">現在 <span class="timeline-era">現代</span></div>
+              <div class="timeline-content">
+                <h3>観光・文化資源として</h3>
+                <p>諸白小路は城下町の歴史を伝える地名として、デジタルミュージアムや観光ガイドで紹介されている。南町一帯で町名碑・別邸・文学館等を巡れる。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <h2 id="edo-period" class="era-heading">I. 江戸時代の城下町</h2>
+      <p class="section-intro" style="margin-bottom:20px;">諸白小路と周辺の小路・町名は、江戸期の史料に現れる。地名の由来と城下町としての性格を整理する。</p>
+
+      <section id="shiryo">
+        <h2>3. 史料上の位置づけ</h2>
+        <p class="section-intro">
+          諸白小路は、単なる町の名前ではなく、武家屋敷地へと続く道の名前として歴史に記録されている。
+        </p>
+        <ul>
+          <li>
+            小田原市資料では、東海道筋から南へ延びる筋違橋町の小路として、
+            <strong>諸白小路・狩野殿小路・安斎小路</strong> が並んで記されている。
+          </li>
+          <li>
+            諸白小路の初出は、<strong>1686年（貞享三年）の御引渡記録</strong>である。
+          </li>
+        </ul>
+      </section>
+
+      <section id="yurai">
+        <h2>4. 地名の由来</h2>
+        <p class="section-intro">
+          地名の由来は、酒造りの歴史にまつわる興味深い伝承である。
+        </p>
+        <ul>
+          <li>
+            城主・稲葉正則の時代、京都や大阪から杜氏（酒造りの職人）を招いて<strong><a href="#morohakushu">諸白酒</a></strong>を造らせたことが由来である。諸白酒の語義・製法は下記の解説を参照。
+          </li>
+        </ul>
+        <div class="detail-box" id="morohakushu">
+          <h3>諸白酒（もろはくしゅ）とは</h3>
+          <p>
+            諸白酒（もろはくしゅ）は、麹米と掛け米の両方に精白米を使用した日本酒の製法、またはその酒を指す。（<a href="https://ja.wikipedia.org/wiki/%E8%AB%B8%E7%99%BD" target="_blank" rel="noopener noreferrer">日本語Wikipedia</a>）
+          </p>
+          <p>
+            江戸時代以前は精米技術が未熟で玄米や片白（掛け米のみ精白）が主流だったが、諸白は透明度の高い上等酒として発展し、現代の清酒の原型となった。（<a href="https://sake-guide.com/glossaries/detail/1519" target="_blank" rel="noopener noreferrer">sake-guide</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">歴史的背景</h4>
+          <p>
+            16世紀頃に奈良の菩提山正暦寺で起源を持ち、「多聞院日記」（1576年）に初出する。（<a href="https://sake-guide.com/glossaries/detail/1519" target="_blank" rel="noopener noreferrer">sake-guide</a>）
+          </p>
+          <p>
+            伊丹諸白や灘の技法が広まり、元禄年間以降に標準化され、濁り酒から澄んだ清酒への進化を促した。（<a href="http://www.nada-ken.com/main/jp/index_mo/557.html" target="_blank" rel="noopener noreferrer">灘のけん</a>）
+          </p>
+        </div>
+      </section>
+
+      <section id="basho">
+        <h2>5. どんな場所だったか</h2>
+        <p class="section-intro">
+          当時の諸白小路は、武家たちの生活空間として機能していた。
+        </p>
+        <ul>
+          <li>道の両側に、中級の武士たちの屋敷が並んでいたと考えられている。</li>
+          <li>
+            周辺の狩野殿小路・天神小路・御厩小路も武家地で、城下町の武家屋敷帯を形成していた。
+          </li>
+        </ul>
+      </section>
+
+      <section id="shosai">
+        <h2>6. 詳細解説</h2>
+        <p class="section-intro">
+          史料・武家地の性格は前節までで触れた。ここでは現在地の捉え方のみ補足する。
+        </p>
+        <div class="detail-box">
+          <h3>現在地の捉え方</h3>
+          <p>
+            歴史的な小路は、現代の道路と完全に一致しないことが多い。諸白小路の場合、「南町周辺」という広いエリアとして捉えると、史料と現実のギャップを埋めやすくなる。
+          </p>
+        </div>
+      </section>
+
+      <h2 id="meiji-showa" class="era-heading">II. 明治〜昭和の南町</h2>
+      <p class="section-intro" style="margin-bottom:20px;">維新後の変遷、豆相人車鉄道、別邸文化、ゆかりの人物など、近代の南町を時系列でたどる。</p>
+
+      <section id="rekishi">
+        <h2>7. 歴史的背景の詳細</h2>
+        <p class="section-intro">
+          諸白小路の成立と変遷を、城下町の歴史的文脈で詳しく見ていきよう。
+        </p>
+        <div class="detail-box">
+          <h3>稲葉正則と城下町の形成</h3>
+          <p>
+            地名の由来（諸白酒）は4章に述べた。稲葉正則（1592-1662）は徳川家康の家臣として小田原城主となり、城下町の整備に力を注いだ。上方から技術者を招いて酒造業を振興し、地域経済の基盤を築いた。
+          </p>
+        </div>
+        <div class="detail-box">
+          <h3>武家地の構造</h3>
+          <p>
+            城下町では武家屋敷が城の周囲に帯状に配置され、諸白小路はその一画で中級武士の居住区をなした。構造の概要は5章「どんな場所だったか」を参照。
+          </p>
+        </div>
+        <div class="detail-box">
+          <h3>明治維新後の変遷</h3>
+          <p>
+            武家制度の廃止により屋敷地は民間に開放され、諸白小路の名は薄れ南町へ移った。地名の記憶は史料・伝承として残り、観光資源となっている（年表1868年も参照）。
+          </p>
+        </div>
+        <div class="detail-box" id="hasuan">
+          <h3>野崎幻庵の別荘「自怡荘」</h3>
+          <p id="genan">
+            野崎幻庵（野崎廣太）は、小田原の十字町・諸白小路（現在の小田原市南町）に別荘「自怡荘（じいそう）」を構え、その敷地内に茶室「葉雨庵」を建てていた。この別荘の跡地には、後にメガネスーパーの創業者が豪邸を建てたという歴史がある。
+          </p>
+        </div>
+        <div class="detail-box" id="gunshiro">
+          <h3>望月軍四郎について</h3>
+          <p>
+            望月軍四郎（もちづき ぐんしろう）は、明治〜昭和前期に活躍した日本の実業家・教育支援者・中国学研究者である。（<a href="https://ja.wikipedia.org/wiki/%E6%9C%9B%E6%9C%88%E8%BB%8D%E5%9B%9B%E9%83%8E" target="_blank" rel="noopener noreferrer">日本語Wikipedia</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">基本情報</h4>
+          <ul style="margin:0 0 10px; padding-left:1.2rem;">
+            <li>1879年（明治12年）に静岡県富士郡大宮町（現・富士宮市）の農家に生まれ、1940年（昭和15年）に没した。（<a href="https://fujinomiya.net/persona/mochizuki-gunshiro/" target="_blank" rel="noopener noreferrer">富士宮市の人物紹介</a>）</li>
+            <li>慶應義塾の特選塾員でもあり、学問・教育への支援に熱心だった。（<a href="https://www.weblio.jp/content/%E6%9C%9B%E6%9C%88%E8%BB%8D%E5%9B%9B%E9%83%8E" target="_blank" rel="noopener noreferrer">weblio</a>）</li>
+          </ul>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">実業家として</h4>
+          <ul style="margin:0 0 10px; padding-left:1.2rem;">
+            <li>10代半ばで上京し、村上太三郎の商店で株式取引を学び、その後独立して証券仲買から身を起こした。（<a href="https://ja.wikipedia.org/wiki/%E6%9C%9B%E6%9C%88%E8%BB%8D%E5%9B%9B%E9%83%8E" target="_blank" rel="noopener noreferrer">日本語Wikipedia</a>）</li>
+            <li>日清生命保険社長、京浜電気鉄道・湘南電気鉄道・錦華紡績などの取締役会長、横浜倉庫社長、東京株式取引所理事など、多数の企業経営に関わった。（<a href="https://www.weblio.jp/content/%E6%9C%9B%E6%9C%88%E8%BB%8D%E5%9B%9B%E9%83%8E" target="_blank" rel="noopener noreferrer">weblio</a>）</li>
+          </ul>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">教育・地域への貢献</h4>
+          <ul style="margin:0 0 10px; padding-left:1.2rem;">
+            <li>出身地の大宮町で「大宮商業学校」「大宮工業学校」を設立し、現在の静岡県立富士宮北高等学校の源流の一つとなっている。（<a href="https://fujinomiya.net/persona/mochizuki-gunshiro/" target="_blank" rel="noopener noreferrer">富士宮市の人物紹介</a>）</li>
+            <li>大宮育英財団など育英事業を立ち上げ、奨学・教育支援に財産を投じた。（<a href="https://fujinomiya.net/persona/mochizuki-gunshiro/" target="_blank" rel="noopener noreferrer">富士宮市の人物紹介</a>）</li>
+          </ul>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">小田原との関わり</h4>
+          <ul style="margin:0 0 0; padding-left:1.2rem;">
+            <li>小田原市南町に別荘「静山荘（旧望月軍四郎別邸）」を構え、現在は歴史的建造物として位置付けられている。（<a href="https://odawara-digital-museum.jp/point/detail/176/" target="_blank" rel="noopener noreferrer">おだわらデジタルミュージアム</a>）</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="nishikoji">
+        <h2>8. 周辺地域との比較</h2>
+        <p class="section-intro">
+          諸白小路をより深く理解するために、周辺の小路との比較を見てみよう。
+        </p>
+        <div class="detail-box" id="kanodono">
+          <h3>狩野殿小路</h3>
+          <p>
+            狩野殿小路は、小田原市南町にある歴史的な小路の名前である。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+          <p>
+            江戸時代、この一帯は中級の藩士が住む武家地で、「貞享三年御引渡記録」（1686年）に初めて登場する。（<a href="https://www.0465.net/map/index.html?i=802" target="_blank" rel="noopener noreferrer">0465.net</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">地名の由来</h4>
+          <p>
+            小田原北条氏の家臣である狩野氏の宅跡に由来するとされ、絵師の狩野古法眼（狩野元信）が住んでいたという伝承もある。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+          <p>
+            また、狩野小路（かのうこうじ）や金殿小路（かねどのこうじ）と表記されることもあり、小田原城南西部の旧町名として今も歴史探訪のスポットである。（<a href="https://www.0465.net/map/index.html?i=802" target="_blank" rel="noopener noreferrer">0465.net</a>）
+          </p>
+        </div>
+        <div class="detail-box" id="anzaikoji">
+          <h3>安斎小路</h3>
+          <p>
+            安斎小路は、小田原市南町にある歴史的な小路である。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+          <p>
+            小田原北条氏の侍医・田村安斎（栖）の宅があったことに由来する。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">歴史的背景</h4>
+          <p>
+            江戸時代の「貞享三年御引渡記録」（1686年）に記された武家地で、北条氏政・氏照兄弟が豊臣秀吉の小田原攻め後にこの地で自害したという伝承がある。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+          <p>
+            小田原城西部の武家屋敷街に位置する。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+        </div>
+        <div class="detail-box" id="tenjinkoji">
+          <h3>天神小路</h3>
+          <p>
+            天神小路は、小田原市南町にある歴史的な小路である。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+          <p>
+            江戸時代の「貞享三年御引渡記録」（1686年）に「御花畑小路」として初出後、「東海道分間延絵図」（1789～1806年）から天神小路と呼ばれるようになった。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">地名の由来</h4>
+          <p>
+            東海道を隔てた北方の天神社に由来し、道の両側は中級藩士の武家地だった。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+          <p>
+            御花畑小路の名は一部区間に残る。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+        </div>
+        <div class="detail-box" id="omayakoji">
+          <h3>御厩小路</h3>
+          <p>
+            御厩小路は、小田原市南町にある歴史的な小路である。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+          <p>
+            「寛文九年火災報告に関する文書」（1669年）に初出で、小田原藩の馬屋（御厩）が西海子小路との交差点西側にあったことに由来する。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">歴史的背景</h4>
+          <p>
+            承応2年（1653年）、藩主・稲葉正則が馬を見に来た記録が残り、熱海街道の起点でもあった。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+          <p>
+            東海道筋から南へ延びる武家地の小路の一つである。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+        </div>
+        <div class="detail-box" id="kakonagaya">
+          <h3>かこながや（水主長屋）</h3>
+          <p>
+            かこながや（水主長屋）は、小田原市南町にある歴史的な町地名である。（<a href="https://www.0465.net/map/index.html?i=801" target="_blank" rel="noopener noreferrer">0465.net</a>）
+          </p>
+          <p>
+            江戸時代、稲葉氏が藩主の頃、この地に御船小屋の隣で水主（水軍の船乗り）の長屋があったことに由来する。（<a href="https://www.city.odawara.kanagawa.jp/global-image/units/500025/1-20210902175224.pdf" target="_blank" rel="noopener noreferrer">小田原市</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">歴史的背景</h4>
+          <p>
+            「万治図」（1660年）の小田原城絵図に「御船小屋」と並んで記載され、城下町の水運・船関連の労働者が住む地域だった。（<a href="https://www.0465.net/map/index.html?i=801" target="_blank" rel="noopener noreferrer">0465.net</a>）
+          </p>
+          <p>
+            町名碑が現存する。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+        </div>
+        <div class="detail-box" id="matsumoto-goukichi">
+          <h3>旧松本剛吉別邸</h3>
+          <p>
+            旧松本剛吉別邸は、小田原市南町二丁目にある大正時代建築の歴史的建造物である。（<a href="https://www.matsumoto-goukichi.com/building.html" target="_blank" rel="noopener noreferrer">松本剛吉記念館</a>）
+          </p>
+          <p>
+            明治・大正期の政治家・松本剛吉（貴族院議員）が大正12年（1923年）頃に建て、山縣有朋と親交が深かった人物ゆかりの別邸である。（<a href="https://www.matsumoto-goukichi.com/history.html" target="_blank" rel="noopener noreferrer">松本剛吉記念館</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">特徴</h4>
+          <p>
+            数寄屋風主屋、茶室「雨香亭」、待合からなる建物群と、築山・水景を備えた回遊式庭園が特徴で、近代小田原の別邸文化を象徴する。（<a href="https://www.city.odawara.kanagawa.jp/field/lifelong/culture/historical_structure/p20642.html" target="_blank" rel="noopener noreferrer">小田原市</a>）
+          </p>
+          <p>
+            平成28年（2016年）に小田原市歴史的風致形成建造物に指定され、2019年に市有化後、一般公開されている。（<a href="https://www.matsumoto-goukichi.com/history.html" target="_blank" rel="noopener noreferrer">松本剛吉記念館</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">歴史的変遷</h4>
+          <p>
+            松本没後、東京府農工銀行頭取・鈴木茂平、日本橋木綿商・岡田正吉の所有を経て現在に至る。（<a href="https://www.matsumoto-goukichi.com/history.html" target="_blank" rel="noopener noreferrer">松本剛吉記念館</a>）
+          </p>
+        </div>
+        <div class="detail-box" id="tanizaki">
+          <h3>谷崎潤一郎と南町（旧十字町）</h3>
+          <p>
+            谷崎潤一郎は小田原市南町（旧十字町）にゆかりがある。（<a href="https://www.0465.net/blog/jyujimachi-h/index.html" target="_blank" rel="noopener noreferrer">0465.net</a>）
+          </p>
+          <p>
+            大正時代に南町の十字町で数年間暮らし、長女・鮎子が花園幼稚園に通っていた。（<a href="https://www.komazawa-u.ac.jp/~hagi/ko_kokugo-tanizaki.htm" target="_blank" rel="noopener noreferrer">駒澤大学</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">小田原事件</h4>
+          <p>
+            1919年頃の「小田原事件」で有名で、妻・石川千代子と佐藤春夫の三角関係が発端となり、親友との絶交劇が起きた。（<a href="https://scrapbox.io/arpla/%E5%B0%8F%E7%94%B0%E5%8E%9F%E4%BA%8B%E4%BB%B6" target="_blank" rel="noopener noreferrer">Scrapbox</a>）
+          </p>
+          <p>
+            この地で執筆活動を行い、小田原文学館でも谷崎ゆかりの資料が展示されている。（<a href="https://www.city.odawara.kanagawa.jp/public-i/facilities/literature-museum/bungakukan.html" target="_blank" rel="noopener noreferrer">小田原市</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">『陰翳礼讃』</h4>
+          <p>
+            谷崎潤一郎の『陰翳礼讃』は、1933年（昭和8年）に発表された随筆で、日本伝統美の本質を「陰翳」（光の当たらない暗がりや影）に求めている。（<a href="https://umiumiseasea.com/tanizaki/ineilaisan/" target="_blank" rel="noopener noreferrer">umiumiseasea</a>）
+          </p>
+          <p>
+            西洋の明るく直接的な美意識に対し、日本人は闇や間接光の中で金箔、漆器、和紙、建築の幽玄な美を愛でる、と論じている。（<a href="https://iroai.jp/tanizaki/" target="_blank" rel="noopener noreferrer">iroai</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">主なテーマ</h4>
+          <ul style="margin:0 0 10px; padding-left:1.2rem;">
+            <li><strong>家屋と陰影</strong>: 障子や床の間が作り出す微妙な光のグラデーションを絶賛し、電灯の過剰な明るさを批判。（<a href="https://www.aozora.gr.jp/cards/001383/files/56642_59575.html" target="_blank" rel="noopener noreferrer">青空文庫</a>）</li>
+            <li><strong>漆器・金蒔絵</strong>: 暗闇でほのかに輝く金色の美しさを「沈痛な美」と表現。（<a href="https://umiumiseasea.com/tanizaki/ineilaisan/" target="_blank" rel="noopener noreferrer">umiumiseasea</a>）</li>
+            <li><strong>能や伝統文化</strong>: 暗さが生む荘厳さを、現代の照明過多と対比。（<a href="https://iroai.jp/tanizaki/" target="_blank" rel="noopener noreferrer">iroai</a>）</li>
+          </ul>
+          <p>
+            小田原在住時の谷崎の美学が色濃く、現代デザインや建築にも影響を与える名著である。（<a href="https://ryokufu.com/product/2411-3" target="_blank" rel="noopener noreferrer">緑風出版</a>）
+          </p>
+        </div>
+        <ul>
+          <li>
+            <strong><a href="#kanodono">狩野殿小路</a></strong>: 諸白小路の西側に並行して走る小路。狩野氏の宅跡に由来し、絵師・狩野元信の居住伝承もある。上記の解説を参照。
+          </li>
+          <li>
+            <strong><a href="#anzaikoji">安斎小路</a></strong>: 諸白小路の東側に位置。北条氏の侍医・田村安斎（栖）の宅跡に由来。上記の解説を参照。
+          </li>
+          <li>
+            <strong>西海子小路</strong>: 小田原城の南側（現在の小田原市南町周辺）にある、旧武家屋敷街の面影を残す歴史的な小路。<a href="#tanizaki">谷崎潤一郎</a>ゆかりの地でもある。名称は、この地にサイカチの木が植えられていたことに由来するといわれる。現在の地名としては、小田原市南町二〜三丁目付近で、東海道（国道1号）の南側に並行して通る横町である。江戸時代末期には、中級藩士の武家屋敷が道の両側に十八軒並んでいたとされ、城下の武家地として整った町並みだった。藩主稲葉家の時代の史料「永代日記」にも地名が見られ、近世から知られた通り名である。現在は「小田原文学館」「白秋童謡館」へのアプローチとなる通りで、文学者ゆかりの地としても知られている。桜並木が有名で、春には桜のトンネルができる小田原屈指の花見スポットになっている。
+          </li>
+          <li>
+            <strong><a href="#matsumoto-goukichi">旧松本剛吉別邸</a></strong>: 南町二丁目。大正12年頃、貴族院議員・松本剛吉が建てた別邸。数寄屋風主屋・茶室「雨香亭」・回遊式庭園。市歴史的風致形成建造物、一般公開。上記の解説を参照。
+          </li>
+          <li id="seizan">
+            <strong><a href="#gunshiro">静山荘</a></strong>: 諸白・西海子交差点付近。実業家望月軍四郎の旧別邸で、農家を移築した別荘。市の優れた建造物に位置づく。詳細は上記の<a href="#gunshiro">望月軍四郎</a>の項を参照。
+          </li>
+          <li>
+            <strong><a href="#tenjinkoji">天神小路</a></strong>: 旧称は御花畑小路。東海道北方の天神社に由来し、中級藩士の武家地。上記の解説を参照。
+          </li>
+          <li>
+            <strong><a href="#omayakoji">御厩小路</a></strong>: 西海子小路との交差点西側に藩の馬屋（御厩）があったことに由来。上記の解説を参照。
+          </li>
+          <li>
+            <strong><a href="#kakonagaya">かこながや（水主長屋）</a></strong>: 御船小屋の隣に水主（水軍の船乗り）の長屋があったことに由来する町地名。万治図に記載。上記の解説を参照。
+          </li>
+        </ul>
+        <p>
+          これらの小路はすべて東海道筋から南へ延び、城下町の格子状区画を形成していた。
+        </p>
+      </section>
+
+      <h2 id="gendai" class="era-heading">III. 現代の南町</h2>
+      <p class="section-intro" style="margin-bottom:20px;">現地の見どころ、観光情報、参考リンクをまとめる。</p>
+
+      <section id="kanko">
+        <h2>9. 現代の観光・訪問情報</h2>
+        <p class="section-intro">
+          諸白小路の歴史を現代の視点から楽しむための情報。
+        </p>
+        <div class="detail-box" id="odawara-ekiseki">
+          <h3>小田原駅跡（豆相人車鉄道）</h3>
+          <p>
+            小田原駅跡は、現在のJR小田原駅（1920年開業）より南東の早川口交差点付近、国道1号線沿いに位置する、豆相人車鉄道の旧小田原駅の跡地を指す。（<a href="http://sloway.net/zusou/history.html" target="_blank" rel="noopener noreferrer">sloway</a>）
+          </p>
+          <p>
+            明治29年（1896年）に熱海方面への陸上輸送路として開設された人車鉄道の駅で、現在は石碑が建っている。（<a href="http://sloway.net/zusou/history.html" target="_blank" rel="noopener noreferrer">sloway</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">歴史的背景</h4>
+          <p>
+            豆相人車鉄道は人力で客車を引く珍しい鉄道で、小田原宿の衰退後に地域交通を支えた。（<a href="http://sloway.net/zusou/history.html" target="_blank" rel="noopener noreferrer">sloway</a>）
+          </p>
+          <p>
+            東海道本線熱海線の開通後、役割を終え廃止されたが、小田原の交通史を伝える遺構として残っている。（<a href="http://sloway.net/zusou/history.html" target="_blank" rel="noopener noreferrer">sloway</a>）
+          </p>
+        </div>
+        <div class="detail-box" id="meganesuper">
+          <h3>メガネスーパー</h3>
+          <p>
+            メガネスーパーは1973年に神奈川県小田原市で田中八郎が有限会社ニュー湘南眼鏡として創業した眼鏡販売チェーンである。（<a href="https://ja.wikipedia.org/wiki/%E3%83%A1%E3%82%AC%E3%83%8D%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC" target="_blank" rel="noopener noreferrer">日本語Wikipedia</a>）
+          </p>
+          <p>
+            1980年に埼玉の同名会社と統合し株式会社化、2004年に株式上場、2007年ピーク時には540店舗・380億円を記録したが、2011〜13年に債務超過に陥り再建へ向かった。（<a href="https://www.weblio.jp/content/%E3%83%A1%E3%82%AC%E3%83%8D%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC" target="_blank" rel="noopener noreferrer">weblio</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">再建と変遷</h4>
+          <p>
+            2013年に星崎尚彦社長が就任し、「アイケアカンパニー」へ転換。検眼・サービス強化でV字回復し、現在はビジョナリーホールディングスの子会社として、2023年売上238億円規模で全国展開を続けている。（<a href="https://www.meganesuper.co.jp/profile/" target="_blank" rel="noopener noreferrer">メガネスーパー</a>）
+          </p>
+          <p>
+            自怡荘跡地に同社創業者が豪邸を建てた経緯は、<a href="#hasuan">野崎幻庵の別荘「自怡荘」</a>の項を参照。
+          </p>
+        </div>
+        <div class="detail-box" id="uirou">
+          <h3>小田原のういろう</h3>
+          <p>
+            小田原のういろうは、室町時代から続く外郎（ういろう）家が作る伝統的な蒸し菓子である。（<a href="https://chienotomoshibi.jp/uirou/" target="_blank" rel="noopener noreferrer">ちえのともしび</a>）
+          </p>
+          <p>
+            元々は家伝薬「透頂香（とうちんこう）」の製作者である外郎家が、賓客接待用に考案したもので、米粉・砂糖・水を主原料にモチモチとした柔らかい食感が特徴である。（<a href="https://www.uirou.co.jp/history/" target="_blank" rel="noopener noreferrer">ういろう本店</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">歴史</h4>
+          <p>
+            1368年（応安元年）に元朝から渡来した陳延祐が起源で、北条早雲の招きにより1504年頃に小田原に移住し、現在も25代続く老舗「ういろう本店」で販売されている。（<a href="https://chienotomoshibi.jp/uirou/" target="_blank" rel="noopener noreferrer">ちえのともしび</a>）
+          </p>
+          <p>
+            江戸時代には東海道の名物として『東海道名所記』やケンペルの『日本誌』に記され、小田原城下町の象徴となった。（<a href="https://ja.wikipedia.org/wiki/%E3%81%86%E3%81%84%E3%82%8D%E3%81%86_(%E4%BC%81%E6%A5%AD)" target="_blank" rel="noopener noreferrer">日本語Wikipedia</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">特徴</h4>
+          <p>
+            白・緑・紅などの棹物（棒状）が主流で、さっぱりした上品な甘さが魅力である。薬菓子として保存性が高く、全国のういろう文化の源流である。（<a href="https://ajisaikaikan.com/kanagawa-odawara-uiro-nagoya/" target="_blank" rel="noopener noreferrer">味彩会館</a>）
+          </p>
+        </div>
+        <div class="detail-box" id="taichokaku">
+          <h3>対潮閣跡</h3>
+          <p>
+            対潮閣跡は、小田原市南町1-5-32付近にある山下亀三郎別邸の遺構で、日露戦争の英雄・秋山真之の終焉の地として知られる。（<a href="https://yhistoricalplace2.web.fc2.com/historical_place/kamesaburo_yamashita/index.html" target="_blank" rel="noopener noreferrer">歴史の風景</a>）
+          </p>
+          <p>
+            山下汽船（現・商船三井）創業者・山下亀三郎が大正期に建てた海の見える豪邸で、現在は石垣・釣鐘石・通用門が残っている。（<a href="https://note.com/seikantei/n/nb68282b1f87a" target="_blank" rel="noopener noreferrer">note</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">歴史的エピソード</h4>
+          <p>
+            大正7年（1918年）2月4日、盲腸炎悪化により秋山真之海軍中将がここで49歳で逝去した。山縣有朋の古稀庵（現・清閑亭）近くに位置し、明治の別邸文化を象徴する。（<a href="http://kyoudosi.cocolog-nifty.com/blog/2020/04/post-386e38.html" target="_blank" rel="noopener noreferrer">郷土史</a>）
+          </p>
+          <p>
+            近隣の静閑亭や旧松本剛吉別邸とともに、小田原南町の近代史スポットである。（<a href="https://4travel.jp/travelogue/10605772" target="_blank" rel="noopener noreferrer">4travel</a>）
+          </p>
+        </div>
+        <div class="detail-box" id="tokoku-hi">
+          <h3>北村透谷碑</h3>
+          <p>
+            北村透谷碑は、小田原市南町2丁目の小田原文学館敷地内にある、明治の思想家・文学者北村透谷（1868-1894）を顕彰する記念碑である。（<a href="https://bungakusanpo.oops.jp/tokoku2.html" target="_blank" rel="noopener noreferrer">文学散歩</a>）
+          </p>
+          <p>
+            昭和4年（1929年）に小峰公園の大久保神社境内に建立され、島崎藤村が碑文「北村透谷に献ず」を揮毫、牧雅雄が雪崩造りのデザインを担当した。（<a href="https://ja.localwiki.org/odawara/%E9%80%8F%E8%B0%B7%E7%A2%91" target="_blank" rel="noopener noreferrer">LocalWiki 小田原</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">変遷</h4>
+          <p>
+            昭和29年（1954年）に小田原城址公園へ、平成23年（2011年）に城再整備に伴い文学館へ移転した。除幕式も震災で延期されるなど波乱の歴史を持つ。（<a href="http://tanzawa-yumekoubou.cocolog-nifty.com/blog/2011/05/post-a9aa.html" target="_blank" rel="noopener noreferrer">丹沢夢工房</a>）
+          </p>
+          <p>
+            透谷の生誕地（現・浜町）や小田原事件の谷崎潤一郎と並び、南町の文学史スポットとして位置づけられている。（<a href="https://odawara-digital-museum.jp/great/detail/143/" target="_blank" rel="noopener noreferrer">おだわらデジタルミュージアム</a>）
+          </p>
+        </div>
+        <div class="detail-box" id="hakushu-douyoukan">
+          <h3>白秋童謡館</h3>
+          <p>
+            白秋童謡館は、小田原市南町にある小田原文学館の別館で、北原白秋の童謡関連資料を展示する施設である。（<a href="https://www.city.odawara.kanagawa.jp/public-i/facilities/literature-museum/douyoukan.html" target="_blank" rel="noopener noreferrer">小田原市</a>）
+          </p>
+          <p>
+            大正13年（1924年）に元宮内大臣・田中光顕の別邸として建てられた木造2階建ての和風建築で、登録有形文化財に指定されている。（<a href="https://www.city.odawara.kanagawa.jp/field/lifelong/property/tourokubunkazai/kenzoubutsu/tourokubungakukan.html" target="_blank" rel="noopener noreferrer">小田原市</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">白秋と小田原</h4>
+          <p>
+            大正7～15年頃に小田原在住中、「赤い鳥小鳥」「揺籠のうた」「からたちの花」など生涯の半数以上の童謡を創作した。「木兎の家」の模型や直筆原稿が展示され、白秋童謡の散歩道の起点としても知られる。（<a href="https://odawara-digital-museum.jp/point/detail/617/" target="_blank" rel="noopener noreferrer">おだわらデジタルミュージアム</a>）
+          </p>
+        </div>
+        <div class="detail-box" id="ozaki-kazuo">
+          <h3>尾崎一雄邸</h3>
+          <p>
+            尾崎一雄邸は、小田原文学館敷地内に移築保存されている、私小説家・尾崎一雄（1899-1983）の旧宅「冬眠居」の書斎部分である。（<a href="https://note.com/nareura/n/n58c622378853" target="_blank" rel="noopener noreferrer">note</a>）
+          </p>
+          <p>
+            元々は小田原市曽我谷津にあった戦後建築で、8畳と4畳の書斎、広縁、書庫からなり、柱・建具・天井・旧宅の瓦9割以上を再利用して平成18年（2006年）に移築された。（<a href="https://ameblo.jp/hituzou/entry-12926436487.html" target="_blank" rel="noopener noreferrer">ameblo</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">特徴と意義</h4>
+          <p>
+            『暢気眼鏡』などの作品で知られる尾崎が創作に励んだ空間を再現し、現在は屋外から観覧可能である。北村透谷碑や白秋童謡館と並び、小田原の文学遺産を象徴する。（<a href="https://www.city.odawara.kanagawa.jp/public-i/facilities/literature-museum/shosai.html" target="_blank" rel="noopener noreferrer">小田原市</a>）
+          </p>
+        </div>
+        <ul>
+          <li>
+            <strong>アクセス</strong>: 小田原駅から徒歩15-20分。南町周辺を散策すると良い。
+          </li>
+          <li>
+            <strong>歴史的町名碑</strong>: 南町二丁目に設置。諸白小路の位置を示す標識がある。
+          </li>
+          <li>
+            <strong>周辺スポット</strong>: 小田原城址公園、小田原宿、鈴廣かまぼこ博物館などと合わせて訪れると、城下町の雰囲気を満喫できる。早川口交差点付近には<a href="#odawara-ekiseki">豆相人車鉄道の旧小田原駅跡</a>（石碑）もある。
+          </li>
+          <li>
+            <strong>注意点</strong>: 現代の道路事情で小路の形状は変化している。史料と照らし合わせながら歩くと面白い。
+          </li>
+        </ul>
+      </section>
+
+      <section id="renkei">
+        <h2>10. 関連リンク（外部サイト）</h2>
+        <ul class="links">
+          <li>
+            小田原市公式：歴史的町名碑の設置場所について<br />
+            <a href="https://www.city.odawara.kanagawa.jp/field/lifelong/property/topics/tyoumeihi.html" target="_blank" rel="noopener noreferrer">https://www.city.odawara.kanagawa.jp/field/lifelong/property/topics/tyoumeihi.html</a>
+          </li>
+          <li>
+            おだわらデジタルミュージアム（概要）<br />
+            <a href="https://odawara-digital-museum.jp/about/" target="_blank" rel="noopener noreferrer">https://odawara-digital-museum.jp/about/</a>
+          </li>
+          <li>
+            おだわらデジタルミュージアム（デジタルアーカイブ一覧）<br />
+            <a href="https://odawara-digital-museum.jp/archive/list/" target="_blank" rel="noopener noreferrer">https://odawara-digital-museum.jp/archive/list/</a>
+          </li>
+          <li>
+            おだわらデジタルミュージアム（まちなみ写真：諸白小路関連）<br />
+            <a href="https://odawara-digital-museum.jp/photo/machinami/12/" target="_blank" rel="noopener noreferrer">https://odawara-digital-museum.jp/photo/machinami/12/</a>
+          </li>
+          <li>
+            小田原市：小田原デジタルアーカイブ案内<br />
+            <a href="https://www.city.odawara.kanagawa.jp/encycl/" target="_blank" rel="noopener noreferrer">https://www.city.odawara.kanagawa.jp/encycl/</a>
+          </li>
+          <li>
+            参考：小田原城街歩きガイド（城下町町名）<br />
+            <a href="https://www.scn-net.ne.jp/~yanya/cyoumei.html" target="_blank" rel="noopener noreferrer">https://www.scn-net.ne.jp/~yanya/cyoumei.html</a>
+          </li>
+          <li>
+            野崎幻庵の別荘（諸白小路関連）<br />
+            <a href="https://yhistoricalplace2.web.fc2.com/historical_place/youan/index.html" target="_blank" rel="noopener noreferrer">https://yhistoricalplace2.web.fc2.com/historical_place/youan/index.html</a>
+          </li>
+          <li>
+            メガネスーパー創業者の豪邸（自怡荘跡地）<br />
+            <a href="https://rarea.events/event/195726" target="_blank" rel="noopener noreferrer">https://rarea.events/event/195726</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="sanko">
+        <h2>11. 参考文献・史料</h2>
+        <ul>
+          <li>小田原市史編纂委員会『小田原市史 通史編 上巻』小田原市、1975年</li>
+          <li>小田原市教育委員会『小田原城下町の歴史的町名』小田原市、2006年</li>
+          <li>おだわらデジタルミュージアム所蔵史料</li>
+          <li>『貞享三年御引渡記録』（1686年） - 諸白小路初出の史料</li>
+        </ul>
+      </section>
+
+
+
+      <section id="matome">
+        <h2>12. まとめ</h2>
+        <p class="summary">
+          諸白小路は、<strong>1686年の史料に登場する武家地の小路名</strong>である。由来は稲葉正則時代の諸白酒づくりで、当時は中級武士の屋敷が並んでいた。現在は南町周辺にその歴史をたどることができ、周辺の小路との比較や現代の観光情報も参考に、城下町の魅力を深く味わえる。
+        </p>
+      </section>
+
+      <footer>
+        本ページは、提供された内容を基に一般向けに読みやすく再構成した解説である。
+      </footer>
+    </main>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script>
+      (function () {
+        var mapEl = document.getElementById('spots-map');
+        if (!mapEl) return;
+        var center = [35.2455, 139.1532];
+        var map = L.map('spots-map').setView(center, 17);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+          maxZoom: 19
+        }).addTo(map);
+        function buildTooltipHtml(title, description, sources) {
+          var html = '<span class="spot-tooltip-title">' + title + '</span><span class="spot-tooltip-desc">' + (description || '') + '</span>';
+          if (sources && sources.length) {
+            html += '<span class="spot-tooltip-sources">出典: ';
+            html += sources.map(function (x) { return '<a href="' + x.url + '" target="_blank" rel="noopener noreferrer">' + x.label + '</a>'; }).join('、');
+            html += '</span>';
+          }
+          return html;
+        }
+        var spots = [
+          { lat: 35.24562, lng: 139.15456, name: '旧松本剛吉別邸（南町2-1-27）', label: '旧松本剛吉別邸', color: '#b45309', tooltipDirection: null,
+            description: '大正12年（1923年）頃、貴族院議員・松本剛吉が建てた別邸。数寄屋風主屋・茶室「雨香亭」・回遊式庭園が特徴で、近代小田原の別邸文化を象徴する。平成28年（2016年）に小田原市歴史的風致形成建造物に指定され、2019年市有化後一般公開されている。',
+            sources: [{ label: '松本剛吉記念館', url: 'https://www.matsumoto-goukichi.com/building.html' }, { label: '小田原市', url: 'https://www.city.odawara.kanagawa.jp/field/lifelong/culture/historical_structure/p20642.html' }] },
+          { lat: 35.244773, lng: 139.153718, name: '小田原文学館・北村透谷碑・白秋童謡館・尾崎一雄邸（南町2-3-4）', label: '小田原文学館ほか', color: '#be185d', tooltipDirection: null,
+            description: '北村透谷碑（島崎藤村揮毫の碑文）、白秋童謡館（北原白秋の童謡資料・登録有形文化財）、尾崎一雄邸「冬眠居」書斎が移築保存されている文学ゆかりの施設群。大正期に田中光顕別邸として建てられた建物を活用。',
+            sources: [{ label: '小田原市（文学館）', url: 'https://www.city.odawara.kanagawa.jp/public-i/facilities/literature-museum/bungakukan.html' }, { label: 'おだわらデジタルミュージアム', url: 'https://odawara-digital-museum.jp/point/detail/617/' }] },
+          { lat: 35.245629976659124, lng: 139.1525974526273, name: '静山荘（旧望月軍四郎別邸）（南町3-1-20）', label: '静山荘', color: '#0d9488', tooltipDirection: null,
+            description: '実業家・望月軍四郎が小田原市南町に構えた別荘。農家を移築した風情ある建物で、諸白・西海子小路交差点付近に位置する。市の優れた建造物として歴史的風致に位置づけられている。',
+            sources: [{ label: 'おだわらデジタルミュージアム', url: 'https://odawara-digital-museum.jp/point/detail/176/' }] },
+          { lat: 35.246666135257605, lng: 139.15049167524205, name: '豆相人車鉄道 旧小田原駅跡（早川口・国道1号付近）', label: '旧小田原駅跡', color: '#c2410c', tooltipDirection: null,
+            description: '明治29年（1896年）に熱海方面へ開設された豆相人車鉄道の旧小田原駅の跡地。人力で客車を引く珍しい鉄道の起点で、現在のJR小田原駅より南東の早川口交差点付近に石碑が残る。東海道本線熱海線開通後に廃止されたが、小田原の交通史を伝える遺構である。',
+            sources: [{ label: 'sloway（豆相人車鉄道）', url: 'http://sloway.net/zusou/history.html' }] },
+          { lat: 35.2474585, lng: 139.1523143, name: '対潮閣跡（南町1-5-32付近）', label: '対潮閣跡', color: '#7c3aed', tooltipDirection: null,
+            description: '山下汽船（現・商船三井）創業者・山下亀三郎が大正期に建てた海の見える別邸の跡。日露戦争の英雄・秋山真之が大正7年（1918年）2月にここで49歳で逝去した。石垣・釣鐘石・通用門が残り、近隣の静閑亭や旧松本剛吉別邸とともに南町の近代史スポットである。',
+            sources: [{ label: '歴史の風景', url: 'https://yhistoricalplace2.web.fc2.com/historical_place/kamesaburo_yamashita/index.html' }, { label: 'note', url: 'https://note.com/seikantei/n/nb68282b1f87a' }] },
+          { lat: 35.24571985815069, lng: 139.15322363345845, name: '自怡荘跡地（野崎幻庵別荘・メガネスーパー創業者豪邸付近）', label: '自怡荘跡地', color: '#b91c1c', tooltipDirection: null, shape: 'star',
+            description: '野崎幻庵（野崎廣太）が十字町・諸白小路（現南町）に構えた別荘「自怡荘」の跡地。敷地内に茶室「葉雨庵」があった。のちメガネスーパー創業者がこの地に豪邸を建てた経緯で知られる。',
+            sources: [{ label: '歴史の風景（野崎幻庵）', url: 'https://yhistoricalplace2.web.fc2.com/historical_place/youan/index.html' }, { label: 'rarea', url: 'https://rarea.events/event/195726' }] },
+          { lat: 35.24487415407747, lng: 139.15529778011884, name: 'かこながや（水主長屋）', label: 'かこながや（水主長屋）', color: '#0c4a6e', tooltipDirection: null,
+            description: '江戸時代、稲葉氏が藩主の頃、御船小屋の隣に水主（水軍の船乗り）の長屋があったことに由来する町地名。「万治図」（1660年）の小田原城絵図に「御船小屋」と並んで記載され、城下町の水運・船関連の労働者が住む地域だった。町名碑が現存する。',
+            sources: [{ label: '0465.net', url: 'https://www.0465.net/map/index.html?i=801' }, { label: '小田原市', url: 'https://www.city.odawara.kanagawa.jp/global-image/units/500025/1-20210902175224.pdf' }, { label: 'けまあけ', url: 'https://kemaake.com/wp/odawara/2039' }] },
+          { lat: 35.24719609514179, lng: 139.15370991255148, name: '筋違橋町（すじかいばしちょう）', label: '筋違橋町', color: '#6b21a8', tooltipDirection: null,
+            description: '小田原城下の歴史的町名。東海道筋から南へ延びる小路として、諸白小路・狩野殿小路・安斎小路がこの筋違橋町の小路として史料に並んで記されている。筋違橋（斜めに架かった橋）に由来する地名とされ、城下町の武家地・町人地の区画を表す町名の一つである。',
+            sources: [{ label: '小田原市（歴史的町名）', url: 'https://www.city.odawara.kanagawa.jp/field/lifelong/property/topics/tyoumeihi.html' }, { label: '0465.net', url: 'https://www.0465.net/map/index.html?i=802' }] },
+          { lat: 35.2491008040028, lng: 139.16004770569708, name: '松原神社', label: '松原神社', color: '#0f766e', tooltipDirection: null,
+            description: '小田原総鎮守。創建は近衛天皇久安年間（1145〜1150年）の勧請との伝承があり、かつては鶴の森明神・松原大明神と称された。北条氏・稲葉氏・大久保氏が崇敬し、江戸時代には小田原宿十九町の総鎮守として藩財で社費を賄った。明治2年（1869年）に松原神社と改称、県社。小田原三大明神の一社。',
+            sources: [{ label: '松原神社公式', url: 'https://odawaramatsubarajinja.com/' }, { label: '神奈川県神社庁', url: 'https://www.kanagawa-jinja.or.jp/shrine/1210143-000/' }, { label: '観光かながわNOW', url: 'https://www.kanagawa-kankou.or.jp/spot/1158' }] },
+          { lat: 35.25014734289875, lng: 139.1528205329637, name: '報徳二宮神社', label: '報徳二宮神社', color: '#78350f', tooltipDirection: 'bottom',
+            description: '二宮尊徳を御祭神とする神社。明治27年（1894年）、旧小田原城二の丸小峰曲輪の一角に、伊豆・三河・遠江・駿河・甲斐・相模の6カ国報徳社の総意により創建。明治42年（1909年）に本殿・幣殿を新築し現在の景観に。拝殿の礎石は天保の大飢饉の際、尊徳が領民救済のため城内米蔵を開いた時の礎石が用いられている。神社本庁別表神社、社殿は神明造り。',
+            sources: [{ label: '報徳二宮神社公式', url: 'https://www.ninomiya.or.jp/info/' }, { label: '御祭神・二宮尊徳翁', url: 'https://www.ninomiya.or.jp/sontoku/' }, { label: 'Wikipedia', url: 'https://ja.wikipedia.org/wiki/%E5%A0%B1%E5%BE%B3%E4%BA%8C%E5%AE%AE%E7%A5%9E%E7%A4%BE_(%E5%B0%8F%E7%94%B0%E5%8E%9F%E5%B8%82)' }] },
+          { lat: 35.24754510670632, lng: 139.15604991263515, name: 'ういろう本店', label: 'ういろう本店', color: '#ca8a04', tooltipDirection: 'bottom',
+            description: '室町時代から続く外郎（ういろう）家の老舗。家伝薬「透頂香」の製作者である外郎家が賓客接待用に考案した蒸し菓子を製造・販売。1368年（応安元年）に元朝から渡来した陳延祐が起源で、北条早雲の招きにより1504年頃に小田原に移住し、現在も25代続く。米粉・砂糖・水を主原料にした白・緑・紅などの棹物が名物で、江戸時代には東海道の名物として『東海道名所記』やケンペル『日本誌』に記された。全国のういろう文化の源流。',
+            sources: [{ label: 'ういろう本店（歴史）', url: 'https://www.uirou.co.jp/history/' }, { label: 'ちえのともしび', url: 'https://chienotomoshibi.jp/uirou/' }, { label: 'Wikipedia', url: 'https://ja.wikipedia.org/wiki/%E3%81%86%E3%81%84%E3%82%8D%E3%81%86_(%E4%BC%81%E6%A5%AD)' }] },
+          { lat: 35.24658639198841, lng: 139.1566450193041, name: '茶畑町（ちゃばたけちょう）', label: '茶畑町', color: '#065f46', tooltipDirection: null,
+            description: '小田原城下の江戸時代の町人地。東海道筋の脇道に位置し、この地域でかつて茶の栽培が行われていたことに由来する町名とされる。城下町・宿場町として発展するなかで生まれた歴史的町名の一つで、小田原市では町名碑などで過去の地名を伝えている。',
+            sources: [{ label: 'ツナガルマップ（小田原の町名）', url: 'https://www.tsunagaru-map.com/odawara-names-basic/map.html?point=920' }, { label: '小田原市（町名・地名）', url: 'https://www.city.odawara.kanagawa.jp/about/introduction/history/timei.html' }] },
+          { lat: 35.2510456834545, lng: 139.15344468712, name: '小田原城', label: '小田原城', color: '#374151', tooltipDirection: 'bottom',
+            description: '戦国時代から続く小田原のシンボル。北条氏の本拠として難攻不落の城下町を形成し、のち稲葉氏などが城主を務めた。復興天守や常盤木門・馬出門などが整備され、城址公園として歴史・観光の中心となっている。',
+            sources: [{ label: '小田原城公式', url: 'https://www.city.odawara.kanagawa.jp/encycl/odawara-castle/' }] },
+          { lat: 35.256164102368004, lng: 139.15576140682765, name: '小田原駅', label: '小田原駅', color: '#059669', tooltipDirection: null,
+            description: 'JR東海道本線・東海道新幹線・小田急小田原線が乗り入れる城下町の玄関口。1920年開業。南町・諸白小路周辺へは徒歩15〜20分で、豆相人車鉄道の旧駅跡（早川口付近）は南東に位置する。',
+            sources: [{ label: 'JR東日本', url: 'https://www.jreast.co.jp/station/stations/878.html' }] },
+          { lat: 35.243452421280864, lng: 139.15786012531294, name: '荒久の灯台', label: '荒久の灯台', color: '#1d4ed8', tooltipDirection: null,
+            description: '小田原市南町付近、荒久地区に立つ灯台。地域のランドマークとして親しまれている。',
+            sources: [] },
+          { lat: 35.25355017061354, lng: 139.14328952727084, name: '小峰御鐘ノ台大堀切東堀', label: '小峰御鐘ノ台大堀切東堀', color: '#1d4ed8', tooltipDirection: null,
+            description: '小田原城総構の北西・城山丘陵にある小峰御鐘ノ台大堀切の「東堀」。後北条氏が八幡山〜小峰の尾根を断ち切る形で築いた三重空堀（東・中・西）のうち、現存規模が最大で、堀底に遊歩道が整備された空堀散策ルート。長さ約220〜280m・幅約20〜30m・深さは土塁頂から約12〜15m（見える深さ8〜10m）。法面は50〜60度の急斜面で関東ロームの滑りやすい土質とあわせ敵の登攀を防ぐ。発掘で堀障子・土橋状部分・横矢掛かりが確認され、天正期総構の代表的遺構。小田原駅西口から徒歩約20分、箱根板橋駅から徒歩約11分。南端から北端まで堀底を歩いて体感できる。',
+            sources: [
+              { label: '小田原観光', url: 'https://www.odawara-kankou.com/spot/spot_area/oohorikiri.html' },
+              { label: '小田原市（城の回廊）', url: 'https://www.city.odawara.kanagawa.jp/kanko/corridor/castle/p10002.html' },
+              { label: 'his-trip', url: 'https://www.his-trip.info/siseki/entry2479.html' },
+              { label: 'じゃらん', url: 'https://www.jalan.net/kankou/spt_14206af2172086035/' }
+            ] },
+          { lat: 35.243452421280864, lng: 139.15786012531294, name: '荒久の灯台', label: '荒久の灯台', color: '#1d4ed8', tooltipDirection: null,
+            description: '小田原の海辺・荒久地区に立つ灯台。漁港や海岸の目印として親しまれている。',
+            sources: [] },
+          { lat: 35.24701461701089, lng: 139.16100646635766, name: '海へと続くトンネル', label: '海へと続くトンネル', color: '#1d4ed8', tooltipDirection: null,
+            description: '海へと続くトンネル。かまぼこ通り方面から海側へ抜ける通路として知られる。',
+            sources: [] },
+          { lat: 35.24518150663211, lng: 139.15930097306406, name: '御幸の浜', label: '御幸の浜', color: '#1d4ed8', tooltipDirection: null,
+            description: '小田原の海岸にある御幸の浜。海に面した砂浜・海岸のスポットである。',
+            sources: [] },
+          { lat: 35.24716670727812, lng: 139.14817605993196, name: '居神神社', label: '居神神社', color: '#1d4ed8', tooltipDirection: null,
+            description: '小田原に鎮座する居神神社。地域の氏神として信仰されている。',
+            sources: [] },
+          { lat: 35.24744174648453, lng: 139.15471594266543, name: '柳屋ベーカリー', label: '柳屋ベーカリー', color: '#1d4ed8', tooltipDirection: null,
+            description: '小田原・南町周辺のパン屋「柳屋ベーカリー」。',
+            sources: [] },
+          { lat: 35.24808590827724, lng: 139.16061944570703, name: '籠清本店', label: '籠清本店', color: '#1d4ed8', tooltipDirection: null,
+            description: 'かまぼこ通り周辺の老舗「籠清本店」。',
+            sources: [] },
+          { lat: 35.245096952753364, lng: 139.1569404333824, name: '滄浪閣旧址', label: '滄浪閣旧址', color: '#1d4ed8', tooltipDirection: null,
+            description: '初代内閣総理大臣・伊藤博文の別邸「滄浪閣」の旧址。小田原の南町付近にあった別荘の跡地である。',
+            sources: [] },
+          { lat: 35.253365328262646, lng: 139.15005064295596, name: '八幡山古郭跡', label: '八幡山古郭跡', color: '#1d4ed8', tooltipDirection: null,
+            description: '小田原城総構の北西、八幡山の古郭（曲輪）の跡。城の防御遺構の一つである。',
+            sources: [] },
+          { lat: 35.25212190749775, lng: 139.1517216851566, name: '小田原城 八幡山古郭東曲輪跡', label: '小田原城 八幡山古郭東曲輪跡', color: '#1d4ed8', tooltipDirection: null,
+            description: '小田原城・八幡山古郭の東曲輪の跡。総構の北西側に位置する曲輪遺構である。',
+            sources: [] },
+          { lat: 35.249190242807416, lng: 139.14147358637595, name: '松永記念館（小田原市郷土文化館分館）', label: '松永記念館', color: '#1d4ed8', tooltipDirection: null,
+            description: '小田原市郷土文化館の分館。松永記念館として、小田原の歴史・文化に関する資料を展示している。',
+            sources: [] },
+          { lat: 35.248753583172665, lng: 139.14431719133296, name: '古稀庵（山縣有朋公爵別邸跡）', label: '古稀庵', color: '#1d4ed8', tooltipDirection: null,
+            description: '山縣有朋公爵の別邸跡「古稀庵」。明治・大正期の政治家・山縣有朋ゆかりの地である。',
+            sources: [] },
+          { lat: 35.249898155703065, lng: 139.14380680069968, name: '皆春荘（旧山縣有朋・清浦奎吾別邸）', label: '皆春荘', color: '#1d4ed8', tooltipDirection: null,
+            description: '旧山縣有朋・清浦奎吾別邸「皆春荘」。明治・大正期の政治家ゆかりの別邸である。',
+            sources: [] },
+          { lat: 35.250771460318745, lng: 139.1457106387132, name: '小田原城 三の丸外郭新堀土塁', label: '小田原城 三の丸外郭新堀土塁', color: '#1d4ed8', tooltipDirection: null,
+            description: '小田原城三の丸外郭の新堀に伴う土塁。城の防御遺構の一つである。',
+            sources: [] },
+          { lat: 35.244611419808315, lng: 139.14921957726818, name: '小田原城跡 早川口遺構', label: '小田原城跡 早川口遺構', color: '#1d4ed8', tooltipDirection: null,
+            description: '小田原城跡の早川口に残る遺構。城の虎口・出入口に関連する遺構である。',
+            sources: [] }
+        ];
+        var labelHalfH = 0.000065, labelHalfW = 0.00013;
+        var labelMargin = 2.0;
+        function labelBox(lat, lng, margin) {
+          var m = (margin != null) ? margin : 1;
+          return { minLat: lat - labelHalfH * m, maxLat: lat + labelHalfH * m, minLng: lng - labelHalfW * m, maxLng: lng + labelHalfW * m };
+        }
+        function boxesOverlap(a, b) {
+          return !(a.maxLat < b.minLat || a.minLat > b.maxLat || a.maxLng < b.minLng || a.minLng > b.maxLng);
+        }
+        function pointAlongLine(latlngs, t) {
+          if (latlngs.length < 2) return latlngs[0];
+          t = Math.max(0, Math.min(1, t));
+          var total = 0, segLengths = [];
+          for (var i = 0; i < latlngs.length - 1; i++) {
+            var a = latlngs[i], b = latlngs[i + 1];
+            var d = (b[0] - a[0]) * (b[0] - a[0]) + (b[1] - a[1]) * (b[1] - a[1]);
+            segLengths.push(Math.sqrt(d));
+            total += segLengths[i];
+          }
+          if (total <= 0) return latlngs[0];
+          var target = t * total, acc = 0;
+          for (var j = 0; j < segLengths.length; j++) {
+            if (acc + segLengths[j] >= target) {
+              var u = (target - acc) / segLengths[j];
+              return [latlngs[j][0] + u * (latlngs[j + 1][0] - latlngs[j][0]), latlngs[j][1] + u * (latlngs[j + 1][1] - latlngs[j][1])];
+            }
+            acc += segLengths[j];
+          }
+          return latlngs[latlngs.length - 1];
+        }
+        function labelOffsetFromLine(latlngs, pointOnLine, offsetDist, sign) {
+          if (latlngs.length < 2) return pointOnLine;
+          var a = latlngs[0], b = latlngs[latlngs.length - 1];
+          var dlat = b[0] - a[0], dlng = b[1] - a[1];
+          var len = Math.sqrt(dlat * dlat + dlng * dlng);
+          if (len < 1e-10) return pointOnLine;
+          var mult = (sign === -1) ? -1 : 1;
+          var perpLat = (-dlng / len) * offsetDist * mult, perpLng = (dlat / len) * offsetDist * mult;
+          return [pointOnLine[0] + perpLat, pointOnLine[1] + perpLng];
+        }
+        var streetDefs = [
+          { name: '諸白小路', color: '#9f1239', latlngs: [[35.2451645, 139.1528766], [35.2470533, 139.1528730]], t: 0.72, sign: 1,
+            description: '小田原城下町の南西部にあった武家地の小路。「貞享三年御引渡記録」（1686年）に登場。城主・稲葉正則の時代に京都・大阪から杜氏を招いて諸白酒を造らせたことにちなむ地名で、道の両側に中級武士の屋敷が並んでいた。',
+            sources: [{ label: '小田原市（歴史的町名）', url: 'https://www.city.odawara.kanagawa.jp/field/lifelong/property/topics/tyoumeihi.html' }, { label: '0465.net', url: 'https://www.0465.net/map/index.html?i=802' }] },
+          { name: '西海子小路', color: '#1e40af', latlngs: [[35.2452411, 139.1552844], [35.2452028, 139.1541285], [35.2451810, 139.1534154], [35.2451645, 139.1528766], [35.2451313, 139.1517373], [35.2451302, 139.1516921], [35.2451055, 139.1506258]], t: 0.07, sign: 1,
+            description: 'サイカチの木に由来する通り名。江戸時代末期には中級藩士の武家屋敷が道の両側に十八軒並んだとされる。藩主稲葉家時代の史料「永代日記」にも地名が見られ、現在は小田原文学館・白秋童謡館へのアプローチとして桜並木で知られる。',
+            sources: [{ label: 'けまあけ（南町の小路）', url: 'https://kemaake.com/wp/odawara/2039' }] },
+          { name: '狩野殿小路', color: '#166534', latlngs: [[35.2452028, 139.1541285], [35.2456318, 139.1541255], [35.2458355, 139.1541241], [35.2472226, 139.1541146]], t: 0.52, sign: 1,
+            description: '諸白小路の西側に並行して走る武家地の小路。小田原北条氏の家臣・狩野氏の宅跡に由来し、絵師・狩野古法眼（狩野元信）の居住伝承がある。「貞享三年御引渡記録」（1686年）に初出。狩野小路・金殿小路とも表記された。',
+            sources: [{ label: 'けまあけ', url: 'https://kemaake.com/wp/odawara/2039' }, { label: '0465.net', url: 'https://www.0465.net/map/index.html?i=802' }] },
+          { name: '安斎小路', color: '#9a3412', latlngs: [[35.2472744, 139.1552767], [35.2472004, 139.1552755], [35.2463722, 139.1552745], [35.2459051, 139.1552824], [35.2453009, 139.1552865], [35.2452411, 139.1552844], [35.2444518, 139.1553157], [35.2443969, 139.1553179], [35.2443687, 139.1553190]], t: 0.18, sign: -1, fixedLabelPos: [35.24705, 139.15482],
+            description: '諸白小路の東側に位置する武家地の小路。小田原北条氏の侍医・田村安斎（栖）の宅があったことに由来。「貞享三年御引渡記録」（1686年）に記され、北条氏政・氏照兄弟が豊臣秀吉の小田原攻め後にこの地で自害したという伝承もある。',
+            sources: [{ label: 'けまあけ', url: 'https://kemaake.com/wp/odawara/2039' }] },
+          { name: '天神小路', color: '#5b21b6', latlngs: [[35.2451302, 139.1516921], [35.2454581, 139.1516920], [35.2457604, 139.1516945], [35.2463797, 139.1516970], [35.2468830, 139.1516993]], t: 0.78, sign: -1,
+            description: '「貞享三年御引渡記録」に「御花畑小路」として初出し、「東海道分間延絵図」（1789〜1806年）頃から天神小路と呼ばれる。東海道を隔てた北方の天神社に由来し、道の両側は中級藩士の武家地だった。御花畑小路の名は一部区間に残る。',
+            sources: [{ label: 'けまあけ', url: 'https://kemaake.com/wp/odawara/2039' }] },
+          { name: '御厩小路', color: '#ca8a04', latlngs: [[35.2421129, 139.1500686], [35.2423468, 139.1502691], [35.2425018, 139.1504101], [35.2425894, 139.1504819], [35.2426728, 139.1505319], [35.2428393, 139.1505918], [35.2428980, 139.1506099], [35.2429481, 139.1506186], [35.2431266, 139.1506429], [35.2432057, 139.1506531], [35.2433674, 139.1506657], [35.2437264, 139.1506754], [35.2442198, 139.1506565], [35.2447749, 139.1506362], [35.2449489, 139.1506299], [35.2451055, 139.1506258], [35.2453443, 139.1506197], [35.2454405, 139.1506168], [35.2461292, 139.1505897], [35.2466355, 139.1505772], [35.2467289, 139.1505661]], fixedLabelPos: [35.24522, 139.15058],
+            description: '「寛文九年火災報告に関する文書」（1669年）に初出。西海子小路との交差点西側に小田原藩の馬屋（御厩）があったことに由来。承応2年（1653年）に藩主・稲葉正則が馬を見に来た記録が残り、熱海街道の起点でもあった。',
+            sources: [{ label: 'けまあけ', url: 'https://kemaake.com/wp/odawara/2039' }] },
+          { name: 'かまぼこ通り', color: '#0e7490', latlngs: [[35.2470681, 139.1579610], [35.2472306, 139.1584984], [35.2473296, 139.1588290], [35.2474477, 139.1591730], [35.2476156, 139.1596641], [35.2478525, 139.1603293], [35.2479805, 139.1606989], [35.2480026, 139.1607628], [35.2481470, 139.1611287], [35.2482300, 139.1612852], [35.2482585, 139.1613357], [35.2484002, 139.1616404], [35.2486005, 139.1620756], [35.2486098, 139.1620976], [35.2487989, 139.1625105]], t: 0.5, sign: 1,
+            description: '旧東海道小田原筋の一部。蒲鉾屋・干物屋など約30店舗が並ぶ漁師町風情の通りで、鈴廣かまぼこ博物館なども立地。小田原城下から海側へ向かう歴史ある街道の面影を残す観光・食のスポットである。',
+            sources: [{ label: '小田原市観光', url: 'https://www.city.odawara.kanagawa.jp/kanko/' }] }
+        ];
+        var streetOffset = 0.00018;
+        streetDefs.forEach(function (s) {
+          if (s.fixedLabelPos) {
+            s.labelPos = s.fixedLabelPos;
+          } else {
+            s.onLine = pointAlongLine(s.latlngs, s.t);
+            s.labelPos = labelOffsetFromLine(s.latlngs, s.onLine, streetOffset, s.sign);
+          }
+        });
+        var tooltipPanel = document.getElementById('spots-map-tooltip-panel');
+        var tooltipHideTimeout;
+        var currentTooltipHtml = null;
+        function getLat(latLngOrArr) {
+          if (!latLngOrArr) return null;
+          return typeof latLngOrArr.lat === 'number' ? latLngOrArr.lat : latLngOrArr[0];
+        }
+        function showTooltipPanel(html, markerLat) {
+          if (tooltipHideTimeout) clearTimeout(tooltipHideTimeout);
+          tooltipHideTimeout = null;
+          if (tooltipPanel) {
+            var isFullscreen = document.body.classList.contains('fullscreen-map');
+            var atTop = isFullscreen && markerLat != null && (function () {
+              var center = map.getCenter();
+              return center && markerLat < center.lat;
+            })();
+            if (atTop) tooltipPanel.classList.add('at-top');
+            else tooltipPanel.classList.remove('at-top');
+            tooltipPanel.innerHTML = '<button type="button" class="spots-tooltip-close" aria-label="閉じる" title="閉じる">×</button><div class="spots-tooltip-body">' + html + '</div>';
+            tooltipPanel.style.display = 'block';
+            currentTooltipHtml = html;
+          }
+        }
+        function hideTooltipPanel(delay) {
+          if (tooltipHideTimeout) clearTimeout(tooltipHideTimeout);
+          tooltipHideTimeout = setTimeout(function () {
+            tooltipHideTimeout = null;
+            currentTooltipHtml = null;
+            if (tooltipPanel) tooltipPanel.style.display = 'none';
+          }, delay || 0);
+        }
+        if (tooltipPanel) {
+          tooltipPanel.addEventListener('mouseenter', function () { if (tooltipHideTimeout) clearTimeout(tooltipHideTimeout); tooltipHideTimeout = null; });
+          tooltipPanel.addEventListener('mouseleave', function () { hideTooltipPanel(200); });
+          tooltipPanel.addEventListener('click', function (e) {
+            if (e.target.classList.contains('spots-tooltip-close')) {
+              if (tooltipHideTimeout) clearTimeout(tooltipHideTimeout);
+              tooltipHideTimeout = null;
+              currentTooltipHtml = null;
+              tooltipPanel.style.display = 'none';
+            }
+          });
+        }
+        var spotMarkerColor = '#1d4ed8';
+        spots.forEach(function (s) {
+          var isStar = s.shape === 'star';
+          var iconHtml = isStar
+            ? '<span class="spot-marker spot-marker-star" style="color:' + (s.color || spotMarkerColor) + '">★</span>'
+            : '<span class="spot-marker" style="background-color:' + spotMarkerColor + '"></span>';
+          var icon = L.divIcon({
+            className: 'spot-marker-wrap',
+            html: iconHtml,
+            iconSize: [20, 20],
+            iconAnchor: [10, 10]
+          });
+          var tooltipHtml = buildTooltipHtml(s.label || s.name, s.description, s.sources);
+          var marker = L.marker([s.lat, s.lng], { icon: icon }).addTo(map);
+          marker.on('click', function () {
+            if (tooltipPanel && tooltipPanel.style.display === 'block' && currentTooltipHtml === tooltipHtml) {
+              if (tooltipHideTimeout) clearTimeout(tooltipHideTimeout);
+              tooltipHideTimeout = null;
+              currentTooltipHtml = null;
+              tooltipPanel.style.display = 'none';
+            } else {
+              showTooltipPanel(tooltipHtml, s.lat);
+            }
+          });
+        });
+
+        var route1Latlngs = [
+          [35.23308, 139.0936], [35.233, 139.0939], [35.23297, 139.0949], [35.23283, 139.0951],
+          [35.23271, 139.0956], [35.2328, 139.0959], [35.23299, 139.0962], [35.23288, 139.0969],
+          [35.23269, 139.0973], [35.23266, 139.0976], [35.23209, 139.0992], [35.23207, 139.0993],
+          [35.23207, 139.0997], [35.2319, 139.1001], [35.23182, 139.1002], [35.23171, 139.1003],
+          [35.23166, 139.1005], [35.23165, 139.1006], [35.23165, 139.1007], [35.23165, 139.1008],
+          [35.23183, 139.1018], [35.23189, 139.1021], [35.23192, 139.1021], [35.23195, 139.1022],
+          [35.23207, 139.1024], [35.23239, 139.1028], [35.2325, 139.103], [35.23264, 139.1032],
+          [35.23288, 139.1034], [35.23321, 139.1038], [35.23329, 139.1039], [35.23335, 139.104],
+          [35.23344, 139.1041], [35.23351, 139.1042], [35.23353, 139.1043], [35.23356, 139.1044],
+          [35.23358, 139.1045], [35.23362, 139.1047], [35.23366, 139.1048], [35.23371, 139.105],
+          [35.23379, 139.1053], [35.23384, 139.1056], [35.23387, 139.1058], [35.2339, 139.1061],
+          [35.23402, 139.1073], [35.23403, 139.1075], [35.23403, 139.1077], [35.23402, 139.1079],
+          [35.23393, 139.1083], [35.23392, 139.1084], [35.23386, 139.1086], [35.23381, 139.1087],
+          [35.23377, 139.1088], [35.23368, 139.1091], [35.23365, 139.1094], [35.23363, 139.1097],
+          [35.23364, 139.1101], [35.23365, 139.1102], [35.23367, 139.1104], [35.2339, 139.1114],
+          [35.23392, 139.1115], [35.23399, 139.1118], [35.23405, 139.112], [35.23412, 139.1122],
+          [35.23426, 139.1124], [35.23449, 139.1129], [35.2347, 139.1133], [35.23498, 139.1139],
+          [35.23509, 139.1141], [35.23518, 139.1142], [35.23525, 139.1143], [35.23532, 139.1144],
+          [35.23541, 139.1145], [35.23561, 139.1147], [35.23641, 139.1153], [35.23685, 139.1157],
+          [35.23703, 139.1159], [35.23716, 139.1161], [35.23733, 139.1164], [35.23739, 139.1164],
+          [35.23788, 139.1172], [35.2382, 139.1176], [35.23832, 139.1177], [35.23879, 139.1183],
+          [35.23906, 139.1187], [35.2392, 139.1189], [35.24027, 139.1208], [35.2409, 139.1218],
+          [35.241, 139.122], [35.24195, 139.1236], [35.24219, 139.124], [35.24227, 139.1241],
+          [35.24233, 139.1242], [35.24239, 139.1243], [35.24274, 139.1249], [35.24339, 139.126],
+          [35.24361, 139.1264], [35.24379, 139.1267], [35.24395, 139.127], [35.24432, 139.1276],
+          [35.2444, 139.1277], [35.24444, 139.1278], [35.24467, 139.1282], [35.24483, 139.1285],
+          [35.24492, 139.1287], [35.2451, 139.129], [35.24538, 139.1294], [35.24554, 139.1297],
+          [35.24574, 139.13], [35.24633, 139.1311], [35.24638, 139.1311], [35.24641, 139.1312],
+          [35.24648, 139.1313], [35.24659, 139.1315], [35.24676, 139.1319], [35.2469, 139.1324],
+          [35.24692, 139.1327], [35.24691, 139.133], [35.24689, 139.1332], [35.24652, 139.135],
+          [35.24649, 139.1351], [35.2465, 139.1353], [35.24659, 139.1361], [35.24663, 139.1366],
+          [35.24661, 139.1375], [35.24662, 139.1377], [35.24664, 139.1379], [35.24684, 139.1393],
+          [35.24686, 139.1395], [35.24686, 139.1398], [35.24686, 139.1399], [35.24683, 139.1401],
+          [35.24679, 139.1403], [35.24677, 139.1403], [35.24662, 139.1409], [35.24638, 139.1418],
+          [35.24631, 139.142], [35.24605, 139.1429], [35.24592, 139.1434], [35.24586, 139.1437],
+          [35.24584, 139.1438], [35.24582, 139.1438], [35.24578, 139.1441], [35.24574, 139.1446],
+          [35.24573, 139.1449], [35.24573, 139.1451], [35.24575, 139.1454], [35.24577, 139.1458],
+          [35.24589, 139.1464], [35.24592, 139.1466], [35.24593, 139.1466], [35.24596, 139.1468],
+          [35.24597, 139.1468], [35.24607, 139.1473], [35.24614, 139.1476], [35.24626, 139.1482],
+          [35.24631, 139.1484], [35.24648, 139.1491], [35.24653, 139.1494], [35.24655, 139.1495],
+          [35.2466, 139.1498], [35.24673, 139.1506], [35.24688, 139.1517], [35.2469, 139.1518],
+          [35.24705, 139.1529], [35.24722, 139.1541], [35.24727, 139.1552], [35.24727, 139.1553],
+          [35.24728, 139.1553], [35.24729, 139.1558], [35.24729, 139.1561], [35.24731, 139.1564],
+          [35.24734, 139.1566], [35.24744, 139.1571], [35.24761, 139.1576], [35.24765, 139.1577],
+          [35.2477, 139.1578], [35.2478324, 139.1582465], [35.2482142, 139.1593832], [35.2483249, 139.1596748],
+          [35.2483424, 139.1597117], [35.2483808, 139.1597422], [35.2484552, 139.1597378], [35.2487462, 139.1596315],
+          [35.2487862, 139.1596169], [35.2492996, 139.1594294], [35.2495646, 139.1593751], [35.2496238, 139.1593677],
+          [35.2502016, 139.1593343], [35.2505895, 139.1593067], [35.25061, 139.1598], [35.25063, 139.1601],
+          [35.25066, 139.1607], [35.25067, 139.1609], [35.25069, 139.1612], [35.25071, 139.1615],
+          [35.25071, 139.1616], [35.25072, 139.1617], [35.25075, 139.1623], [35.25076, 139.1624],
+          [35.25077, 139.1625], [35.25079, 139.1628], [35.25081, 139.1629], [35.25086, 139.1631],
+          [35.25091, 139.1632], [35.25097, 139.1633], [35.25127, 139.1636], [35.25143, 139.1638],
+          [35.25154, 139.1639], [35.25208, 139.1645], [35.25234, 139.1648], [35.25253, 139.165],
+          [35.25264, 139.1651], [35.25272, 139.1651], [35.25283, 139.1652], [35.25294, 139.1654],
+          [35.25349, 139.1662], [35.25383, 139.1667], [35.2545, 139.1677], [35.25463, 139.1679],
+          [35.25473, 139.1681], [35.25486, 139.1683], [35.25501, 139.1686], [35.25521, 139.169],
+          [35.25525, 139.169], [35.2553, 139.1691], [35.25552, 139.1695], [35.25583, 139.1701],
+          [35.25596, 139.1704], [35.25597, 139.1704], [35.25637, 139.1719], [35.25639, 139.172],
+          [35.2564, 139.172], [35.25652, 139.1723], [35.25664, 139.1726], [35.25688, 139.1731],
+          [35.25689, 139.1731], [35.25725, 139.1738], [35.25736, 139.1741], [35.25751, 139.1744],
+          [35.25754, 139.1744], [35.25757, 139.1745], [35.2577, 139.1747], [35.25798, 139.1752],
+          [35.25815, 139.1754], [35.25816, 139.1754], [35.25865, 139.1762], [35.25889, 139.1765],
+          [35.25911, 139.1768], [35.25923, 139.177], [35.25966, 139.1775], [35.25982, 139.1776],
+          [35.26031, 139.1782], [35.26044, 139.1783], [35.26087, 139.1788], [35.26114, 139.1791],
+          [35.26163, 139.1796], [35.26201, 139.18], [35.2626, 139.1805], [35.26438, 139.1825],
+          [35.26451, 139.1827], [35.26456, 139.1827], [35.26462, 139.1828], [35.26473, 139.183],
+          [35.26476, 139.1831], [35.26487, 139.1834], [35.26498, 139.1837], [35.265, 139.1837],
+          [35.26502, 139.1838], [35.2652, 139.1844], [35.26524, 139.1846], [35.2653, 139.1848],
+          [35.26533, 139.1848], [35.27839, 139.2049], [35.27849, 139.2051], [35.27859, 139.2053],
+          [35.27935, 139.2076], [35.28015, 139.2126], [35.28028, 139.2135]
+        ];
+        var route1LayerGroup = L.layerGroup();
+        L.polyline(route1Latlngs, {
+          color: 'rgba(0,0,0,0.08)',
+          weight: 18,
+          opacity: 1,
+          lineCap: 'round',
+          lineJoin: 'round'
+        }).addTo(route1LayerGroup);
+        L.polyline(route1Latlngs, {
+          color: 'rgba(29, 78, 216, 0.6)',
+          weight: 10,
+          opacity: 1,
+          lineCap: 'round',
+          lineJoin: 'round'
+        }).addTo(route1LayerGroup).bindPopup('国道1号', { className: 'street-popup' });
+        route1LayerGroup.addTo(map);
+        // 画像で示された旧東海道（国道1号より北の住宅地を通る板橋旧道）＝ OSM way 49577381
+        var itabashiTokaidoLatlngs = [
+          [35.2469569, 139.1403556], [35.2469761, 139.1405328], [35.2470418, 139.1408224], [35.2470762, 139.1408885],
+          [35.2471339, 139.1409579], [35.2471781, 139.1410068], [35.2472554, 139.1411349], [35.2473260, 139.1412606],
+          [35.2475637, 139.1417680], [35.2475861, 139.1418480], [35.2475894, 139.1419074], [35.2475858, 139.1420154],
+          [35.2475172, 139.1424358], [35.2473935, 139.1431133], [35.2473449, 139.1434086], [35.2472278, 139.1440737],
+          [35.2469457, 139.1456669], [35.2468502, 139.1461512], [35.2467331, 139.1465699], [35.2465367, 139.1472357],
+          [35.2465319, 139.1472518], [35.2464643, 139.1474430], [35.2464009, 139.1474974], [35.2462967, 139.1475609],
+          [35.2462282, 139.1476006], [35.2461431, 139.1476499]
+        ];
+        var tokaidoLayerGroup = L.layerGroup();
+        L.polyline(itabashiTokaidoLatlngs, {
+          color: 'rgba(100, 116, 139, 0.6)',
+          weight: 10,
+          opacity: 1,
+          dashArray: '10,8',
+          lineCap: 'round',
+          lineJoin: 'round'
+        }).addTo(tokaidoLayerGroup);
+        // 本町〜新宿の旧東海道（指定通過点）
+        var honmachiShinjukuTokaidoLatlngs = [
+          [35.248379423847965, 139.15977642201545],
+          [35.24879573511963, 139.16100306983805],
+          [35.249160005728776, 139.16204651701182],
+          [35.249390926428, 139.1625682405987],
+          [35.250721146995744, 139.16431262930286],
+          [35.25197329061948, 139.1659255915371],
+          [35.25266927898125, 139.16508525812645]
+        ];
+        L.polyline(honmachiShinjukuTokaidoLatlngs, {
+          color: 'rgba(100, 116, 139, 0.6)',
+          weight: 10,
+          opacity: 1,
+          dashArray: '10,8',
+          lineCap: 'round',
+          lineJoin: 'round'
+        }).addTo(tokaidoLayerGroup);
+        tokaidoLayerGroup.addTo(map);
+        // かまぼこ通り（指定通過点）
+        var kamabokoDoriLatlngs = [
+          [35.2488175314471, 139.16249881467414],
+          [35.249168792327026, 139.1631878084051],
+          [35.24953631365383, 139.1637453755972],
+          [35.250284360774515, 139.164665361451],
+          [35.25105516733104, 139.16562119090548],
+          [35.25152024960176, 139.1661867233238],
+          [35.251621071277974, 139.16633408036745]
+        ];
+        L.polyline(kamabokoDoriLatlngs, {
+          color: '#0e7490',
+          weight: 4,
+          opacity: 0.92,
+          lineCap: 'round',
+          lineJoin: 'round'
+        }).addTo(map);
+        // かまぼこ通り（指定通過点・2本目）
+        var kamabokoDoriLatlngs2 = [
+          [35.25196779160646, 139.1659100670894],
+          [35.24987003339279, 139.16320586623146],
+          [35.249557804262565, 139.1627797256057],
+          [35.249362660454416, 139.16245315053607],
+          [35.24886178918576, 139.16118269388346],
+          [35.248442225801796, 139.15999587232],
+          [35.248038922517544, 139.15886082484965]
+        ];
+        L.polyline(kamabokoDoriLatlngs2, {
+          color: '#0e7490',
+          weight: 4,
+          opacity: 0.92,
+          lineCap: 'round',
+          lineJoin: 'round'
+        }).addTo(map);
+        // かまぼこ通り（指定通過点・3本目）
+        var kamabokoDoriLatlngs3 = [
+          [35.24845890726257, 139.16005313417844],
+          [35.24787085094587, 139.16032671884054],
+          [35.247538391677125, 139.16052369979008],
+          [35.247166607662265, 139.1608410579936]
+        ];
+        L.polyline(kamabokoDoriLatlngs3, {
+          color: '#0e7490',
+          weight: 4,
+          opacity: 0.92,
+          lineCap: 'round',
+          lineJoin: 'round'
+        }).addTo(map);
+        var initialBounds = L.latLngBounds(
+          [[35.24505, 139.140], [35.252, 139.166]]
+        );
+        map.fitBounds(initialBounds, { padding: [24, 24], maxZoom: 18 });
+
+        streetDefs.forEach(function (s) {
+          if (s.showLine === false) {
+            var labelIcon = L.divIcon({
+              className: 'street-label-wrap',
+              html: '<span class="street-label" style="background-color:' + s.color + '">' + s.name + '</span>',
+              iconSize: null,
+              iconAnchor: [0, 0]
+            });
+            var streetTooltipHtml = buildTooltipHtml(s.name, s.description, s.sources);
+            var streetMarker = L.marker(s.labelPos, { icon: labelIcon, zIndexOffset: 600 }).addTo(map);
+            streetMarker.on('click', function () {
+              if (tooltipPanel && tooltipPanel.style.display === 'block' && currentTooltipHtml === streetTooltipHtml) {
+                if (tooltipHideTimeout) clearTimeout(tooltipHideTimeout);
+                tooltipHideTimeout = null;
+                currentTooltipHtml = null;
+                tooltipPanel.style.display = 'none';
+              } else {
+                showTooltipPanel(streetTooltipHtml, getLat(s.labelPos));
+              }
+            });
+            return;
+          }
+          L.polyline(s.latlngs, {
+            color: 'rgba(0,0,0,0.12)',
+            weight: 8,
+            opacity: 1,
+            lineCap: 'round',
+            lineJoin: 'round'
+          }).addTo(map);
+          L.polyline(s.latlngs, {
+            color: s.color,
+            weight: 4,
+            opacity: 0.92,
+            lineCap: 'round',
+            lineJoin: 'round'
+          }).addTo(map).bindPopup(s.name, { className: 'street-popup' });
+          if (s.onLine) {
+            L.polyline([s.onLine, s.labelPos], {
+              color: '#334155',
+              weight: 3,
+              opacity: 1,
+              dashArray: '6,5'
+            }).addTo(map);
+          }
+          var labelIcon = L.divIcon({
+            className: 'street-label-wrap',
+            html: '<span class="street-label" style="background-color:' + s.color + '">' + s.name + '</span>',
+            iconSize: null,
+            iconAnchor: [0, 0]
+          });
+          var streetTooltipHtml = buildTooltipHtml(s.name, s.description, s.sources);
+          var streetMarker = L.marker(s.labelPos, { icon: labelIcon, zIndexOffset: 600 }).addTo(map);
+          streetMarker.on('click', function () {
+            if (tooltipPanel && tooltipPanel.style.display === 'block' && currentTooltipHtml === streetTooltipHtml) {
+              if (tooltipHideTimeout) clearTimeout(tooltipHideTimeout);
+              tooltipHideTimeout = null;
+              currentTooltipHtml = null;
+              tooltipPanel.style.display = 'none';
+            } else {
+              showTooltipPanel(streetTooltipHtml, getLat(s.labelPos));
+            }
+          });
+        });
+        var route1OnLine = pointAlongLine(route1Latlngs, 0.36);
+        var route1LabelPos = labelOffsetFromLine(route1Latlngs, route1OnLine, 0.00022, 1);
+        L.polyline([route1OnLine, route1LabelPos], {
+          color: '#334155',
+          weight: 3,
+          opacity: 1,
+          dashArray: '6,5'
+        }).addTo(route1LayerGroup);
+        var route1LabelIcon = L.divIcon({
+          className: 'street-label-wrap',
+          html: '<span class="street-label" style="background-color:#1d4ed8">国道1号</span>',
+          iconSize: null,
+          iconAnchor: [0, 0]
+        });
+        var route1Description = '東海道の現道で、箱根湯本〜小田原〜国府津を結ぶ。小田原城下の北側を通り、江戸時代の東海道にほぼ沿うルート。南町の諸白小路・西海子小路などはこの国道1号（旧東海道）の南側に並行して延びる武家地の小路であった。';
+        var route1Sources = [{ label: '国土交通省（国道の番号）', url: 'https://www.mlit.go.jp/road/road_e/route.html' }];
+        var route1TooltipHtml = buildTooltipHtml('国道1号', route1Description, route1Sources);
+        var route1Marker = L.marker(route1LabelPos, { icon: route1LabelIcon }).addTo(route1LayerGroup);
+        route1Marker.on('click', function () {
+          if (tooltipPanel && tooltipPanel.style.display === 'block' && currentTooltipHtml === route1TooltipHtml) {
+            if (tooltipHideTimeout) clearTimeout(tooltipHideTimeout);
+            tooltipHideTimeout = null;
+            currentTooltipHtml = null;
+            tooltipPanel.style.display = 'none';
+          } else {
+            showTooltipPanel(route1TooltipHtml, getLat(route1LabelPos));
+          }
+        });
+        var toggleRoute1 = document.getElementById('toggle-route1');
+        var toggleTokaido = document.getElementById('toggle-tokaido');
+        if (toggleRoute1) {
+          toggleRoute1.addEventListener('change', function () {
+            if (this.checked) map.addLayer(route1LayerGroup);
+            else map.removeLayer(route1LayerGroup);
+          });
+        }
+        if (toggleTokaido) {
+          toggleTokaido.addEventListener('change', function () {
+            if (this.checked) map.addLayer(tokaidoLayerGroup);
+            else map.removeLayer(tokaidoLayerGroup);
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
