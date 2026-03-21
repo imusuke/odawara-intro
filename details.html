@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>諸白小路（もろはくこうじ）について</title>
+    <meta
+      name="description"
+      content="諸白小路（もろはくこうじ）を、由来・位置・現在の場所まで分かりやすく整理した解説ページ。"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  </head>
+  <body>
+    <script>if(/[?&]fullscreen=1/.test(location.search)){document.body.classList.add('fullscreen-map');}</script>
+    <a href="#main-content" class="skip-link">本文へスキップ</a>
+    <div class="sidebar">
+      <h3>ナビゲーション</h3>
+      <p style="font-size:0.85rem; color:var(--muted); margin:0 0 10px;">時系列・体系別に整理している。</p>
+      <ul>
+        <li><a href="#header-top">トップ</a></li>
+        <li><a href="#zukai">図解画像</a></li>
+        <li><a href="#map-spots">地図（登場する地点）</a></li>
+        <li><a href="#morohaku">歴史年表</a></li>
+      </ul>
+      <h3 style="margin-top:1rem; font-size:0.95rem;">I. 江戸時代の城下町</h3>
+      <ul>
+        <li><a href="#shiryo">史料上の位置づけ</a></li>
+        <li><a href="#yurai">地名の由来</a></li>
+        <li><a href="#morohakushu">諸白酒とは</a></li>
+        <li><a href="#basho">どんな場所だったか</a></li>
+        <li><a href="#shosai">詳細解説</a></li>
+        <li><a href="#omayakoji">御厩小路</a></li>
+        <li><a href="#kakonagaya">かこながや（水主長屋）</a></li>
+        <li><a href="#kanodono">狩野殿小路</a></li>
+        <li><a href="#anzaikoji">安斎小路</a></li>
+        <li><a href="#tenjinkoji">天神小路</a></li>
+      </ul>
+      <h3 style="margin-top:1rem; font-size:0.95rem;">II. 明治〜昭和の南町</h3>
+      <ul>
+        <li><a href="#rekishi">歴史的背景の詳細</a></li>
+        <li><a href="#odawara-ekiseki">豆相人車鉄道・駅跡</a></li>
+        <li><a href="#tanizaki">谷崎潤一郎</a></li>
+        <li><a href="#matsumoto-goukichi">旧松本剛吉別邸</a></li>
+        <li><a href="#hasuan">葉雨庵・野崎幻庵</a></li>
+        <li><a href="#gunshiro">望月軍四郎</a></li>
+        <li><a href="#seizan">静山荘</a></li>
+        <li><a href="#nishikoji">西海子小路ほか</a></li>
+      </ul>
+      <h3 style="margin-top:1rem; font-size:0.95rem;">III. 現代</h3>
+      <ul>
+        <li><a href="#kanko">観光・訪問情報</a></li>
+        <li><a href="#meganesuper">メガネスーパー</a></li>
+        <li><a href="#uirou">小田原のういろう</a></li>
+        <li><a href="#taichokaku">対潮閣跡</a></li>
+        <li><a href="#tokoku-hi">北村透谷碑</a></li>
+        <li><a href="#hakushu-douyoukan">白秋童謡館</a></li>
+        <li><a href="#ozaki-kazuo">尾崎一雄邸</a></li>
+        <li><a href="#renkei">関連リンク</a></li>
+        <li><a href="#sanko">参考文献</a></li>
+        <li><a href="#matome">まとめ</a></li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <main class="container" id="main-content">
+      <header id="header-top">
+        <h1>諸白小路（もろはくこうじ）</h1>
+        <p class="lead">
+          <strong>諸白小路</strong>は、小田原城下町の南西部にあった小さな道の名前である。<br />
+          江戸時代初期、城主・稲葉正則が京都や大阪から酒造りの職人を招いて「諸白酒」をつくらせたことに由来し、今も南町周辺にその歴史をたどることができる。
+        </p>
+        <div class="quick-points">
+          <div class="quick-point">
+            <h3>初出史料</h3>
+            <p>「貞享三年御引渡記録」（1686年）</p>
+          </div>
+          <div class="quick-point">
+            <h3>地名の由来</h3>
+            <p>京都や大阪から杜氏を招いて諸白酒を造らせたこと</p>
+          </div>
+        </div>
+      </header>
+
+      <section id="zukai" class="image-card">
+        <span class="note">先に図で全体像</span>
+        <h2>図解画像</h2>
+        <img
+          src="assets/morohaku-koji.png"
+          alt="小田原城下・諸白小路（もろはくこうじ）の歴史と変遷"
+        />
+        <p class="caption">
+          小田原城下の諸白小路について、由来と位置関係を図で整理した画像。
+        </p>
+      </section>
+
+      <section id="map-spots" class="map-section">
+        <span class="note">現地を訪れるとき</span>
+        <h2>登場する地点の地図</h2>
+        <p class="section-intro">
+          諸白小路・南町周辺で紹介している主な地点を地図に示した。各地点をクリックすると説明が表示される。Google Mapsで詳しく見る場合は下記のリンクから。
+        </p>
+        <div class="spots-map-wrapper">
+          <a href="details.html" target="_top" class="fullscreen-back-link" id="fullscreen-back-link">解説ページへ</a>
+          <div id="spots-map" aria-label="諸白小路・南町周辺の地図"></div>
+          <div id="spots-map-tooltip-panel" class="spots-tooltip-panel" aria-live="polite"></div>
+          <p class="map-caption map-layer-toggles">
+            <label><input type="checkbox" id="toggle-route1" checked> 国道1号</label>
+            <label><input type="checkbox" id="toggle-tokaido" checked> 旧東海道</label>
+            <button type="button" id="map-reset-view" class="map-reset-btn">地図の表示を初期に戻す</button>
+          </p>
+        </div>
+        <p class="map-caption">
+          線はOpenStreetMapに登録されている現在の道路です。灰色の点線は旧東海道（板橋旧道・本町〜新宿）です。スポットマーカーや小路・国道1号のラベルをクリックすると説明パネルが表示されます。同じマーカー・ラベルを再度クリックするか、パネルの閉じるボタンで非表示にできます。
+        </p>
+        <p class="map-fullscreen-link">
+          <a href="index.html">地図を全画面で見る</a>
+        </p>
+        <div class="map-links">
+          <h3>Google Mapsで開く</h3>
+          <ul>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=小田原市南町二丁目+歴史的町名碑+諸白小路" target="_blank" rel="noopener noreferrer">歴史的町名碑（諸白小路）・南町二丁目</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=旧松本剛吉別邸+小田原市南町" target="_blank" rel="noopener noreferrer">旧松本剛吉別邸（南町二丁目1-27）</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=小田原文学館+小田原市南町" target="_blank" rel="noopener noreferrer">小田原文学館・北村透谷碑・白秋童謡館・尾崎一雄邸（南町2-3-4）</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=静山荘+望月軍四郎別邸+小田原市南町" target="_blank" rel="noopener noreferrer">静山荘（旧望月軍四郎別邸）・諸白・西海子交差点付近</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=豆相人車鉄道+旧小田原駅+早川口交差点+小田原" target="_blank" rel="noopener noreferrer">豆相人車鉄道 旧小田原駅跡（早川口交差点付近）</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=対潮閣跡+小田原市南町1-5-32" target="_blank" rel="noopener noreferrer">対潮閣跡（南町1-5-32付近）</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=小田原城" target="_blank" rel="noopener noreferrer">小田原城</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=小田原駅" target="_blank" rel="noopener noreferrer">小田原駅</a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&query=小田原市南町" target="_blank" rel="noopener noreferrer">南町一帯（諸白小路・西海子小路ほか）</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="morohaku">
+        <h2>2. 諸白小路に纏わる歴史的年表</h2>
+        <p class="section-intro">
+          諸白小路の成立から現代までの主な出来事を年表形式でまとめた。
+        </p>
+        <p class="section-intro" style="margin-bottom:12px;">南町・諸白小路周辺の主な出来事を時系列で示す。横軸は年尺に比例しており、各年の間隔が正確に把握できる。下記の各セクションはこの年表の時代区分に沿って整理した。</p>
+        <div class="timeline">
+          <div class="timeline-era-labels">
+            <span style="left: 31.9%;">江戸時代</span>
+            <span style="left: 68.8%;">明治時代</span>
+            <span style="left: 75.5%;">大正時代</span>
+            <span style="left: 84.4%;">昭和時代</span>
+            <span style="left: 95.9%;">現代</span>
+          </div>
+          <div class="timeline-scale">
+            <div class="timeline-scale-inner"></div>
+            <div class="timeline-year-ticks">
+              <span class="timeline-year-tick" style="left: 0;"></span>
+              <span class="timeline-year-tick" style="left: 24.9%;"></span>
+              <span class="timeline-year-tick" style="left: 48%;"></span>
+              <span class="timeline-year-tick" style="left: 63.7%;"></span>
+              <span class="timeline-year-tick" style="left: 71.1%;"></span>
+              <span class="timeline-year-tick" style="left: 75.8%;"></span>
+              <span class="timeline-year-tick" style="left: 80.4%;"></span>
+              <span class="timeline-year-tick" style="left: 85%;"></span>
+              <span class="timeline-year-tick" style="left: 94.2%;"></span>
+              <span class="timeline-year-tick" style="left: 100%;"></span>
+            </div>
+          </div>
+          <div class="timeline-scale-years">
+            <span style="left: 0;">1592</span>
+            <span style="left: 24.9%;">1700</span>
+            <span style="left: 48%;">1800</span>
+            <span style="left: 63.7%;">1868</span>
+            <span style="left: 71.1%;">1900</span>
+            <span style="left: 75.8%;">1920</span>
+            <span style="left: 80.4%;">1940</span>
+            <span style="left: 85%;">1960</span>
+            <span style="left: 94.2%;">2000</span>
+            <span style="right: 0; left: auto;">現在</span>
+          </div>
+          <div class="timeline-events">
+            <span class="timeline-event-marker" data-year="1592" style="left: 0%;" title="1592 稲葉正則"></span>
+            <span class="timeline-event-marker" data-year="1660" style="left: 15.7%;" title="1660 かこながや"></span>
+            <span class="timeline-event-marker" data-year="1669" style="left: 17.8%;" title="1669 御厩小路"></span>
+            <span class="timeline-event-marker" data-year="1686" style="left: 21.7%;" title="1686 諸白・狩野殿・安斎"></span>
+            <span class="timeline-event-marker" data-year="1868" style="left: 63.7%;" title="1868 明治維新"></span>
+            <span class="timeline-event-marker" data-year="1896" style="left: 70.2%;" title="1896 豆相人車鉄道"></span>
+            <span class="timeline-event-marker" data-year="1919" style="left: 75.5%;" title="1919 谷崎・小田原事件"></span>
+            <span class="timeline-event-marker" data-year="1923" style="left: 76.4%;" title="1923 松本剛吉別邸"></span>
+            <span class="timeline-event-marker" data-year="1928" style="left: 77.6%;" title="1928 葉雨庵"></span>
+            <span class="timeline-event-marker" data-year="1939" style="left: 80.1%;" title="1939 静山荘"></span>
+            <span class="timeline-event-marker" data-year="1975" style="left: 88.5%;" title="1975 小田原市史"></span>
+            <span class="timeline-event-marker" data-year="2006" style="left: 95.6%;" title="2006 町名碑"></span>
+            <span class="timeline-event-marker" data-year="2016" style="left: 97.9%;" title="2016 松本別邸指定"></span>
+            <span class="timeline-event-marker" data-year="現在" style="left: 100%;" title="現在"></span>
+          </div>
+          <div class="timeline-cards">
+            <div class="timeline-item">
+              <div class="timeline-year">1592 <span class="timeline-era">江戸時代</span></div>
+              <div class="timeline-content">
+                <h3>稲葉正則、小田原城主就任</h3>
+                <p>徳川家康の家臣である稲葉正則が小田原城主となり、城下町の整備を開始。上方から杜氏を招いて諸白酒づくりを推進した。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1660 <span class="timeline-era">江戸時代</span></div>
+              <div class="timeline-content">
+                <h3>万治図・かこながや</h3>
+                <p>「万治図」の小田原城絵図に御船小屋と並んで水主長屋の地が記載される。城下の水運・船関連の労働者居住区であった。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1669 <span class="timeline-era">江戸時代</span></div>
+              <div class="timeline-content">
+                <h3>御厩小路初出</h3>
+                <p>「寛文九年火災報告に関する文書」に御厩小路が登場する。西海子小路交差点西側に藩の馬屋（御厩）があったことに由来する。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1686 <span class="timeline-era">江戸時代</span></div>
+              <div class="timeline-content">
+                <h3>諸白・狩野殿・安斎小路など史料に</h3>
+                <p>「貞享三年御引渡記録」に諸白小路・狩野殿小路・安斎小路などが記録される。武家地の小路として位置づけられた。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1868 <span class="timeline-era">明治時代</span></div>
+              <div class="timeline-content">
+                <h3>明治維新と武家制度廃止</h3>
+                <p>武家屋敷地は民間に開放された。諸白小路の地名は次第に薄れ、南町という町名へ移る。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1896 <span class="timeline-era">明治時代</span></div>
+              <div class="timeline-content">
+                <h3>豆相人車鉄道・旧小田原駅</h3>
+                <p>熱海方面への人車鉄道が開設された。早川口交差点付近に旧小田原駅（のち石碑が建つ）がある。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1919 <span class="timeline-era">大正時代</span></div>
+              <div class="timeline-content">
+                <h3>谷崎潤一郎・小田原事件</h3>
+                <p>十字町（南町）在住中の谷崎。妻・千代子と佐藤春夫の三角関係に端を発する「小田原事件」が起きた。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1923 <span class="timeline-era">大正時代</span></div>
+              <div class="timeline-content">
+                <h3>旧松本剛吉別邸</h3>
+                <p>貴族院議員・松本剛吉が南町二丁目に別邸を建設した。のち市歴史的風致形成建造物に指定され、一般公開される。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1928 <span class="timeline-era">昭和時代</span></div>
+              <div class="timeline-content">
+                <h3>葉雨庵（野崎幻庵の旧別邸）</h3>
+                <p>野崎幻庵が自怡荘内に茶室「葉雨庵」を建築した。のち松永記念館へ移築され、国登録有形文化財となった。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1939 <span class="timeline-era">昭和時代</span></div>
+              <div class="timeline-content">
+                <h3>静山荘（望月軍四郎別邸）移築</h3>
+                <p>望月軍四郎が農家住宅を南町に移築し別荘「静山荘」とした。諸白小路・西海子小路交差点付近にある。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">1975 <span class="timeline-era">昭和時代</span></div>
+              <div class="timeline-content">
+                <h3>小田原市史編纂</h3>
+                <p>小田原市史（通史編上巻）が刊行された。諸白小路の歴史的背景が詳述される。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2006 <span class="timeline-era">現代</span></div>
+              <div class="timeline-content">
+                <h3>歴史的町名碑設置</h3>
+                <p>小田原市が歴史的町名碑を設置した。諸白小路の位置が南町周辺として示される。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2016 <span class="timeline-era">現代</span></div>
+              <div class="timeline-content">
+                <h3>旧松本剛吉別邸指定</h3>
+                <p>小田原市歴史的風致形成建造物に指定された。2019年市有化のうえ一般公開されている。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">現在 <span class="timeline-era">現代</span></div>
+              <div class="timeline-content">
+                <h3>観光・文化資源として</h3>
+                <p>諸白小路は城下町の歴史を伝える地名として、デジタルミュージアムや観光ガイドで紹介されている。南町一帯で町名碑・別邸・文学館等を巡れる。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <h2 id="edo-period" class="era-heading">I. 江戸時代の城下町</h2>
+      <p class="section-intro" style="margin-bottom:20px;">諸白小路と周辺の小路・町名は、江戸期の史料に現れる。地名の由来と城下町としての性格を整理する。</p>
+
+      <section id="shiryo">
+        <h2>3. 史料上の位置づけ</h2>
+        <p class="section-intro">
+          諸白小路は、単なる町の名前ではなく、武家屋敷地へと続く道の名前として歴史に記録されている。
+        </p>
+        <ul>
+          <li>
+            小田原市資料では、東海道筋から南へ延びる筋違橋町の小路として、
+            <strong>諸白小路・狩野殿小路・安斎小路</strong> が並んで記されている。
+          </li>
+          <li>
+            諸白小路の初出は、<strong>1686年（貞享三年）の御引渡記録</strong>である。
+          </li>
+        </ul>
+      </section>
+
+      <section id="yurai">
+        <h2>4. 地名の由来</h2>
+        <p class="section-intro">
+          地名の由来は、酒造りの歴史にまつわる興味深い伝承である。
+        </p>
+        <ul>
+          <li>
+            城主・稲葉正則の時代、京都や大阪から杜氏（酒造りの職人）を招いて<strong><a href="#morohakushu">諸白酒</a></strong>を造らせたことが由来である。諸白酒の語義・製法は下記の解説を参照。
+          </li>
+        </ul>
+        <div class="detail-box" id="morohakushu">
+          <h3>諸白酒（もろはくしゅ）とは</h3>
+          <p>
+            諸白酒（もろはくしゅ）は、麹米と掛け米の両方に精白米を使用した日本酒の製法、またはその酒を指す。（<a href="https://ja.wikipedia.org/wiki/%E8%AB%B8%E7%99%BD" target="_blank" rel="noopener noreferrer">日本語Wikipedia</a>）
+          </p>
+          <p>
+            江戸時代以前は精米技術が未熟で玄米や片白（掛け米のみ精白）が主流だったが、諸白は透明度の高い上等酒として発展し、現代の清酒の原型となった。（<a href="https://sake-guide.com/glossaries/detail/1519" target="_blank" rel="noopener noreferrer">sake-guide</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">歴史的背景</h4>
+          <p>
+            16世紀頃に奈良の菩提山正暦寺で起源を持ち、「多聞院日記」（1576年）に初出する。（<a href="https://sake-guide.com/glossaries/detail/1519" target="_blank" rel="noopener noreferrer">sake-guide</a>）
+          </p>
+          <p>
+            伊丹諸白や灘の技法が広まり、元禄年間以降に標準化され、濁り酒から澄んだ清酒への進化を促した。（<a href="http://www.nada-ken.com/main/jp/index_mo/557.html" target="_blank" rel="noopener noreferrer">灘のけん</a>）
+          </p>
+        </div>
+      </section>
+
+      <section id="basho">
+        <h2>5. どんな場所だったか</h2>
+        <p class="section-intro">
+          当時の諸白小路は、武家たちの生活空間として機能していた。
+        </p>
+        <ul>
+          <li>道の両側に、中級の武士たちの屋敷が並んでいたと考えられている。</li>
+          <li>
+            周辺の狩野殿小路・天神小路・御厩小路も武家地で、城下町の武家屋敷帯を形成していた。
+          </li>
+        </ul>
+      </section>
+
+      <section id="shosai">
+        <h2>6. 詳細解説</h2>
+        <p class="section-intro">
+          史料・武家地の性格は前節までで触れた。ここでは現在地の捉え方のみ補足する。
+        </p>
+        <div class="detail-box">
+          <h3>現在地の捉え方</h3>
+          <p>
+            歴史的な小路は、現代の道路と完全に一致しないことが多い。諸白小路の場合、「南町周辺」という広いエリアとして捉えると、史料と現実のギャップを埋めやすくなる。
+          </p>
+        </div>
+      </section>
+
+      <h2 id="meiji-showa" class="era-heading">II. 明治〜昭和の南町</h2>
+      <p class="section-intro" style="margin-bottom:20px;">維新後の変遷、豆相人車鉄道、別邸文化、ゆかりの人物など、近代の南町を時系列でたどる。</p>
+
+      <section id="rekishi">
+        <h2>7. 歴史的背景の詳細</h2>
+        <p class="section-intro">
+          諸白小路の成立と変遷を、城下町の歴史的文脈で詳しく見ていきよう。
+        </p>
+        <div class="detail-box">
+          <h3>稲葉正則と城下町の形成</h3>
+          <p>
+            地名の由来（諸白酒）は4章に述べた。稲葉正則（1592-1662）は徳川家康の家臣として小田原城主となり、城下町の整備に力を注いだ。上方から技術者を招いて酒造業を振興し、地域経済の基盤を築いた。
+          </p>
+        </div>
+        <div class="detail-box">
+          <h3>武家地の構造</h3>
+          <p>
+            城下町では武家屋敷が城の周囲に帯状に配置され、諸白小路はその一画で中級武士の居住区をなした。構造の概要は5章「どんな場所だったか」を参照。
+          </p>
+        </div>
+        <div class="detail-box">
+          <h3>明治維新後の変遷</h3>
+          <p>
+            武家制度の廃止により屋敷地は民間に開放され、諸白小路の名は薄れ南町へ移った。地名の記憶は史料・伝承として残り、観光資源となっている（年表1868年も参照）。
+          </p>
+        </div>
+        <div class="detail-box" id="hasuan">
+          <h3>野崎幻庵の別荘「自怡荘」</h3>
+          <p id="genan">
+            野崎幻庵（野崎廣太）は、小田原の十字町・諸白小路（現在の小田原市南町）に別荘「自怡荘（じいそう）」を構え、その敷地内に茶室「葉雨庵」を建てていた。この別荘の跡地には、後にメガネスーパーの創業者が豪邸を建てたという歴史がある。
+          </p>
+        </div>
+        <div class="detail-box" id="gunshiro">
+          <h3>望月軍四郎について</h3>
+          <p>
+            望月軍四郎（もちづき ぐんしろう）は、明治〜昭和前期に活躍した日本の実業家・教育支援者・中国学研究者である。（<a href="https://ja.wikipedia.org/wiki/%E6%9C%9B%E6%9C%88%E8%BB%8D%E5%9B%9B%E9%83%8E" target="_blank" rel="noopener noreferrer">日本語Wikipedia</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">基本情報</h4>
+          <ul style="margin:0 0 10px; padding-left:1.2rem;">
+            <li>1879年（明治12年）に静岡県富士郡大宮町（現・富士宮市）の農家に生まれ、1940年（昭和15年）に没した。（<a href="https://fujinomiya.net/persona/mochizuki-gunshiro/" target="_blank" rel="noopener noreferrer">富士宮市の人物紹介</a>）</li>
+            <li>慶應義塾の特選塾員でもあり、学問・教育への支援に熱心だった。（<a href="https://www.weblio.jp/content/%E6%9C%9B%E6%9C%88%E8%BB%8D%E5%9B%9B%E9%83%8E" target="_blank" rel="noopener noreferrer">weblio</a>）</li>
+          </ul>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">実業家として</h4>
+          <ul style="margin:0 0 10px; padding-left:1.2rem;">
+            <li>10代半ばで上京し、村上太三郎の商店で株式取引を学び、その後独立して証券仲買から身を起こした。（<a href="https://ja.wikipedia.org/wiki/%E6%9C%9B%E6%9C%88%E8%BB%8D%E5%9B%9B%E9%83%8E" target="_blank" rel="noopener noreferrer">日本語Wikipedia</a>）</li>
+            <li>日清生命保険社長、京浜電気鉄道・湘南電気鉄道・錦華紡績などの取締役会長、横浜倉庫社長、東京株式取引所理事など、多数の企業経営に関わった。（<a href="https://www.weblio.jp/content/%E6%9C%9B%E6%9C%88%E8%BB%8D%E5%9B%9B%E9%83%8E" target="_blank" rel="noopener noreferrer">weblio</a>）</li>
+          </ul>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">教育・地域への貢献</h4>
+          <ul style="margin:0 0 10px; padding-left:1.2rem;">
+            <li>出身地の大宮町で「大宮商業学校」「大宮工業学校」を設立し、現在の静岡県立富士宮北高等学校の源流の一つとなっている。（<a href="https://fujinomiya.net/persona/mochizuki-gunshiro/" target="_blank" rel="noopener noreferrer">富士宮市の人物紹介</a>）</li>
+            <li>大宮育英財団など育英事業を立ち上げ、奨学・教育支援に財産を投じた。（<a href="https://fujinomiya.net/persona/mochizuki-gunshiro/" target="_blank" rel="noopener noreferrer">富士宮市の人物紹介</a>）</li>
+          </ul>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">小田原との関わり</h4>
+          <ul style="margin:0 0 0; padding-left:1.2rem;">
+            <li>小田原市南町に別荘「静山荘（旧望月軍四郎別邸）」を構え、現在は歴史的建造物として位置付けられている。（<a href="https://odawara-digital-museum.jp/point/detail/176/" target="_blank" rel="noopener noreferrer">おだわらデジタルミュージアム</a>）</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="nishikoji">
+        <h2>8. 周辺地域との比較</h2>
+        <p class="section-intro">
+          諸白小路をより深く理解するために、周辺の小路との比較を見てみよう。
+        </p>
+        <div class="detail-box" id="kanodono">
+          <h3>狩野殿小路</h3>
+          <p>
+            狩野殿小路は、小田原市南町にある歴史的な小路の名前である。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+          <p>
+            江戸時代、この一帯は中級の藩士が住む武家地で、「貞享三年御引渡記録」（1686年）に初めて登場する。（<a href="https://www.0465.net/map/index.html?i=802" target="_blank" rel="noopener noreferrer">0465.net</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">地名の由来</h4>
+          <p>
+            小田原北条氏の家臣である狩野氏の宅跡に由来するとされ、絵師の狩野古法眼（狩野元信）が住んでいたという伝承もある。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+          <p>
+            また、狩野小路（かのうこうじ）や金殿小路（かねどのこうじ）と表記されることもあり、小田原城南西部の旧町名として今も歴史探訪のスポットである。（<a href="https://www.0465.net/map/index.html?i=802" target="_blank" rel="noopener noreferrer">0465.net</a>）
+          </p>
+        </div>
+        <div class="detail-box" id="anzaikoji">
+          <h3>安斎小路</h3>
+          <p>
+            安斎小路は、小田原市南町にある歴史的な小路である。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+          <p>
+            小田原北条氏の侍医・田村安斎（栖）の宅があったことに由来する。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">歴史的背景</h4>
+          <p>
+            江戸時代の「貞享三年御引渡記録」（1686年）に記された武家地で、北条氏政・氏照兄弟が豊臣秀吉の小田原攻め後にこの地で自害したという伝承がある。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+          <p>
+            小田原城西部の武家屋敷街に位置する。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+        </div>
+        <div class="detail-box" id="tenjinkoji">
+          <h3>天神小路</h3>
+          <p>
+            天神小路は、小田原市南町にある歴史的な小路である。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+          <p>
+            江戸時代の「貞享三年御引渡記録」（1686年）に「御花畑小路」として初出後、「東海道分間延絵図」（1789～1806年）から天神小路と呼ばれるようになった。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">地名の由来</h4>
+          <p>
+            東海道を隔てた北方の天神社に由来し、道の両側は中級藩士の武家地だった。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+          <p>
+            御花畑小路の名は一部区間に残る。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+        </div>
+        <div class="detail-box" id="omayakoji">
+          <h3>御厩小路</h3>
+          <p>
+            御厩小路は、小田原市南町にある歴史的な小路である。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+          <p>
+            「寛文九年火災報告に関する文書」（1669年）に初出で、小田原藩の馬屋（御厩）が西海子小路との交差点西側にあったことに由来する。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">歴史的背景</h4>
+          <p>
+            承応2年（1653年）、藩主・稲葉正則が馬を見に来た記録が残り、熱海街道の起点でもあった。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+          <p>
+            東海道筋から南へ延びる武家地の小路の一つである。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+        </div>
+        <div class="detail-box" id="kakonagaya">
+          <h3>かこながや（水主長屋）</h3>
+          <p>
+            かこながや（水主長屋）は、小田原市南町にある歴史的な町地名である。（<a href="https://www.0465.net/map/index.html?i=801" target="_blank" rel="noopener noreferrer">0465.net</a>）
+          </p>
+          <p>
+            江戸時代、稲葉氏が藩主の頃、この地に御船小屋の隣で水主（水軍の船乗り）の長屋があったことに由来する。（<a href="https://www.city.odawara.kanagawa.jp/global-image/units/500025/1-20210902175224.pdf" target="_blank" rel="noopener noreferrer">小田原市</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">歴史的背景</h4>
+          <p>
+            「万治図」（1660年）の小田原城絵図に「御船小屋」と並んで記載され、城下町の水運・船関連の労働者が住む地域だった。（<a href="https://www.0465.net/map/index.html?i=801" target="_blank" rel="noopener noreferrer">0465.net</a>）
+          </p>
+          <p>
+            町名碑が現存する。（<a href="https://kemaake.com/wp/odawara/2039" target="_blank" rel="noopener noreferrer">けまあけ</a>）
+          </p>
+        </div>
+        <div class="detail-box" id="matsumoto-goukichi">
+          <h3>旧松本剛吉別邸</h3>
+          <p>
+            旧松本剛吉別邸は、小田原市南町二丁目にある大正時代建築の歴史的建造物である。（<a href="https://www.matsumoto-goukichi.com/building.html" target="_blank" rel="noopener noreferrer">松本剛吉記念館</a>）
+          </p>
+          <p>
+            明治・大正期の政治家・松本剛吉（貴族院議員）が大正12年（1923年）頃に建て、山縣有朋と親交が深かった人物ゆかりの別邸である。（<a href="https://www.matsumoto-goukichi.com/history.html" target="_blank" rel="noopener noreferrer">松本剛吉記念館</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">特徴</h4>
+          <p>
+            数寄屋風主屋、茶室「雨香亭」、待合からなる建物群と、築山・水景を備えた回遊式庭園が特徴で、近代小田原の別邸文化を象徴する。（<a href="https://www.city.odawara.kanagawa.jp/field/lifelong/culture/historical_structure/p20642.html" target="_blank" rel="noopener noreferrer">小田原市</a>）
+          </p>
+          <p>
+            平成28年（2016年）に小田原市歴史的風致形成建造物に指定され、2019年に市有化後、一般公開されている。（<a href="https://www.matsumoto-goukichi.com/history.html" target="_blank" rel="noopener noreferrer">松本剛吉記念館</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">歴史的変遷</h4>
+          <p>
+            松本没後、東京府農工銀行頭取・鈴木茂平、日本橋木綿商・岡田正吉の所有を経て現在に至る。（<a href="https://www.matsumoto-goukichi.com/history.html" target="_blank" rel="noopener noreferrer">松本剛吉記念館</a>）
+          </p>
+        </div>
+        <div class="detail-box" id="tanizaki">
+          <h3>谷崎潤一郎と南町（旧十字町）</h3>
+          <p>
+            谷崎潤一郎は小田原市南町（旧十字町）にゆかりがある。（<a href="https://www.0465.net/blog/jyujimachi-h/index.html" target="_blank" rel="noopener noreferrer">0465.net</a>）
+          </p>
+          <p>
+            大正時代に南町の十字町で数年間暮らし、長女・鮎子が花園幼稚園に通っていた。（<a href="https://www.komazawa-u.ac.jp/~hagi/ko_kokugo-tanizaki.htm" target="_blank" rel="noopener noreferrer">駒澤大学</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">小田原事件</h4>
+          <p>
+            1919年頃の「小田原事件」で有名で、妻・石川千代子と佐藤春夫の三角関係が発端となり、親友との絶交劇が起きた。（<a href="https://scrapbox.io/arpla/%E5%B0%8F%E7%94%B0%E5%8E%9F%E4%BA%8B%E4%BB%B6" target="_blank" rel="noopener noreferrer">Scrapbox</a>）
+          </p>
+          <p>
+            この地で執筆活動を行い、小田原文学館でも谷崎ゆかりの資料が展示されている。（<a href="https://www.city.odawara.kanagawa.jp/public-i/facilities/literature-museum/bungakukan.html" target="_blank" rel="noopener noreferrer">小田原市</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">『陰翳礼讃』</h4>
+          <p>
+            谷崎潤一郎の『陰翳礼讃』は、1933年（昭和8年）に発表された随筆で、日本伝統美の本質を「陰翳」（光の当たらない暗がりや影）に求めている。（<a href="https://umiumiseasea.com/tanizaki/ineilaisan/" target="_blank" rel="noopener noreferrer">umiumiseasea</a>）
+          </p>
+          <p>
+            西洋の明るく直接的な美意識に対し、日本人は闇や間接光の中で金箔、漆器、和紙、建築の幽玄な美を愛でる、と論じている。（<a href="https://iroai.jp/tanizaki/" target="_blank" rel="noopener noreferrer">iroai</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">主なテーマ</h4>
+          <ul style="margin:0 0 10px; padding-left:1.2rem;">
+            <li><strong>家屋と陰影</strong>: 障子や床の間が作り出す微妙な光のグラデーションを絶賛し、電灯の過剰な明るさを批判。（<a href="https://www.aozora.gr.jp/cards/001383/files/56642_59575.html" target="_blank" rel="noopener noreferrer">青空文庫</a>）</li>
+            <li><strong>漆器・金蒔絵</strong>: 暗闇でほのかに輝く金色の美しさを「沈痛な美」と表現。（<a href="https://umiumiseasea.com/tanizaki/ineilaisan/" target="_blank" rel="noopener noreferrer">umiumiseasea</a>）</li>
+            <li><strong>能や伝統文化</strong>: 暗さが生む荘厳さを、現代の照明過多と対比。（<a href="https://iroai.jp/tanizaki/" target="_blank" rel="noopener noreferrer">iroai</a>）</li>
+          </ul>
+          <p>
+            小田原在住時の谷崎の美学が色濃く、現代デザインや建築にも影響を与える名著である。（<a href="https://ryokufu.com/product/2411-3" target="_blank" rel="noopener noreferrer">緑風出版</a>）
+          </p>
+        </div>
+        <ul>
+          <li>
+            <strong><a href="#kanodono">狩野殿小路</a></strong>: 諸白小路の西側に並行して走る小路。狩野氏の宅跡に由来し、絵師・狩野元信の居住伝承もある。上記の解説を参照。
+          </li>
+          <li>
+            <strong><a href="#anzaikoji">安斎小路</a></strong>: 諸白小路の東側に位置。北条氏の侍医・田村安斎（栖）の宅跡に由来。上記の解説を参照。
+          </li>
+          <li>
+            <strong>西海子小路</strong>: 小田原城の南側（現在の小田原市南町周辺）にある、旧武家屋敷街の面影を残す歴史的な小路。<a href="#tanizaki">谷崎潤一郎</a>ゆかりの地でもある。名称は、この地にサイカチの木が植えられていたことに由来するといわれる。現在の地名としては、小田原市南町二〜三丁目付近で、東海道（国道1号）の南側に並行して通る横町である。江戸時代末期には、中級藩士の武家屋敷が道の両側に十八軒並んでいたとされ、城下の武家地として整った町並みだった。藩主稲葉家の時代の史料「永代日記」にも地名が見られ、近世から知られた通り名である。現在は「小田原文学館」「白秋童謡館」へのアプローチとなる通りで、文学者ゆかりの地としても知られている。桜並木が有名で、春には桜のトンネルができる小田原屈指の花見スポットになっている。
+          </li>
+          <li>
+            <strong><a href="#matsumoto-goukichi">旧松本剛吉別邸</a></strong>: 南町二丁目。大正12年頃、貴族院議員・松本剛吉が建てた別邸。数寄屋風主屋・茶室「雨香亭」・回遊式庭園。市歴史的風致形成建造物、一般公開。上記の解説を参照。
+          </li>
+          <li id="seizan">
+            <strong><a href="#gunshiro">静山荘</a></strong>: 諸白・西海子交差点付近。実業家望月軍四郎の旧別邸で、農家を移築した別荘。市の優れた建造物に位置づく。詳細は上記の<a href="#gunshiro">望月軍四郎</a>の項を参照。
+          </li>
+          <li>
+            <strong><a href="#tenjinkoji">天神小路</a></strong>: 旧称は御花畑小路。東海道北方の天神社に由来し、中級藩士の武家地。上記の解説を参照。
+          </li>
+          <li>
+            <strong><a href="#omayakoji">御厩小路</a></strong>: 西海子小路との交差点西側に藩の馬屋（御厩）があったことに由来。上記の解説を参照。
+          </li>
+          <li>
+            <strong><a href="#kakonagaya">かこながや（水主長屋）</a></strong>: 御船小屋の隣に水主（水軍の船乗り）の長屋があったことに由来する町地名。万治図に記載。上記の解説を参照。
+          </li>
+        </ul>
+        <p>
+          これらの小路はすべて東海道筋から南へ延び、城下町の格子状区画を形成していた。
+        </p>
+      </section>
+
+      <h2 id="gendai" class="era-heading">III. 現代の南町</h2>
+      <p class="section-intro" style="margin-bottom:20px;">現地の見どころ、観光情報、参考リンクをまとめる。</p>
+
+      <section id="kanko">
+        <h2>9. 現代の観光・訪問情報</h2>
+        <p class="section-intro">
+          諸白小路の歴史を現代の視点から楽しむための情報。
+        </p>
+        <div class="detail-box" id="odawara-ekiseki">
+          <h3>小田原駅跡（豆相人車鉄道）</h3>
+          <p>
+            小田原駅跡は、現在のJR小田原駅（1920年開業）より南東の早川口交差点付近、国道1号線沿いに位置する、豆相人車鉄道の旧小田原駅の跡地を指す。（<a href="http://sloway.net/zusou/history.html" target="_blank" rel="noopener noreferrer">sloway</a>）
+          </p>
+          <p>
+            明治29年（1896年）に熱海方面への陸上輸送路として開設された人車鉄道の駅で、現在は石碑が建っている。（<a href="http://sloway.net/zusou/history.html" target="_blank" rel="noopener noreferrer">sloway</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">歴史的背景</h4>
+          <p>
+            豆相人車鉄道は人力で客車を引く珍しい鉄道で、小田原宿の衰退後に地域交通を支えた。（<a href="http://sloway.net/zusou/history.html" target="_blank" rel="noopener noreferrer">sloway</a>）
+          </p>
+          <p>
+            東海道本線熱海線の開通後、役割を終え廃止されたが、小田原の交通史を伝える遺構として残っている。（<a href="http://sloway.net/zusou/history.html" target="_blank" rel="noopener noreferrer">sloway</a>）
+          </p>
+        </div>
+        <div class="detail-box" id="meganesuper">
+          <h3>メガネスーパー</h3>
+          <p>
+            メガネスーパーは1973年に神奈川県小田原市で田中八郎が有限会社ニュー湘南眼鏡として創業した眼鏡販売チェーンである。（<a href="https://ja.wikipedia.org/wiki/%E3%83%A1%E3%82%AC%E3%83%8D%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC" target="_blank" rel="noopener noreferrer">日本語Wikipedia</a>）
+          </p>
+          <p>
+            1980年に埼玉の同名会社と統合し株式会社化、2004年に株式上場、2007年ピーク時には540店舗・380億円を記録したが、2011〜13年に債務超過に陥り再建へ向かった。（<a href="https://www.weblio.jp/content/%E3%83%A1%E3%82%AC%E3%83%8D%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC" target="_blank" rel="noopener noreferrer">weblio</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">再建と変遷</h4>
+          <p>
+            2013年に星崎尚彦社長が就任し、「アイケアカンパニー」へ転換。検眼・サービス強化でV字回復し、現在はビジョナリーホールディングスの子会社として、2023年売上238億円規模で全国展開を続けている。（<a href="https://www.meganesuper.co.jp/profile/" target="_blank" rel="noopener noreferrer">メガネスーパー</a>）
+          </p>
+          <p>
+            自怡荘跡地に同社創業者が豪邸を建てた経緯は、<a href="#hasuan">野崎幻庵の別荘「自怡荘」</a>の項を参照。
+          </p>
+        </div>
+        <div class="detail-box" id="uirou">
+          <h3>小田原のういろう</h3>
+          <p>
+            小田原のういろうは、室町時代から続く外郎（ういろう）家が作る伝統的な蒸し菓子である。（<a href="https://chienotomoshibi.jp/uirou/" target="_blank" rel="noopener noreferrer">ちえのともしび</a>）
+          </p>
+          <p>
+            元々は家伝薬「透頂香（とうちんこう）」の製作者である外郎家が、賓客接待用に考案したもので、米粉・砂糖・水を主原料にモチモチとした柔らかい食感が特徴である。（<a href="https://www.uirou.co.jp/history/" target="_blank" rel="noopener noreferrer">ういろう本店</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">歴史</h4>
+          <p>
+            1368年（応安元年）に元朝から渡来した陳延祐が起源で、北条早雲の招きにより1504年頃に小田原に移住し、現在も25代続く老舗「ういろう本店」で販売されている。（<a href="https://chienotomoshibi.jp/uirou/" target="_blank" rel="noopener noreferrer">ちえのともしび</a>）
+          </p>
+          <p>
+            江戸時代には東海道の名物として『東海道名所記』やケンペルの『日本誌』に記され、小田原城下町の象徴となった。（<a href="https://ja.wikipedia.org/wiki/%E3%81%86%E3%81%84%E3%82%8D%E3%81%86_(%E4%BC%81%E6%A5%AD)" target="_blank" rel="noopener noreferrer">日本語Wikipedia</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">特徴</h4>
+          <p>
+            白・緑・紅などの棹物（棒状）が主流で、さっぱりした上品な甘さが魅力である。薬菓子として保存性が高く、全国のういろう文化の源流である。（<a href="https://ajisaikaikan.com/kanagawa-odawara-uiro-nagoya/" target="_blank" rel="noopener noreferrer">味彩会館</a>）
+          </p>
+        </div>
+        <div class="detail-box" id="taichokaku">
+          <h3>対潮閣跡</h3>
+          <p>
+            対潮閣跡は、小田原市南町1-5-32付近にある山下亀三郎別邸の遺構で、日露戦争の英雄・秋山真之の終焉の地として知られる。（<a href="https://yhistoricalplace2.web.fc2.com/historical_place/kamesaburo_yamashita/index.html" target="_blank" rel="noopener noreferrer">歴史の風景</a>）
+          </p>
+          <p>
+            山下汽船（現・商船三井）創業者・山下亀三郎が大正期に建てた海の見える豪邸で、現在は石垣・釣鐘石・通用門が残っている。（<a href="https://note.com/seikantei/n/nb68282b1f87a" target="_blank" rel="noopener noreferrer">note</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">歴史的エピソード</h4>
+          <p>
+            大正7年（1918年）2月4日、盲腸炎悪化により秋山真之海軍中将がここで49歳で逝去した。山縣有朋の古稀庵（現・清閑亭）近くに位置し、明治の別邸文化を象徴する。（<a href="http://kyoudosi.cocolog-nifty.com/blog/2020/04/post-386e38.html" target="_blank" rel="noopener noreferrer">郷土史</a>）
+          </p>
+          <p>
+            近隣の静閑亭や旧松本剛吉別邸とともに、小田原南町の近代史スポットである。（<a href="https://4travel.jp/travelogue/10605772" target="_blank" rel="noopener noreferrer">4travel</a>）
+          </p>
+        </div>
+        <div class="detail-box" id="tokoku-hi">
+          <h3>北村透谷碑</h3>
+          <p>
+            北村透谷碑は、小田原市南町2丁目の小田原文学館敷地内にある、明治の思想家・文学者北村透谷（1868-1894）を顕彰する記念碑である。（<a href="https://bungakusanpo.oops.jp/tokoku2.html" target="_blank" rel="noopener noreferrer">文学散歩</a>）
+          </p>
+          <p>
+            昭和4年（1929年）に小峰公園の大久保神社境内に建立され、島崎藤村が碑文「北村透谷に献ず」を揮毫、牧雅雄が雪崩造りのデザインを担当した。（<a href="https://ja.localwiki.org/odawara/%E9%80%8F%E8%B0%B7%E7%A2%91" target="_blank" rel="noopener noreferrer">LocalWiki 小田原</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">変遷</h4>
+          <p>
+            昭和29年（1954年）に小田原城址公園へ、平成23年（2011年）に城再整備に伴い文学館へ移転した。除幕式も震災で延期されるなど波乱の歴史を持つ。（<a href="http://tanzawa-yumekoubou.cocolog-nifty.com/blog/2011/05/post-a9aa.html" target="_blank" rel="noopener noreferrer">丹沢夢工房</a>）
+          </p>
+          <p>
+            透谷の生誕地（現・浜町）や小田原事件の谷崎潤一郎と並び、南町の文学史スポットとして位置づけられている。（<a href="https://odawara-digital-museum.jp/great/detail/143/" target="_blank" rel="noopener noreferrer">おだわらデジタルミュージアム</a>）
+          </p>
+        </div>
+        <div class="detail-box" id="hakushu-douyoukan">
+          <h3>白秋童謡館</h3>
+          <p>
+            白秋童謡館は、小田原市南町にある小田原文学館の別館で、北原白秋の童謡関連資料を展示する施設である。（<a href="https://www.city.odawara.kanagawa.jp/public-i/facilities/literature-museum/douyoukan.html" target="_blank" rel="noopener noreferrer">小田原市</a>）
+          </p>
+          <p>
+            大正13年（1924年）に元宮内大臣・田中光顕の別邸として建てられた木造2階建ての和風建築で、登録有形文化財に指定されている。（<a href="https://www.city.odawara.kanagawa.jp/field/lifelong/property/tourokubunkazai/kenzoubutsu/tourokubungakukan.html" target="_blank" rel="noopener noreferrer">小田原市</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">白秋と小田原</h4>
+          <p>
+            大正7～15年頃に小田原在住中、「赤い鳥小鳥」「揺籠のうた」「からたちの花」など生涯の半数以上の童謡を創作した。「木兎の家」の模型や直筆原稿が展示され、白秋童謡の散歩道の起点としても知られる。（<a href="https://odawara-digital-museum.jp/point/detail/617/" target="_blank" rel="noopener noreferrer">おだわらデジタルミュージアム</a>）
+          </p>
+        </div>
+        <div class="detail-box" id="ozaki-kazuo">
+          <h3>尾崎一雄邸</h3>
+          <p>
+            尾崎一雄邸は、小田原文学館敷地内に移築保存されている、私小説家・尾崎一雄（1899-1983）の旧宅「冬眠居」の書斎部分である。（<a href="https://note.com/nareura/n/n58c622378853" target="_blank" rel="noopener noreferrer">note</a>）
+          </p>
+          <p>
+            元々は小田原市曽我谷津にあった戦後建築で、8畳と4畳の書斎、広縁、書庫からなり、柱・建具・天井・旧宅の瓦9割以上を再利用して平成18年（2006年）に移築された。（<a href="https://ameblo.jp/hituzou/entry-12926436487.html" target="_blank" rel="noopener noreferrer">ameblo</a>）
+          </p>
+          <h4 style="margin:1rem 0 0.5rem; font-size:1rem; color:var(--accent);">特徴と意義</h4>
+          <p>
+            『暢気眼鏡』などの作品で知られる尾崎が創作に励んだ空間を再現し、現在は屋外から観覧可能である。北村透谷碑や白秋童謡館と並び、小田原の文学遺産を象徴する。（<a href="https://www.city.odawara.kanagawa.jp/public-i/facilities/literature-museum/shosai.html" target="_blank" rel="noopener noreferrer">小田原市</a>）
+          </p>
+        </div>
+        <ul>
+          <li>
+            <strong>アクセス</strong>: 小田原駅から徒歩15-20分。南町周辺を散策すると良い。
+          </li>
+          <li>
+            <strong>歴史的町名碑</strong>: 南町二丁目に設置。諸白小路の位置を示す標識がある。
+          </li>
+          <li>
+            <strong>周辺スポット</strong>: 小田原城址公園、小田原宿、鈴廣かまぼこ博物館などと合わせて訪れると、城下町の雰囲気を満喫できる。早川口交差点付近には<a href="#odawara-ekiseki">豆相人車鉄道の旧小田原駅跡</a>（石碑）もある。
+          </li>
+          <li>
+            <strong>注意点</strong>: 現代の道路事情で小路の形状は変化している。史料と照らし合わせながら歩くと面白い。
+          </li>
+        </ul>
+      </section>
+
+      <section id="renkei">
+        <h2>10. 関連リンク（外部サイト）</h2>
+        <ul class="links">
+          <li>
+            小田原市公式：歴史的町名碑の設置場所について<br />
+            <a href="https://www.city.odawara.kanagawa.jp/field/lifelong/property/topics/tyoumeihi.html" target="_blank" rel="noopener noreferrer">https://www.city.odawara.kanagawa.jp/field/lifelong/property/topics/tyoumeihi.html</a>
+          </li>
+          <li>
+            おだわらデジタルミュージアム（概要）<br />
+            <a href="https://odawara-digital-museum.jp/about/" target="_blank" rel="noopener noreferrer">https://odawara-digital-museum.jp/about/</a>
+          </li>
+          <li>
+            おだわらデジタルミュージアム（デジタルアーカイブ一覧）<br />
+            <a href="https://odawara-digital-museum.jp/archive/list/" target="_blank" rel="noopener noreferrer">https://odawara-digital-museum.jp/archive/list/</a>
+          </li>
+          <li>
+            おだわらデジタルミュージアム（まちなみ写真：諸白小路関連）<br />
+            <a href="https://odawara-digital-museum.jp/photo/machinami/12/" target="_blank" rel="noopener noreferrer">https://odawara-digital-museum.jp/photo/machinami/12/</a>
+          </li>
+          <li>
+            小田原市：小田原デジタルアーカイブ案内<br />
+            <a href="https://www.city.odawara.kanagawa.jp/encycl/" target="_blank" rel="noopener noreferrer">https://www.city.odawara.kanagawa.jp/encycl/</a>
+          </li>
+          <li>
+            参考：小田原城街歩きガイド（城下町町名）<br />
+            <a href="https://www.scn-net.ne.jp/~yanya/cyoumei.html" target="_blank" rel="noopener noreferrer">https://www.scn-net.ne.jp/~yanya/cyoumei.html</a>
+          </li>
+          <li>
+            野崎幻庵の別荘（諸白小路関連）<br />
+            <a href="https://yhistoricalplace2.web.fc2.com/historical_place/youan/index.html" target="_blank" rel="noopener noreferrer">https://yhistoricalplace2.web.fc2.com/historical_place/youan/index.html</a>
+          </li>
+          <li>
+            メガネスーパー創業者の豪邸（自怡荘跡地）<br />
+            <a href="https://rarea.events/event/195726" target="_blank" rel="noopener noreferrer">https://rarea.events/event/195726</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="sanko">
+        <h2>11. 参考文献・史料</h2>
+        <ul>
+          <li>小田原市史編纂委員会『小田原市史 通史編 上巻』小田原市、1975年</li>
+          <li>小田原市教育委員会『小田原城下町の歴史的町名』小田原市、2006年</li>
+          <li>おだわらデジタルミュージアム所蔵史料</li>
+          <li>『貞享三年御引渡記録』（1686年） - 諸白小路初出の史料</li>
+        </ul>
+      </section>
+
+
+
+      <section id="matome">
+        <h2>12. まとめ</h2>
+        <p class="summary">
+          諸白小路は、<strong>1686年の史料に登場する武家地の小路名</strong>である。由来は稲葉正則時代の諸白酒づくりで、当時は中級武士の屋敷が並んでいた。現在は南町周辺にその歴史をたどることができ、周辺の小路との比較や現代の観光情報も参考に、城下町の魅力を深く味わえる。
+        </p>
+      </section>
+
+      <footer>
+        本ページは、提供された内容を基に一般向けに読みやすく再構成した解説である。
+      </footer>
+    </main>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
