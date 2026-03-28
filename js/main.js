@@ -112,7 +112,14 @@
       sources: [] },
     { lat: 35.244611419808315, lng: 139.14921957726818, name: '小田原城跡 早川口遺構', label: '小田原城跡 早川口遺構', color: '#1d4ed8', tooltipDirection: null, category: 'castle',
       description: '小田原城跡の早川口に残る遺構で、城の虎口・出入口に関連する遺構である。早川口は南町・諸白小路周辺から城へ向かう際にも関係する歴史的な入口で、豆相人車鉄道の旧小田原駅跡もこの付近にあり、交通と城の関係を考えるうえで興味深い地点である。',
-      sources: [] }
+      sources: [] },
+    { lat: 35.2499, lng: 139.1448, name: '箱根おろし', label: '箱根おろし', color: '#0ea5e9', tooltipDirection: null, category: 'sea', shape: 'wind',
+      windPath: [[35.2513, 139.1408], [35.2506, 139.1427], [35.2499, 139.1448]],
+      description: '夏の夕方に、箱根の山側から小田原方面へ風が下りてくる現象。山地から平地へ向かう風の通り道を意識しやすい位置に設定。',
+      sources: [] },
+    { lat: 35.24489446482574, lng: 139.1601610333528, name: '相模湾（日本三大深海）', label: '相模湾（日本三大深海）', color: '#1d4ed8', tooltipDirection: null, category: 'sea',
+      description: '相模湾は岸近くから深い海底地形を持つことで知られ、地形学的にも特徴的な海域。御幸の浜周辺散策とあわせて海の奥行きを実感できる。',
+      sources: [] },
   ];
   var labelHalfH = 0.000065, labelHalfW = 0.00013;
   var labelMargin = 2.0;
@@ -264,7 +271,40 @@
     var isSea = s.category === 'sea';
     var isStation = s.category === 'station';
     var isStar = s.shape === 'star';
+    var isWind = s.shape === 'wind';
     var c = s.color || spotMarkerColor;
+    var tooltipHtml = buildTooltipHtml(s.label || s.name, s.description, s.sources);
+    if (isWind && s.windPath && s.windPath.length >= 2) {
+      var windLine = L.polyline(s.windPath, {
+        color: c,
+        weight: 4,
+        opacity: 0.9,
+        dashArray: '8,8',
+        lineCap: 'round',
+        lineJoin: 'round'
+      }).addTo(map);
+      var windEnd = s.windPath[s.windPath.length - 1];
+      var windArrowIcon = L.divIcon({
+        className: 'spot-marker-wrap',
+        html: '<span class="spot-marker spot-marker-sea" style="background-color:' + c + '">➜</span>',
+        iconSize: [24, 24],
+        iconAnchor: [12, 12]
+      });
+      var windArrow = L.marker(windEnd, { icon: windArrowIcon, zIndexOffset: 650 }).addTo(map);
+      var toggleWindTooltip = function () {
+        if (tooltipPanel && tooltipPanel.style.display === 'block' && currentTooltipHtml === tooltipHtml) {
+          if (tooltipHideTimeout) clearTimeout(tooltipHideTimeout);
+          tooltipHideTimeout = null;
+          currentTooltipHtml = null;
+          tooltipPanel.style.display = 'none';
+        } else {
+          showTooltipPanel(tooltipHtml, s.lat);
+        }
+      };
+      windLine.on('click', toggleWindTooltip);
+      windArrow.on('click', toggleWindTooltip);
+      return;
+    }
     var iconHtml;
     if (isGourmet) {
       iconHtml = '<span class="spot-marker spot-marker-gourmet" style="background-color:' + c + '">🍴</span>';
@@ -274,6 +314,8 @@
       iconHtml = '<span class="spot-marker spot-marker-shrine" style="background-color:' + c + '">⛩️</span>';
     } else if (isMeiji) {
       iconHtml = '<span class="spot-marker spot-marker-meiji" style="background-color:' + c + '">🚂</span>';
+    } else if (isWind) {
+      iconHtml = '<span class="spot-marker spot-marker-sea" style="background-color:' + c + '">💨</span>';
     } else if (isSea) {
       iconHtml = '<span class="spot-marker spot-marker-sea" style="background-color:' + c + '">🌊</span>';
     } else if (isStation) {
@@ -289,7 +331,6 @@
       iconSize: [20, 20],
       iconAnchor: [10, 10]
     });
-    var tooltipHtml = buildTooltipHtml(s.label || s.name, s.description, s.sources);
     var marker = L.marker([s.lat, s.lng], { icon: icon }).addTo(map);
     marker.on('click', function () {
       if (tooltipPanel && tooltipPanel.style.display === 'block' && currentTooltipHtml === tooltipHtml) {
