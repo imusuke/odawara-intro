@@ -1,5 +1,3 @@
-import { next } from '@vercel/functions';
-
 function unauthorized() {
   return new Response('Authentication required', {
     status: 401,
@@ -44,9 +42,9 @@ export default function middleware(request) {
     return unauthorized();
   }
 
-  return next();
+  return fetch(request);
 }
 
-export var config = {
+export const config = {
   matcher: '/:path*'
 };
